@@ -1,0 +1,132 @@
+@{
+    ViewBag.Title = "我的資訊";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+<style>
+    .gray-bg {
+        background-color: #ffffff;
+    }
+
+</style>
+<div class="row">
+    <div class="col-sm-6">
+        <div class="ibox float-e-margins">
+            <div class="ibox-title">
+                <h5>我的個人資訊</h5>
+            </div>
+            <div class="ibox-content">
+                <form class="form-horizontal" style="margin-top: 10px;">
+                    <div class="form-group">
+                        <label class="col-sm-3 control-label">使用者姓名：</label>
+
+                        <div class="col-sm-8">
+                            <input type="text" v-model="currentRow.UserName"  placeholder="使用者姓名" class="form-control" value="@ViewBag.UserName"> <span class="help-block m-b-none">請輸入您的姓名</span>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label class="col-sm-3 control-label">聯繫手機：</label>
+
+                        <div class="col-sm-8">
+                            <input type="tel" v-model="currentRow.Phone" placeholder="聯繫手機" class="form-control" value="@ViewBag.Phone"> <span class="help-block m-b-none">請輸入您的聯繫方式</span>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <div class="col-sm-offset-3 col-sm-8">
+                            <button class="btn btn-w-m btn-success authorization" style="display: none" action-id="user-detail-update" action-name="更新個人資訊" type="button"  v-on:click="_UpdateUserInfo">更新個人資訊</button>
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+    <div class="col-sm-6">
+        <div class="ibox float-e-margins">
+            <div class="ibox-title">
+                <h5>修改密碼</h5>
+            </div>
+            <div class="ibox-content">
+                <form class="form-horizontal" style="margin-top: 10px;">
+                    <div class="form-group">
+                        <label class="col-sm-3 control-label">舊密碼：</label>
+                        <div class="col-sm-8">
+                            <input type="password" v-model="currentRow.OldPwd"  placeholder="舊密碼" class="form-control"> <span class="help-block m-b-none">請輸入您的舊密碼</span>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label class="col-sm-3 control-label">密碼：</label>
+
+                        <div class="col-sm-8">
+                            <input type="password" v-model="currentRow.Pwd"  placeholder="密碼" class="form-control"><span class="help-block m-b-none">請輸入您的新密碼</span>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <div class="col-sm-offset-3 col-sm-8">
+                            <button class="btn btn-w-m btn-danger authorization" style="display: none" action-id="user-detail-pwd" action-name="修改密碼"type="button" v-on:click="_UpdatePwd">修改密碼</button>
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
+
+@section Scripts{
+    <script type="text/javascript">
+
+        var vm = new Vue({
+            el: 'body',
+            data: {
+                currentRow: {
+                    UserName: '',
+                    Phone: "",
+                    OldPwd: "",
+                    Pwd:""
+                }
+            },
+            computed: {},
+            ready: function () {
+                auth();
+            },
+            methods: {
+                _UpdateUserInfo: function () {
+                    QQT.ajax('/Admin/Account/UpdateUserInfo',
+                        'POST', vm.currentRow)
+                        .done(function (response) {
+                            swal("成功啦！", "更新成功!", "success");
+                        });
+                },
+                _UpdatePwd: function () {
+
+                    if (!vm.currentRow.OldPwd) {
+                        swal({
+                            title: "",
+                            text: "請輸入舊密碼！",
+                            type: "error"
+                        });
+                        return;
+                    }
+                    if (!vm.currentRow.Pwd) {
+                        swal({
+                            title: "",
+                            text: "請輸入新密碼！",
+                            type: "error"
+                        });
+                        return;
+                    }
+
+                    QQT.ajax('/Admin/Account/UpdatePwd',
+                            'POST', vm.currentRow)
+                        .done(function (response) {
+                            swal("更新成功！", "請退出系統重新登入!", "success");
+                            vm.currentRow.OldPwd = '';
+                            vm.currentRow.Pwd = '';
+                        });
+                }
+            }
+        });
+
+
+
+    </script>
+
+}

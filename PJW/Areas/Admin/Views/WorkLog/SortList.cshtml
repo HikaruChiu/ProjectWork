@@ -1,0 +1,405 @@
+﻿@{ ViewBag.Title = "工作任務分類";
+    Layout = "~/Views/Shared/_Layout.cshtml"; }
+@*<link rel="stylesheet" href="~/css/ace/font-awesome.min.css" asp-append-version="true" />
+<link rel="stylesheet" href="~/css/ace/ace.min.css" asp-append-version="true" />
+<link rel="stylesheet" href="~/css/ace/ace-responsive.min.css" asp-append-version="true" />
+<link rel="stylesheet" href="~/css/ace/ace-skins.min.css" asp-append-version="true" />*@
+<style>
+    .select2-container .select2-choice, .select2-result-label {
+        font-size: 16px;
+        height: 34px;
+        overflow: auto;
+    }
+
+    .select2-arrow, .select2-chosen {
+        padding-top: 6px;
+    }
+
+    .table thead tr th {
+        background: linear-gradient(to bottom,#f8f8f8 0,#ececec 100%);
+    }
+
+    .table-striped tbody > tr:nth-child(odd) > td, .table-striped tbody > tr:nth-child(odd) > th {
+        background-color: #f9f9f9;
+    }
+
+    .table-hover tbody tr:hover td, .table-hover tbody tr:hover th {
+        background-color: #f1f1f1;
+    }
+
+    .modal-dialog {
+        width: 800px;
+    }
+</style>
+<div class="wrapper wrapper-content animated fadeInRight">
+    <div class="ibox float-e-margins">
+        <div class="ibox-content">
+            <div class="row row-lg">
+                <div class="col-sm-12">
+                    <div>
+                        <div>
+                            <div id="WorkLogSortTableEventsToolbar" role="group">
+
+                                <div class="input-group" style="display: inline-block">
+                                    <input type="text" class="form-control  input-md" id="AddWorkSortName" placeholder="任務分類名稱" style="width: 250px;display: inline-block" data-pure-clear-button>
+                                </div>
+                                <input class="js-example-data-array-selected text-box" id="AddWorkDeptComb" style="width: 200px;vertical-align: initial;" />
+                                @*<button type="button" id="btnSortAdd" action-id="worksort-add" action-name="新增任務分類" class="btn btn-w-m btn-success" style="display: inline-block; margin-right: 10px">新增任務分類</button>*@
+                                <button type="button" id="btnSortAdd" action-id="worksort-add" action-name="新增任務分類" style="width: 120px; height: 38px; margin-left: 20px;vertical-align:top; " class="btn btn-info">新增任務分類</button>
+                            </div>
+                            <table id="WorkLogSortTable" data-side-pagination="server" data-sort-order="desc" data-mobile-responsive="true"></table>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+<div class="modal inmodal" id="myModal" tabindex="-1" role="dialog" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div>
+
+            </div>
+            <div class="modal-body">
+                <div class="form-group">
+                    <label class="control-label">分類編號：</label>
+                    <input id="EditSortNo" name="EditSortNo" v-model="EditSortNo" class="form-control" type="text" disabled>
+                </div>
+                <div class="form-group">
+                    <label class="control-label">分類名稱：</label>
+                    <input id="EditSortName" name="EditSortName" v-model="EditSortName" class="form-control" type="text" placeholder="請輸入分類名稱">
+                </div>
+                <div class="form-group">
+                    <label class="control-label">所屬部門：</label>
+                    <input class="js-example-data-array-selected text-box" id="EditDeptComb" style="width: 150px;" />
+                </div>
+
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-danger" id="close-model">關閉</button>
+                <button type="button" class="btn btn-primary" id="save-model">儲存</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+@section Scripts{
+    <script type="text/javascript">
+
+        $(function () {
+            auth();
+            onReady();
+
+            //1.初始化Table
+            var oTable = new TableInit();
+            oTable.Init();
+
+            //2.初始化Button的點擊事件
+            var oButtonInit = new ButtonInit();
+            oButtonInit.Init();
+
+        });
+
+        
+        var TableInit = function () {
+            var oTableInit = new Object();
+
+            //初始化Table
+
+            oTableInit.Init = function () {
+                $('#WorkLogSortTable')
+                    .bootstrapTable({
+                        ajax: ajaxRequest,
+                        pageNumber: 1,
+                        pageSize: 25,
+                        pageList: [10, 25, 50, 100],
+                        resetOffset: true,
+                        search: false,
+                        sortable: true,
+                        pagination: true,
+                        height: $(window).height(),
+                        showRefresh: true,
+                        showToggle: true,
+                        showColumns: false,
+                        striped: true,
+                        sortOrder: 'desc',
+                        clickToSelect: true,
+                        singleSelect: true,
+                        cache: false,
+                        // showPaginationSwitch:true,
+                        dataType: "json",
+                        iconSize: 'outline',
+                        toolbar: '#WorkLogSortTableEventsToolbar',
+                        icons: {
+                            refresh: 'glyphicon-refresh',
+                            toggleOff: 'glyphicon-list-alt icon-list-alt',
+                            toggleOn: 'glyphicon-list-alt icon-list-alt',
+                            columns: 'glyphicon-list'
+                        },
+                        columns: [
+                            { field: 'sortNo', title: '任務分類編號', visible: false },
+                            {
+                                field: 'sortName',
+                                title: '任務分類名稱'
+                            },
+                            {
+                                field: 'deptNo',
+                                title: '所屬部門'
+                            },
+                            {
+                                field: 'work_log_cnt',
+                                title: '附帶任務'
+                            },
+                            //{
+                            //    field: 'Operate',
+                            //    title: '管理',
+                            //    halign: 'center',
+                            //    align: 'center',
+                            //    events: operateEvents,
+                                
+                            //    formatter: function (value, row, index) {
+
+                            //        var strHtml = "<a class='btn btn-mini btn-info' action-id='sort-edit' action-name='編輯任務分類' title='編輯任務分類' href='javascript:void(0);'><i class='icon-edit'></i></a>&nbsp;";
+                            //        strHtml += "<a class='btn btn-mini btn-danger' action-id='sort-del' action-name='刪除任務分類' title='刪除任務分類'  href='javascript:void(0);'><i class='icon-trash'></i></a>";
+                            //        return strHtml;
+                            //    }
+                            //}
+                            { field: 'operate', title: '管理', align: 'center', halign: 'center', events: operateEvents, formatter: 'operateFormatter' },
+
+                        ],
+                        onLoadSuccess: function () {
+
+                        },
+                        onToggle: function () {
+
+
+                        }
+
+                    });
+                $(window).resize(function () {
+
+                    $('#WorkLogSortTable').bootstrapTable('resetView', { height: $(window).height() });
+                });
+
+            }
+
+            return oTableInit;
+        }
+
+        // 格式化按钮
+        function operateFormatter(value, row, index) {
+            return [
+                '<button type="button" class="btn btn-mini btn-info" style="margin-right:15px;" action-id="sort-edit" action-name="編輯任務分類" title="編輯任務分類"><i class="icon-edit" ></i>&nbsp;編輯</button>',
+                '<button type="button" class="btn btn-mini btn-danger" style="margin-right:15px;" action-id="sort-del" action-name="刪除任務分類" title="刪除任務分類"><i class="icon-trash" ></i>&nbsp;删除</button>'
+                
+            ].join('');
+
+        }
+
+
+        var ButtonInit = function () {
+            var oInit = new Object();
+
+            oInit.Init = function () {
+                $("#btnSortAdd").click(function () {
+                    var WorkSortName = $("#AddWorkSortName").val();
+                    var WorkDeptNo = $("#AddWorkDeptComb").val();
+                    if (WorkSortName == "") {
+                        //$.modalAlert("請輸入任務分類名稱。", "warning");
+                        swal({
+                            title: "",
+                            text: "請輸入任務分類名稱！",
+                            type: "error"
+                        });
+                        return;
+                    }
+
+                    if (WorkDeptNo == "") {
+                        //$.modalAlert("請輸入任務所屬部門。", "warning");
+                        swal({
+                            title: "",
+                            text: "請選擇任務所屬部門！",
+                            type: "error"
+                        });
+                        return;
+                    }
+
+                    QQT.ajax('/Admin/WorkLog/WorkLogSortAdd',
+                        'Post',
+                        {
+                            sortName: WorkSortName,
+                            deptNo: WorkDeptNo
+                        })
+                        .done(function (response) {
+                            $('#WorkLogSortTable').bootstrapTable('refresh', { silent: true });
+                            swal("成功啦！", "新增成功!", "success");
+                            $('#AddWorkDeptComb').val(null).trigger('change');
+                            $('#AddWorkSortName').val('');
+                        });
+                });
+
+
+                $("#myModal #close-model").click(function () {
+                    $('#EditDeptComb').val(null).trigger('change');
+                    $('#EditSortName').val('');
+                    $('#myModal').modal('hide');
+                });
+
+                $("#myModal #save-model").click(function () {
+                    var EditSortNo = $("#EditSortNo").val();
+                    var EditSortName = $("#EditSortName").val();
+                    var EditDeptNo = $("#EditDeptComb").val();
+
+                    if (EditSortName == "") {
+                        //$.modalAlert("請輸入任務分類名稱。", "warning");
+                        swal({
+                            title: "",
+                            text: "請輸入任務分類名稱！",
+                            type: "error"
+                        });
+                        return;
+                    }
+
+                    QQT.ajax('/Admin/WorkLog/WorkLogSortEdit',
+                        'Post',
+                        {
+                            sortNo: EditSortNo,
+                            sortName: EditSortName,
+                            deptNo: EditDeptNo
+                        })
+                        .done(function (response) {
+                            $('#WorkLogSortTable').bootstrapTable('refresh', { silent: true });
+                            if (response.Status == "0") {
+                                swal({
+                                    title: "更新失敗",
+                                    text: response.Info,
+                                    type: "error"
+                                });
+                                return;
+                            }
+                            swal("成功啦！", "修改成功!", "success");
+                            $('#EditDeptComb').val(null).trigger('change');
+                            $('#EditSortName').val('');
+                        });
+
+                    $('#myModal').modal('hide');
+                });
+
+            }
+
+            return oInit;
+        }
+
+        function ajaxRequest(params) {
+            var pageSize = params.data.limit;
+            var pageIndex = params.data.offset / params.data.limit + 1;
+            var orderBy = params.data.sort;
+            var orderSequence = params.data.order;
+            QQT.ajax('/Admin/WorkLog/GetWorkLogSortList',
+                'POST',
+                {
+                    pageIndex: pageIndex,
+                    pageSize: pageSize,
+                    orderBy: orderBy,
+                    orderSequence: orderSequence
+                })
+                .done(function (response) {
+                    params.success({
+                        total: response.Total,
+                        rows: response.Rows
+                    });
+                });
+
+        }
+
+        function onReady() {
+            //獲取全部部門選單
+            QQT.ajax('/Admin/WorkLog/GetDeptList', 'Post')
+                .done(function (response) {
+                    if (!response || !response.Data) return;
+                    var searchList = new Array();
+
+                    $.each(response.Data,
+                        function (index, item) {
+                            searchList.push({
+                                id: item.deptNo,
+                                text: item.deptName
+                            });
+                        });
+
+                    //設定select2
+                    $('#AddWorkDeptComb, #EditDeptComb').select2({
+                        data: searchList,
+                        placeholder: '請選擇所屬部門',
+                        multiple: false
+                    });
+
+                });
+        }
+
+        //修改
+        function editSort(sortNo) {
+            QQT.ajax('/Admin/WorkLog/GetWorkLogSort', 'Post', { sortNo: sortNo })
+                .done(function (response) {
+                    if (!response || !response.Data) return;
+                    var data = response.Data[0];
+                    $('#EditSortNo').val(data.sortNo);
+                    $('#EditSortName').val(data.sortName);
+                    $('#EditDeptComb').val(data.deptNo).trigger("change");
+
+                    $('#myModal').modal({ backdrop: 'static', keyboard: false });
+                    $('#myModal').modal('show');
+                });
+        }
+
+        //刪除
+        function delSort(sortNo) {
+
+        }
+
+        //操作監聽事件
+        window.operateEvents = {
+            //編輯
+            'click [action-id=sort-edit]': function (e, value, row, index) {
+                //$('#test_Table').bootstrapTable('remove', { field: 'work_log_sort_no', values: [row['work_log_sort_no']] });
+
+                editSort(row.sortNo);
+            },
+            //刪除數據行
+            'click [action-id=sort-del]': function (e, value, row, index) {
+                //$('#test_Table').bootstrapTable('remove', { field: 'work_log_sort_no', values: [row['work_log_sort_no']] });
+                swal({
+                    title: "您確定刪除這個分類[" + row.sortName + "]嗎?<br>請確認這個分類底下有沒有工作任務",
+                    text: "請謹慎操作！",
+                    type: "warning",                    
+                    showCancelButton: true,
+                    confirmButtonColor: "#DD6B55",
+                    confirmButtonText: "確定刪除！",
+                    cancelButtonText: "再考慮一下…",
+                    showLoaderOnConfirm: true,
+                    preConfirm: function (isConfirm) {
+                        if (isConfirm) {
+                            QQT.ajax('/Admin/WorkLog/WorkLogSortDelete',
+                                'Post',
+                                {
+                                    sortNo: row.sortNo
+                                }).done(function (response) {
+                                    $('#WorkLogSortTable').bootstrapTable('refresh', { silent: true });
+                                    swal("成功啦！", "已刪除!", "success");
+                                });
+                        }
+
+                    }
+                }).then(function (response) {
+
+                }).catch(function () {
+                });
+            }
+        }
+
+    </script>
+}

@@ -1,0 +1,471 @@
+﻿@{
+    ViewBag.Title = "工作任務分享";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+<link href="~/js/plugins/jQuery-File-Upload/css/jquery.fileupload.css" asp-append-version="true" rel="stylesheet" />
+<link href="~/js/plugins/jQuery-File-Upload/css/jquery.fileupload-ui.css" asp-append-version="true" rel="stylesheet" />
+
+
+<div class="wrapper wrapper-content animated fadeInRight">
+
+    <div class="ibox-content">
+
+        <div style="margin-top:10px;" id="WorkLogListTableEventsToolbar">
+            新增日期：
+            <input type="text" id="startDate" style="height:35px;width:100px;margin-left:5px;margin-top:-32px;border-radius: 6px;border: 1px #cccccc solid; outline: none" onclick="WdatePicker({dateFmt:'yyyy-MM-dd'})">
+            —
+            <input type="text" id="endDate" style="height:35px;width:100px;margin-left:8px;margin-top:-34px;border-radius: 6px;border: 1px #cccccc solid; outline: none" onclick="WdatePicker({dateFmt:'yyyy-MM-dd'})">
+            <input type="text" id="queryKey" placeholder="輸入關鍵字搜尋" style="height:35px;width:170px;margin-left:10px;margin-top:-34px;border-radius: 6px;border: 1px #cccccc solid; outline: none">
+            <button type="button" style="width:70px;height:35px;margin-left:20px;margin-top:-3px" id="btnQuery" class="btn btn-info">搜尋</button>
+
+        </div>
+        <table id="WorkLogListTable" data-side-pagination="server" data-sort-order="desc" data-mobile-responsive="true"></table>
+
+    </div>
+
+</div>
+
+@await Html.PartialAsync("_ShareSet");
+
+@section Scripts{
+    <script src="~/js/plugins/jQuery-File-Upload/js/vendor/jquery.ui.widget.js" asp-append-version="true"></script>
+    <script src="~/js/plugins/jQuery-File-Upload/js/jquery.iframe-transport.js" asp-append-version="true"></script>
+    <script src="~/js/plugins/jQuery-File-Upload/js/jquery.fileupload.js" asp-append-version="true"></script>
+    <script src="~/js/site.js" asp-append-version="true"></script>
+    <script type="text/javascript">
+        $(function () {
+            onReady();
+
+            //1.初始化Table
+            var oTable = new TableInit();
+            oTable.Init();
+
+            //2.初始化Button的點擊事件
+            var oButtonInit = new ButtonInit();
+            oButtonInit.Init();
+
+        });
+
+        var TableInit = function () {
+            var oTableInit = new Object();
+
+            //初始化Table
+
+            oTableInit.Init = function () {
+                $('#WorkLogListTable')
+                    .bootstrapTable({
+                        ajax: ajaxRequest,
+                        pageNumber: 1,
+                        pageSize: 25,
+                        pageList: [10, 25, 50, 100],
+                        resetOffset: true,
+                        search: false,
+                        sortable: true,
+                        pagination: true,
+                        height: $(window).height(),
+                        showRefresh: true,
+                        showToggle: true,
+                        showColumns: false,
+                        striped: true,
+                        sortOrder: 'desc',
+                        clickToSelect: true,
+                        singleSelect: true,
+                        cache: false,
+                        // showPaginationSwitch:true,
+                        dataType: "json",
+                        iconSize: 'outline',
+                        toolbar: '#WorkLogListTableEventsToolbar',
+                        icons: {
+                            refresh: 'glyphicon-refresh',
+                            toggleOff: 'glyphicon-list-alt icon-list-alt',
+                            toggleOn: 'glyphicon-list-alt icon-list-alt',
+                            columns: 'glyphicon-list'
+                        },
+                        columns: [
+                            { field: 'work_log_no', title: '任務編號', visible: false },
+                            {
+                                field: 'sortName',
+                                title: '任務分類'
+                            },
+                            {
+                                field: 'work_log_subject',
+                                title: '任務名稱'
+                            },
+                            { field: 'work_log_priority_status', title: '需求等級編號', visible: false },
+                            {
+                                field: 'workLogPriority',
+                                title: '需求等級'
+                            },
+                            { field: 'work_log_status', title: '任務狀態編號', visible: false },
+                            {
+                                field: 'workLogStatus',
+                                title: '任務狀態'
+                            },
+                            { field: 'work_log_type', title: '任務屬性編號', visible: false },
+                            {
+                                field: 'workLogType',
+                                title: '任務屬性'
+                            },
+                            {
+                                field: 'work_log_adddate',
+                                title: '新增時間'
+                            },
+                            { field: 'operate', title: '操作', align: 'center', halign: 'center', events: operateEvents, formatter: 'operateFormatter' }
+
+                        ],
+                        onLoadSuccess: function () {
+
+                        },
+                        onToggle: function () {
+
+
+                        }
+
+                    });
+                $(window).resize(function () {
+
+                    $('#WorkLogListTable').bootstrapTable('resetView', { height: $(window).height() });
+                });
+
+            }
+
+            return oTableInit;
+        }
+
+        // 格式化按钮
+        function operateFormatter(value, row, index) {
+            //需求單位主管審核 = 1
+            if (row.work_log_status != 0) {
+                return [
+
+                    '<button type="button" class="btn btn-success" style="margin-right:15px;" action-id="worklogshare" action-name="任務分享" title="任務分享"><i class="icon-edit" ></i>&nbsp;分享</button>'
+
+                ].join('');
+            }
+
+        }
+
+        //操作監聽事件
+        window.operateEvents = {
+            //檢視
+            'click [action-id=worklogDetail]': function (e, value, row, index) {
+
+                WorkLogDetail(row.work_log_no);
+            },
+            //需求單位審核
+            'click [action-id=worklogshare]': function (e, value, row, index) {
+
+                ShareSetInit();
+
+                var workLogNo = row.work_log_no;
+
+                //取得任務詳細內容
+                QQT.ajax('/WorkLog/WorkLogDetail', 'Post', { workLogNo: workLogNo })
+                    .done(function (response) {
+                        if (!response || !response.Data) return;
+                        var data = response.Data[0];
+
+                        var formatWorkLogAddDate = dayjs(data.WorkLogAddDate).format('YYYY-MM-DD HH:mm:ss');
+                        $('#workLogNo').val(data.WorkLogNo);
+                        $('#spanWorkLogNo').text(data.WorkLogNo);
+                        $('#spanWorkLogStatus').html(data.WorkLogStatusName);
+                        $('#spanWorkLogSort').text(data.WorkLogSortName);
+                        $('#spanWorkLogSubject').html(data.WorkLogSubject);
+                        $('#spanWorkLogContent').html(data.WorkLogContent);
+                        $('#spanWorkLogPriority').html(data.WorkLogPriorityName);
+                        $('#spanWorkLogAddDept').html(data.WorkLogDeptName);
+                        $('#spanWorkLogAddUser').html(data.WorkLogAddUserName);
+                        $('#spanWorkLogAddDate').text(formatWorkLogAddDate);
+                        $('#spanWorkLogAssignDept').text(data.WorkLogAssignDeptName);
+                        $('#spanWorkLogAssignUser').text(data.WorkLogAssignName);
+
+                        if (data.WorkLogScore && data.WorkLogScore != '') {
+                            $('#spanWorkLogScore').html('任務評鑑' + data.WorkLogScore + '分');
+                        }
+
+                        $('#WorkLogShareSetModal').modal({ backdrop: 'static', keyboard: false });
+                        $('#WorkLogShareSetModal').modal('show');
+                    });
+
+                //取得此任務的附件
+                QQT.ajax('/WorkLog/GetWorkLogFile', 'Post', { workLogNo: workLogNo })
+                    .done(function (response) {
+                        if (!response || !response.Data) return;
+
+                        $.each(response.Data,
+                            function (index, item) {
+                                $('#presentationDetail > .files').append(
+                                    $(
+                                        '<tr class="template-upload fade in" fileNo="' + item.work_log_file_no + '">' +
+                                        /*'<td><span class="preview"><img src="' + e.target.result + '" class="previewImg" /></span></td>' +*/
+                                        '<td style="color:blue">' + item.work_log_file_name + '</td>' +
+                                        '<td style="text-align:right"><button class="btn btn-primary submit" onclick="DownloadWorkLogFile(' + item.work_log_file_no + ')" style="background-color:#5cb85c;border-color:#4cae4c"><span>下載</span></button></td>' +
+                                        '</tr>'
+                                    )
+                                );
+                            });
+
+                    });
+
+                //部門選單
+                QQT.ajax('/WorkLog/GetDeptList', 'Post')
+                    .done(function (response) {
+                        if (!response || !response.Data) return;
+                        var searchList = new Array();
+
+                        $.each(response.Data,
+                            function (index, item) {
+                                searchList.push({
+                                    id: item.deptNo,
+                                    text: item.deptName
+                                });
+
+                                //組checkbox
+                                $("#divDeptShare > div[deptList]").append(
+                                    $(
+                                        '<div class="checkbox">' +
+                                        '<label>' +
+                                        '<input type="checkbox" id="cbShareDeptNo' + item.deptNo +'" name="cbShareDeptNo" value="' + item.deptNo + '">' + item.deptName +
+                                        '</label>' +
+                                        '</div>'
+                                    )
+                                );
+                            });
+
+                        //設定select2
+                        $('#workLogShareDeptId').select2({
+                            data: searchList,
+                            placeholder: '請選擇部門',
+                            multiple: false
+                        });
+
+                        //設定select2
+                        $('#workLogShareUserId').select2({
+                            data: {id:'',test:''},
+                            placeholder: '請選擇人員',
+                            multiple: true
+                        });
+
+                    });
+
+               }
+
+        }
+
+        function ShareSetInit() {
+            $('#spanWorkLogScore').html('');
+            $('#spanWorkLogStatus').html('');
+            $('#presentationDetail > .files').html('');
+            $("#divDeptShare > div[deptList]").html('');
+            
+            $("#rbDeptShare").prop("checked", true);
+            $("#rbDeptShare").trigger("click");
+
+            $('#workLogShareDeptId').val('');
+            $('#workLogShareDeptId').trigger('change');
+            $('#workLogShareUserId').val('');
+            $('#workLogShareUserId').trigger('change');
+        }
+
+
+        var ButtonInit = function () {
+            var oInit = new Object();
+            //檔案上傳元件初始化
+            var filesList = [];
+            oInit.Init = function () {
+                //取得我的部門代號
+                var myDeptNo = '@ViewBag.UserToken.DeptNo';
+
+                //部門選單
+                QQT.ajax('/WorkLog/GetDeptList', 'Post')
+                    .done(function (response) {
+                        if (!response || !response.Data) return;
+                        var searchList = new Array();
+
+                        $.each(response.Data,
+                            function (index, item) {
+                                searchList.push({
+                                    id: item.deptNo,
+                                    text: item.deptName
+                                });
+                            });
+
+                    });
+
+
+                //單位分享
+                $("#rbDeptShare").click(function (e) {
+                    
+                    $("#divDeptShare").show();
+                    $("#divUserShare").hide();
+                    
+
+                    
+                    
+                    
+                });
+                //人員分享
+                $("#rbUserShare").click(function (e) {
+                    
+                    $("#divDeptShare").hide();
+                    $("#divUserShare").show();
+                    
+                    
+                });
+
+                //分享設定
+                $("#WorkLogShareSetModal #share-model").click(function (e) {
+                    e.preventDefault();
+                    //////////////////////////////////////////////////////////////////
+                    var workLogNo = $("#WorkLogShareSetModal #workLogNo").val();
+                    var cbShareDeptNo = new Array();
+                    $('input:checkbox:checked[name="cbShareDeptNo"]').each(function (i) { cbShareDeptNo[i] = this.value; });
+
+                    var workLogShareDeptId = $("#WorkLogShareSetModal #workLogShareDeptId").val();
+                    var workLogShareUserId = $("#WorkLogShareSetModal #workLogShareUserId").val();
+
+                    //swal(workLogNo, JSON.stringify(cbxVehicle), "success");
+
+                    //swal(workLogShareDeptId, workLogShareUserId, "success");
+
+                    var jsonShareDeptNo = cbShareDeptNo.length > 0 ? JSON.stringify(cbShareDeptNo.join(',')) : '';
+
+                    var jsonWorkLogShareUserId = workLogShareUserId != '' ? JSON.stringify(workLogShareUserId) : '';
+
+                    if ($("#rbDeptShare").is(":checked")) {
+                        if (jsonShareDeptNo == '') {
+                            swal("請勾選要分享的部門", "", "error");
+                            return;
+                        }
+                            
+                    }
+
+                    if ($("#rbUserShare").is(":checked")) {
+                        if (jsonWorkLogShareUserId == '') {
+                            swal("請選擇要分享的人員", "", "error");
+                            return;
+                        }
+                    }
+                    return;
+
+                    if (workLogAssignDeptId == "") {
+                        swal({
+                            title: "請選擇執行單位！",
+                            text: "",
+                            type: "error"
+                        });
+                        return;
+                    }
+
+                    var workLogAssignDeptName = $("#workLogAssignDeptId").select2('data').text;
+
+
+                    //送給執行單位
+                    QQT.ajax('/WorkLog/WorkLogFlow',
+                        'POST',
+                        {
+                            WorkLogNo: workLogNo,
+                            WorkLogDeptNo: myDeptNo,
+                            WorkLogAssignDeptId: workLogAssignDeptId,
+                            WorkLogStatus: 2
+                        })
+                        .done(function (response) {
+
+                            if (response.Status == "1") {
+                                $('#WorkLogListTable').bootstrapTable('refresh', { silent: true });
+                                swal({
+                                    title: "已送審給執行單位 <span style='color:blue'>" + workLogAssignDeptName + "</span>",
+                                    text: "",
+                                    type: "success"
+                                });
+
+                            } else {
+                                swal({
+                                    title: "送審給執行單位失敗",
+                                    text: "送審給執行單位失敗：" + response.Data,
+                                    type: "error"
+                                });
+                            }
+                        });
+
+                    $('#WorkLogShareSetModal').modal('hide');
+
+
+                });
+
+
+                $("#WorkLogShareSetModal #close-model").click(function (e) {
+                    $("#WorkLogShareSetModal").modal("hide");
+                });
+
+                $("#btnQuery").click(function () {
+                    $(".bootstrap-table button[name='refresh']")[0].click();
+                });
+
+            }
+
+            return oInit;
+        }
+
+
+        function ajaxRequest(params) {
+            var pageSize = params.data.limit;
+            var pageIndex = params.data.offset / params.data.limit + 1;
+            var orderBy = params.data.sort;
+            var orderSequence = params.data.order;
+            QQT.ajax('/WorkLog/GetWorkLogListByStatus',
+                'POST',
+                {
+                    pageIndex: pageIndex,
+                    pageSize: pageSize,
+                    orderBy: orderBy,
+                    orderSequence: orderSequence,
+                    workLogStatus: 12,
+                    startDate: $("#startDate").val(),
+                    endDate: $("#endDate").val(),
+                    queryKey: $("#queryKey").val()
+                })
+                .done(function (response) {
+                    params.success({
+                        total: response.Total,
+                        rows: response.Rows
+                    });
+                });
+
+        }
+
+        function onReady() {
+            //選擇部門以下人員
+            $('#workLogShareDeptId').on('change', function (e) {
+                var deptNo = $(this).val();// + $(this).select2('data').text;
+                if (deptNo == '') {
+                    return;
+                }
+
+                QQT.ajax('/WorkLog/GetDeptUsers', 'Post', { deptNo: deptNo })
+                    .done(function (response) {
+                        if (!response || !response.Data) return;
+                        var searchList = new Array();
+
+                        $.each(response.Data,
+                            function (index, item) {
+                                searchList.push({
+                                    id: item.indx,
+                                    text: item.ChgName + '(' + item.EngName + ')'
+                                });
+                            });
+
+                        //設定select2
+                        $('#workLogShareUserId').select2({
+                            data: searchList,
+                            placeholder: '請選擇人員',
+                            multiple: true
+                        });
+
+                    });
+
+            });
+        }
+
+    </script>
+}

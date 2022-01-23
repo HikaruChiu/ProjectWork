@@ -1,0 +1,48 @@
+﻿@{
+    ViewBag.Title = "SSO登入";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+
+    string userName = "";
+    string password = "";
+    if (Model != null)
+    {
+        userName = Model.eid;
+        password = Model.pwd;
+    }
+    else
+    {
+        @Html.Raw("SSO登入失敗");
+    }
+}
+@section Scripts
+{
+    <script type="text/javascript">
+        $(function () {
+            QQT.ajax('/Admin/Account/LogOn',
+                'POST',
+                {
+                    eid: '@userName',
+                    pwd: '@password'
+
+                }, null, null, null, true)
+                .done(function (result) {
+
+                    if (parseInt(result.Status, 10) === 0) {
+                        swal({
+                            title: "SSO登入失敗",
+                            text: result.Info,
+                            type: "error"
+                        });
+                    } else {
+                        var returnUrl = $('#returnUrl').val();
+                        if (returnUrl) {
+                            window.location.replace(returnUrl);
+                        } else {
+                            window.location.replace(window.appUrl + '/Admin/Home/Index');
+                        }
+                    }
+                });
+        });
+
+    </script>
+}

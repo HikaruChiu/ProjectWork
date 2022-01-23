@@ -1,0 +1,200 @@
+@using Infrastructure.Web
+<!DOCTYPE html>
+<html>
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta charset="utf-8" />
+    <title>專案與工作任務系統</title>
+    <link href="~/favicon.ico" asp-append-version="true" rel="shortcut icon" type="image/x-icon" />
+    <meta name="viewport" content="width=device-width" />
+
+    @*<link href="~/css/bootstrap.min.css" asp-append-version="true" rel="stylesheet">
+        <link href="~/css/font-awesome.css" asp-append-version="true" rel="stylesheet">*@
+    <link href="~/lib/bootstrap/dist/css/bootstrap.min.css" asp-append-version="true" rel="stylesheet">
+    <link href="~/css/font-awesome-4.7.0/css/font-awesome.min.css" asp-append-version="true" rel="stylesheet">
+    <link href="~/css/animate.css" asp-append-version="true" rel="stylesheet">
+    <link href="~/css/style.css" asp-append-version="true" rel="stylesheet">
+    <link href="~/css/plugins/jQueryUI/jquery-ui.css" asp-append-version="true" rel="stylesheet" />
+    <link href="~/js/plugins/tipped-4.4.1-light/css/tipped/tipped.css" asp-append-version="true" rel="stylesheet" />
+    <link href="~/css/plugins/bootstrap-table/bootstrap-table.min.css" asp-append-version="true" rel="stylesheet">
+    <link href="~/css/plugins/dataTables/bootstrap-editable.css" asp-append-version="true" rel="stylesheet" />
+    <link href="~/js/plugins/select2/select2.css" asp-append-version="true" rel="stylesheet" />
+    <link href="~/js/plugins/bootstrap-fileinput/css/fileinput.min.css" asp-append-version="true" rel="stylesheet" />
+    <link href="~/css/plugins/switchery/switchery.css" asp-append-version="true" rel="stylesheet">
+    <link href="~/css/loading.css" asp-append-version="true" rel="stylesheet" />
+    <!-- Sweet alert 2 -->
+    <link href="~/js/plugins/sweetalert/sweetalert2.css" asp-append-version="true" rel="stylesheet" />
+    
+    @RenderSection("Head", false)
+    <style>
+
+        .wrapper-content {
+            padding: 0px !important;
+        }
+
+        .ibox {
+            margin-bottom: 0 !important;
+        }
+    </style>
+</head>
+
+<body class="fixed-sidebar full-height-layout gray-bg" style="overflow: hidden">
+    <partial name="_Loading" />
+
+    @RenderBody()
+
+
+    <form id='_AntiForgeryTokenId' method='POST'>@Html.AntiForgeryToken() </form>
+
+
+    <!-- 全域性js -->
+    <script src="~/lib/jquery/jquery.min.js" asp-append-version="true"></script>
+    <script src="~/js/jquery.serializeObject.js" asp-append-version="true"></script>
+    <script src="~/lib/bootstrap/dist/js/bootstrap.min.js" asp-append-version="true"></script>
+
+    <!-- 自定義js -->
+    <script src="~/js/content.js" asp-append-version="true"></script>
+
+    <script src="~/js/plugins/layer/laydatev5.0.85/laydate.js" asp-append-version="true"></script>
+    <script src="~/js/plugins/tipped-4.4.1-light/js/tipped/tipped.js" asp-append-version="true"></script>
+    <!-- Bootstrap table -->
+    <script src="~/js/plugins/bootstrap-table/bootstrap-table.min.js" asp-append-version="true"></script>
+    <script src="~/js/plugins/bootstrap-table/bootstrap-table-mobile.min.js" asp-append-version="true"></script>
+    <script src="~/js/plugins/bootstrap-table/locale/bootstrap-table-zh-TW.min.js" asp-append-version="true"></script>
+    <script src="~/js/plugins/select2/select2.js" asp-append-version="true"></script>
+    <script src="~/js/underscore-1.8.2.js" asp-append-version="true"></script>
+    <script src="~/js/plugins/bootstrap-table/bootstrap-editable.js" asp-append-version="true"></script>
+    <script src="~/js/plugins/bootstrap-table/bootstrap-table-editable.min.js" asp-append-version="true"></script>
+    <script src="~/js/authlazy.js" asp-append-version="true"></script>
+    <!-- Switchery -->
+    <script src="~/js/plugins/switchery/switchery.js" asp-append-version="true"></script>
+    <script src="~/js/monkey-run.js" asp-append-version="true"></script>
+    <script src="~/js/plugins/clearjs/jquery.bootstrap-pureClearButton.min.js" asp-append-version="true"></script>
+    <!-- Sweet alert 2 -->
+    <script src="~/lib/vue2/vue2.min.js" asp-append-version="true"></script>
+
+    <script src="~/js/plugins/jquery-ui/jquery-ui.min.js" asp-append-version="true"></script>
+    <script src="~/js/plugins/bootstrap-fileinput/js/fileinput.min.js" asp-append-version="true"></script>
+    <script src="~/js/plugins/bootstrap-fileinput/js/locales/zh-TW.js" asp-append-version="true"></script>
+    <script src="~/js/jquery.fileDownload.js" asp-append-version="true"></script>
+    <script src="~/js/plugins/sweetalert/sweetalert2.js" asp-append-version="true"></script>
+    <script src="~/js/plugins/moment/moment-with-locales.min.js" asp-append-version="true"></script>
+    <script src="~/js/whenReady.js" asp-append-version="true"></script>
+
+    <script type="text/javascript">
+    var appUrl = "@WebUtils.AppBaseUrl";
+
+
+    var QQT = {
+        ajax: function (path, method, data, isJsonNet, async, isFile,hideLoading) {
+            var newData = null;
+            var token = null;
+            if (isJsonNet) {
+                token = $('[name=__RequestVerificationToken]').val();
+                newData = { __RequestVerificationToken: token, __JsonRequest: JSON.stringify(data) };
+            } else {
+                token = $('#_AntiForgeryTokenId').serializeObject();
+                newData = $.extend(data, token);
+            }
+            var deferred = $.Deferred();
+            var ajaxSettings = {
+                url: appUrl + path,
+                data: newData,
+                dataType: 'json',
+                method: method,
+                beforeSend: function() {
+                    $('.loading').show();
+                },
+                complete: function() {
+                   if(!hideLoading) $('.loading').hide();
+                }
+                // headers: { 'token': QQT.getToken() }
+            };
+            if (isJsonNet) {
+                ajaxSettings.contentType = 'application/x-www-form-urlencoded';
+            }
+
+            if (async) {
+                ajaxSettings.async = async;
+            }
+            if (isFile) {
+                ajaxSettings.contentType = false;
+                ajaxSettings.processData = false;
+            }
+            $.ajax(ajaxSettings)
+                .done(function(response) {
+                    console.log(path, method, data, response);
+                    if (response && response.Status) {
+                        deferred.resolve(response);
+                    } else if (response) {
+                        $('.loading').hide();
+                        swal({
+                            title: "失敗",
+                            text: response.Info,
+                            type: "error"
+                        });
+                        deferred.reject(response);
+                    } else {
+                        $('.loading').hide();
+                        swal({
+                            title: "失敗",
+                            text: "請求錯誤！",
+                            type: "error"
+                        });
+                        deferred.reject(response);
+                    }
+                })
+                .fail(function(response) {
+                    console.error('ajax fail', response);
+                    $('.loading').hide();
+                    if (response && response.responseJSON && (response.responseJSON.Status === 401 || response.responseJSON.Status === 403)) {
+                        //alert('沒有許可權訪問！');
+                        swal({
+                            title: "失敗",
+                            text: "沒有許可權訪問！",
+                            type: "error"
+                        });
+                        //MonkeyRun.mvcJump('Account', 'Login', { returnUrl: location.href });
+                    } else if (response && (response.status === 401 || response.status === 403)) {
+                        swal({
+                            title: "失敗",
+                            text: "沒有許可權訪問！",
+                            type: "error"
+                        });
+                    } else if (response && response.responseJSON && response.responseJSON.Info) {
+                        swal({
+                            title: "失敗",
+                            text: response.responseJSON.Info,
+                            type: "error"
+                        });
+                    } else {
+                        console.log('網路請求中斷');
+                    }
+                    deferred.reject(response);
+                });
+            return deferred;
+        },
+        InsertEnter: function (str, n) {
+            if (!str)
+                return '';
+            /*
+            str:需要換行的字串
+            n:換行間隔字元數
+            */
+            var len = str.length;
+            var strTemp = '';
+            if (len > n) {
+                strTemp = str.substring(0, n);
+                str = str.substring(n, len);
+                return strTemp + '<br>' + QQT.InsertEnter(str, n);
+            } else {
+                return str;
+            }
+        }
+    }
+    </script>
+
+    @RenderSection("Scripts", required: false)
+</body>
+
+</html>

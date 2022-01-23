@@ -1,0 +1,104 @@
+﻿<!--檢視、送審、執行-->
+<div class="modal inmodal" id="WorkLogShareSetModal" tabindex="-1" role="dialog" aria-hidden="true">
+    <div class="modal-dialog modal-lg">
+        <div class="modal-content">
+            <div class="modal-header">
+                <div class="modal-title">
+                    任務狀態：
+                    <span id="spanWorkLogStatus"></span>
+                    &nbsp;&nbsp;&nbsp;&nbsp;
+                    <span id="spanWorkLogScore"></span>
+                </div>
+            </div>
+            <div class="modal-body">
+                <div class="container-fluid">
+
+                    <div class="row">
+                        <div class="col-sm-12">
+
+                            <div class="row">
+                                <div class="col-8 col-sm-6" style="border-width: 0px 1px 0px 0px; border-color: #cccccc; border-style: solid; ">
+                                    <div class="form-group">
+                                        <label class="control-label">任務編號：</label>
+                                        <span id="spanWorkLogNo"></span>
+                                        <input type="text" id="workLogNo" value="" readonly style="display:none" />
+                                    </div>
+                                    <div class="form-group">
+                                        <label class="form-label">任務分類：</label>
+                                        <span id="spanWorkLogSort"></span>
+                                    </div>
+                                    <div class="form-group">
+                                        <label class="form-label">任務名稱：</label>
+                                        <span id="spanWorkLogSubject"></span>
+                                    </div>
+                                    <div class="form-group">
+                                        <label class="form-label">任務說明：</label>
+                                        <span id="spanWorkLogContent"></span>
+                                    </div>
+                                    <div class="form-group">
+                                        <label class="form-label">需求等級：</label>
+                                        <span id="spanWorkLogPriority"></span>
+                                    </div>
+                                    <div class="form-group" id="divWorkLogAddDept">
+                                        <label class="form-label">需求單位：</label>
+                                        <span id="spanWorkLogAddDept"></span>
+                                    </div>
+                                    <div class="form-group" id="divWorkLogAddUser">
+                                        <label class="form-label">新增人員：</label>
+                                        <span id="spanWorkLogAddUser"></span>
+                                    </div>
+                                    <div class="form-group">
+                                        <label class="form-label">新增時間：</label>
+                                        <span id="spanWorkLogAddDate"></span>
+                                    </div>
+                                    <div class="form-group" id="divWorkLogAssignDept">
+                                        <label class="form-label">執行單位：</label>
+                                        <span id="spanWorkLogAssignDept"></span>
+                                    </div>
+                                    <div class="form-group" id="divWorkLogAssign">
+                                        <label class="form-label">執行人員：</label>
+                                        <span id="spanWorkLogAssignUser"></span>
+                                    </div>
+                                    <div class="form-group">
+                                        <label class="form-label">附件明細：</label>
+                                        <table role="presentation" class="table table-striped" id="presentationDetail" style="font-size:12px">
+                                            <tbody class="files"></tbody>
+                                        </table>
+                                    </div>
+                                </div>
+                                <div class="col-8 col-sm-6" style="">
+                                    
+                                    <input type="radio" id="rbDeptShare" name="rbShareSelect">
+                                    <label class="radio-inline" for="rbDeptShare">單位分享選擇</label>
+                                    <input type="radio" id="rbUserShare" name="rbShareSelect">
+                                    <label class="radio-inline" for="rbUserShare">人員分享選擇</label>
+                                    
+                                    <div id="divDeptShare" class="row" style="border-width: 1px 0px 0px 0px; border-color: #cccccc; border-style: solid; display: none; ">
+                                        <div class="col-6 col-sm-6" deptList style="margin: 10px 7px 2px 14px;">
+                                            
+                                        </div>
+                                    </div>
+
+                                    <div id="divUserShare" class="row" style="border-width: 1px 0px 0px 0px; border-color: #cccccc; border-style: solid; display: none; ">
+                                        <div class="col-6 col-sm-6" userList style="margin: 10px 7px 7px 14px; ">
+                                            <input class="js-example-data-array-selected text-box" id="workLogShareDeptId" style="width: 200px;" />
+                                        </div>
+                                        <div class="col-6 col-sm-6" userList style="margin: 10px 7px 7px 14px; ">
+                                            <input class="js-example-data-array-selected text-box" id="workLogShareUserId" style="width: 300px;" />
+                                        </div>
+                                    </div>
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="modal-footer">
+                <button type="button" class="btn btn-success" id="share-model">分享出去</button>
+                <button type="button" class="btn btn-danger" id="close-model">關閉</button>
+            </div>
+        </div>
+    </div>
+</div>

@@ -1,0 +1,4328 @@
+[12:01:31.2152][PJW.Web.Program][Debug] - init main 
+[12:01:35.8302][Infrastructure.Logging.LogHelper][Info] - SQLSELECT TOP (1)
+	[t1].[Tid],
+	[t1].[DataChangeLastTime],
+	[t1].[IsActive],
+	[t1].[Eid],
+	[t1].[UserName],
+	[t1].[Pwd],
+	[t1].[Phone],
+	[t1].[LoginIp],
+	[t1].[MenuRights],
+	[t1].[RoleTid],
+	[t1].[LastLoginTime],
+	[t1].[UserAgent],
+	[t1].[CreateRoleName],
+	[t1].[CreateUser] as [CreateUser1]
+FROM
+	[system_users] [t1]
+WHERE
+	[t1].[Eid] = admin
+
+Server：.,DB名稱：PJW, 執行時間：193豪秒
+#####################################################
+
+            [Tags]
+                 {Key:method,Value:OnCustomerTraceConnection}
+ 
+[12:01:36.1258][Infrastructure.Logging.LogHelper][Info] - SQLSELECT TOP (1)
+	[t1].[Tid],
+	[t1].[DataChangeLastTime],
+	[t1].[IsActive],
+	[t1].[Eid],
+	[t1].[UserName],
+	[t1].[Pwd],
+	[t1].[Phone],
+	[t1].[LoginIp],
+	[t1].[MenuRights],
+	[t1].[RoleTid],
+	[t1].[LastLoginTime],
+	[t1].[UserAgent],
+	[t1].[CreateRoleName],
+	[t1].[CreateUser] as [CreateUser1]
+FROM
+	[system_users] [t1]
+WHERE
+	[t1].[Eid] = admin
+
+Server：.,DB名稱：PJW, 執行時間：2豪秒
+#####################################################
+
+            [Tags]
+                 {Key:method,Value:OnCustomerTraceConnection}
+ 
+[12:01:36.2152][Infrastructure.Logging.LogHelper][Info] - SQLSELECT
+	[t1].[Class] as [Class1],
+	[t1].[Ico],
+	[t1].[IsActive],
+	[t1].[Level] as [Level1],
+	[t1].[Name],
+	[t1].[OrderRule],
+	[t1].[ParentTid],
+	[t1].[Tid],
+	[t1].[Url]
+FROM
+	[system_menu] [t1]
+WHERE
+	True = [t1].[IsActive]
+
+Server：.,DB名稱：PJW, 執行時間：4豪秒
+#####################################################
+
+            [Tags]
+                 {Key:method,Value:OnCustomerTraceConnection}
+ 
+[12:01:52.8544][Infrastructure.Logging.LogHelper][Info] - SQLSELECT TOP (1)
+	[t1].[Tid],
+	[t1].[DataChangeLastTime],
+	[t1].[IsActive],
+	[t1].[Eid],
+	[t1].[UserName],
+	[t1].[Pwd],
+	[t1].[Phone],
+	[t1].[LoginIp],
+	[t1].[MenuRights],
+	[t1].[RoleTid],
+	[t1].[LastLoginTime],
+	[t1].[UserAgent],
+	[t1].[CreateRoleName],
+	[t1].[CreateUser] as [CreateUser1]
+FROM
+	[system_users] [t1]
+WHERE
+	[t1].[Eid] = admin
+
+Server：.,DB名稱：PJW, 執行時間：1豪秒
+#####################################################
+
+            [Tags]
+                 {Key:method,Value:OnCustomerTraceConnection}
+ 
+[12:01:53.6901][Infrastructure.Logging.LogHelper][Info] - SQLSELECT TOP (1)
+	[t1].[Tid],
+	[t1].[DataChangeLastTime],
+	[t1].[IsActive],
+	[t1].[Eid],
+	[t1].[UserName],
+	[t1].[Pwd],
+	[t1].[Phone],
+	[t1].[LoginIp],
+	[t1].[MenuRights],
+	[t1].[RoleTid],
+	[t1].[LastLoginTime],
+	[t1].[UserAgent],
+	[t1].[CreateRoleName],
+	[t1].[CreateUser] as [CreateUser1]
+FROM
+	[system_users] [t1]
+WHERE
+	[t1].[Eid] = admin
+
+Server：.,DB名稱：PJW, 執行時間：1豪秒
+#####################################################
+
+            [Tags]
+                 {Key:method,Value:OnCustomerTraceConnection}
+ 
+[12:04:26.0738][PJW.Web.Program][Debug] - init main 
+[12:04:28.6785][Infrastructure.Logging.LogHelper][Info] - SQLSELECT TOP (1)
+	[t1].[Tid],
+	[t1].[DataChangeLastTime],
+	[t1].[IsActive],
+	[t1].[Eid],
+	[t1].[UserName],
+	[t1].[Pwd],
+	[t1].[Phone],
+	[t1].[LoginIp],
+	[t1].[MenuRights],
+	[t1].[RoleTid],
+	[t1].[LastLoginTime],
+	[t1].[UserAgent],
+	[t1].[CreateRoleName],
+	[t1].[CreateUser] as [CreateUser1]
+FROM
+	[system_users] [t1]
+WHERE
+	[t1].[Eid] = admin
+
+Server：.,DB名稱：PJW, 執行時間：114豪秒
+#####################################################
+
+            [Tags]
+                 {Key:method,Value:OnCustomerTraceConnection}
+ 
+[12:04:28.9301][Infrastructure.Logging.LogHelper][Info] - SQLSELECT TOP (1)
+	[t1].[Tid],
+	[t1].[DataChangeLastTime],
+	[t1].[IsActive],
+	[t1].[Eid],
+	[t1].[UserName],
+	[t1].[Pwd],
+	[t1].[Phone],
+	[t1].[LoginIp],
+	[t1].[MenuRights],
+	[t1].[RoleTid],
+	[t1].[LastLoginTime],
+	[t1].[UserAgent],
+	[t1].[CreateRoleName],
+	[t1].[CreateUser] as [CreateUser1]
+FROM
+	[system_users] [t1]
+WHERE
+	[t1].[Eid] = admin
+
+Server：.,DB名稱：PJW, 執行時間：3豪秒
+#####################################################
+
+            [Tags]
+                 {Key:method,Value:OnCustomerTraceConnection}
+ 
+[12:04:28.9826][Infrastructure.Logging.LogHelper][Info] - SQLSELECT
+	[t1].[Class] as [Class1],
+	[t1].[Ico],
+	[t1].[IsActive],
+	[t1].[Level] as [Level1],
+	[t1].[Name],
+	[t1].[OrderRule],
+	[t1].[ParentTid],
+	[t1].[Tid],
+	[t1].[Url]
+FROM
+	[system_menu] [t1]
+WHERE
+	True = [t1].[IsActive]
+
+Server：.,DB名稱：PJW, 執行時間：1豪秒
+#####################################################
+
+            [Tags]
+                 {Key:method,Value:OnCustomerTraceConnection}
+ 
+[12:04:33.5380][Infrastructure.Logging.LogHelper][Info] - SQLSELECT TOP (1)
+	[t1].[Tid],
+	[t1].[DataChangeLastTime],
+	[t1].[IsActive],
+	[t1].[Eid],
+	[t1].[UserName],
+	[t1].[Pwd],
+	[t1].[Phone],
+	[t1].[LoginIp],
+	[t1].[MenuRights],
+	[t1].[RoleTid],
+	[t1].[LastLoginTime],
+	[t1].[UserAgent],
+	[t1].[CreateRoleName],
+	[t1].[CreateUser] as [CreateUser1]
+FROM
+	[system_users] [t1]
+WHERE
+	[t1].[Eid] = admin
+
+Server：.,DB名稱：PJW, 執行時間：1豪秒
+#####################################################
+
+            [Tags]
+                 {Key:method,Value:OnCustomerTraceConnection}
+ 
+[12:04:33.7614][Infrastructure.Logging.LogHelper][Info] - SQLSELECT TOP (1)
+	[t1].[Tid],
+	[t1].[DataChangeLastTime],
+	[t1].[IsActive],
+	[t1].[Eid],
+	[t1].[UserName],
+	[t1].[Pwd],
+	[t1].[Phone],
+	[t1].[LoginIp],
+	[t1].[MenuRights],
+	[t1].[RoleTid],
+	[t1].[LastLoginTime],
+	[t1].[UserAgent],
+	[t1].[CreateRoleName],
+	[t1].[CreateUser] as [CreateUser1]
+FROM
+	[system_users] [t1]
+WHERE
+	[t1].[Eid] = admin
+
+Server：.,DB名稱：PJW, 執行時間：0豪秒
+#####################################################
+
+            [Tags]
+                 {Key:method,Value:OnCustomerTraceConnection}
+ 
+[12:04:58.7260][PJW.Web.Program][Debug] - init main 
+[12:05:01.5104][Infrastructure.Logging.LogHelper][Info] - SQLSELECT TOP (1)
+	[t1].[Tid],
+	[t1].[DataChangeLastTime],
+	[t1].[IsActive],
+	[t1].[Eid],
+	[t1].[UserName],
+	[t1].[Pwd],
+	[t1].[Phone],
+	[t1].[LoginIp],
+	[t1].[MenuRights],
+	[t1].[RoleTid],
+	[t1].[LastLoginTime],
+	[t1].[UserAgent],
+	[t1].[CreateRoleName],
+	[t1].[CreateUser] as [CreateUser1]
+FROM
+	[system_users] [t1]
+WHERE
+	[t1].[Eid] = admin
+
+Server：.,DB名稱：PJW, 執行時間：119豪秒
+#####################################################
+
+            [Tags]
+                 {Key:method,Value:OnCustomerTraceConnection}
+ 
+[12:05:01.7005][Infrastructure.Logging.LogHelper][Info] - SQLSELECT TOP (1)
+	[t1].[Tid],
+	[t1].[DataChangeLastTime],
+	[t1].[IsActive],
+	[t1].[Eid],
+	[t1].[UserName],
+	[t1].[Pwd],
+	[t1].[Phone],
+	[t1].[LoginIp],
+	[t1].[MenuRights],
+	[t1].[RoleTid],
+	[t1].[LastLoginTime],
+	[t1].[UserAgent],
+	[t1].[CreateRoleName],
+	[t1].[CreateUser] as [CreateUser1]
+FROM
+	[system_users] [t1]
+WHERE
+	[t1].[Eid] = admin
+
+Server：.,DB名稱：PJW, 執行時間：2豪秒
+#####################################################
+
+            [Tags]
+                 {Key:method,Value:OnCustomerTraceConnection}
+ 
+[12:05:01.7530][Infrastructure.Logging.LogHelper][Info] - SQLSELECT
+	[t1].[Class] as [Class1],
+	[t1].[Ico],
+	[t1].[IsActive],
+	[t1].[Level] as [Level1],
+	[t1].[Name],
+	[t1].[OrderRule],
+	[t1].[ParentTid],
+	[t1].[Tid],
+	[t1].[Url]
+FROM
+	[system_menu] [t1]
+WHERE
+	True = [t1].[IsActive]
+
+Server：.,DB名稱：PJW, 執行時間：2豪秒
+#####################################################
+
+            [Tags]
+                 {Key:method,Value:OnCustomerTraceConnection}
+ 
+[12:05:17.1914][Infrastructure.Logging.LogHelper][Info] - SQLSELECT TOP (1)
+	[t1].[Tid],
+	[t1].[DataChangeLastTime],
+	[t1].[IsActive],
+	[t1].[Eid],
+	[t1].[UserName],
+	[t1].[Pwd],
+	[t1].[Phone],
+	[t1].[LoginIp],
+	[t1].[MenuRights],
+	[t1].[RoleTid],
+	[t1].[LastLoginTime],
+	[t1].[UserAgent],
+	[t1].[CreateRoleName],
+	[t1].[CreateUser] as [CreateUser1]
+FROM
+	[system_users] [t1]
+WHERE
+	[t1].[Eid] = admin
+
+Server：.,DB名稱：PJW, 執行時間：1豪秒
+#####################################################
+
+            [Tags]
+                 {Key:method,Value:OnCustomerTraceConnection}
+ 
+[12:05:17.4091][Infrastructure.Logging.LogHelper][Info] - SQLSELECT TOP (1)
+	[t1].[Tid],
+	[t1].[DataChangeLastTime],
+	[t1].[IsActive],
+	[t1].[Eid],
+	[t1].[UserName],
+	[t1].[Pwd],
+	[t1].[Phone],
+	[t1].[LoginIp],
+	[t1].[MenuRights],
+	[t1].[RoleTid],
+	[t1].[LastLoginTime],
+	[t1].[UserAgent],
+	[t1].[CreateRoleName],
+	[t1].[CreateUser] as [CreateUser1]
+FROM
+	[system_users] [t1]
+WHERE
+	[t1].[Eid] = admin
+
+Server：.,DB名稱：PJW, 執行時間：1豪秒
+#####################################################
+
+            [Tags]
+                 {Key:method,Value:OnCustomerTraceConnection}
+ 
+[12:10:48.6447][PJW.Web.Program][Debug] - init main 
+[12:10:51.1943][Infrastructure.Logging.LogHelper][Info] - SQLSELECT TOP (1)
+	[t1].[Tid],
+	[t1].[DataChangeLastTime],
+	[t1].[IsActive],
+	[t1].[Eid],
+	[t1].[UserName],
+	[t1].[Pwd],
+	[t1].[Phone],
+	[t1].[LoginIp],
+	[t1].[MenuRights],
+	[t1].[RoleTid],
+	[t1].[LastLoginTime],
+	[t1].[UserAgent],
+	[t1].[CreateRoleName],
+	[t1].[CreateUser] as [CreateUser1]
+FROM
+	[system_users] [t1]
+WHERE
+	[t1].[Eid] = admin
+
+Server：.,DB名稱：PJW, 執行時間：117豪秒
+#####################################################
+
+            [Tags]
+                 {Key:method,Value:OnCustomerTraceConnection}
+ 
+[12:10:51.3960][Infrastructure.Logging.LogHelper][Info] - SQLSELECT TOP (1)
+	[t1].[Tid],
+	[t1].[DataChangeLastTime],
+	[t1].[IsActive],
+	[t1].[Eid],
+	[t1].[UserName],
+	[t1].[Pwd],
+	[t1].[Phone],
+	[t1].[LoginIp],
+	[t1].[MenuRights],
+	[t1].[RoleTid],
+	[t1].[LastLoginTime],
+	[t1].[UserAgent],
+	[t1].[CreateRoleName],
+	[t1].[CreateUser] as [CreateUser1]
+FROM
+	[system_users] [t1]
+WHERE
+	[t1].[Eid] = admin
+
+Server：.,DB名稱：PJW, 執行時間：3豪秒
+#####################################################
+
+            [Tags]
+                 {Key:method,Value:OnCustomerTraceConnection}
+ 
+[12:10:51.4481][Infrastructure.Logging.LogHelper][Info] - SQLSELECT
+	[t1].[Class] as [Class1],
+	[t1].[Ico],
+	[t1].[IsActive],
+	[t1].[Level] as [Level1],
+	[t1].[Name],
+	[t1].[OrderRule],
+	[t1].[ParentTid],
+	[t1].[Tid],
+	[t1].[Url]
+FROM
+	[system_menu] [t1]
+WHERE
+	True = [t1].[IsActive]
+
+Server：.,DB名稱：PJW, 執行時間：2豪秒
+#####################################################
+
+            [Tags]
+                 {Key:method,Value:OnCustomerTraceConnection}
+ 
+[12:10:56.3527][Infrastructure.Logging.LogHelper][Info] - SQLSELECT TOP (1)
+	[t1].[Tid],
+	[t1].[DataChangeLastTime],
+	[t1].[IsActive],
+	[t1].[Eid],
+	[t1].[UserName],
+	[t1].[Pwd],
+	[t1].[Phone],
+	[t1].[LoginIp],
+	[t1].[MenuRights],
+	[t1].[RoleTid],
+	[t1].[LastLoginTime],
+	[t1].[UserAgent],
+	[t1].[CreateRoleName],
+	[t1].[CreateUser] as [CreateUser1]
+FROM
+	[system_users] [t1]
+WHERE
+	[t1].[Eid] = admin
+
+Server：.,DB名稱：PJW, 執行時間：0豪秒
+#####################################################
+
+            [Tags]
+                 {Key:method,Value:OnCustomerTraceConnection}
+ 
+[12:10:56.5640][Infrastructure.Logging.LogHelper][Info] - SQLSELECT TOP (1)
+	[t1].[Tid],
+	[t1].[DataChangeLastTime],
+	[t1].[IsActive],
+	[t1].[Eid],
+	[t1].[UserName],
+	[t1].[Pwd],
+	[t1].[Phone],
+	[t1].[LoginIp],
+	[t1].[MenuRights],
+	[t1].[RoleTid],
+	[t1].[LastLoginTime],
+	[t1].[UserAgent],
+	[t1].[CreateRoleName],
+	[t1].[CreateUser] as [CreateUser1]
+FROM
+	[system_users] [t1]
+WHERE
+	[t1].[Eid] = admin
+
+Server：.,DB名稱：PJW, 執行時間：0豪秒
+#####################################################
+
+            [Tags]
+                 {Key:method,Value:OnCustomerTraceConnection}
+ 
+[12:12:38.4487][PJW.Web.Program][Debug] - init main 
+[12:14:46.6630][PJW.Web.Program][Debug] - init main 
+[12:15:39.4209][Infrastructure.Logging.LogHelper][Info] - SQLSELECT TOP (1)
+	[t1].[Tid],
+	[t1].[DataChangeLastTime],
+	[t1].[IsActive],
+	[t1].[Eid],
+	[t1].[UserName],
+	[t1].[Pwd],
+	[t1].[Phone],
+	[t1].[LoginIp],
+	[t1].[MenuRights],
+	[t1].[RoleTid],
+	[t1].[LastLoginTime],
+	[t1].[UserAgent],
+	[t1].[CreateRoleName],
+	[t1].[CreateUser] as [CreateUser1]
+FROM
+	[system_users] [t1]
+WHERE
+	[t1].[Eid] = admin
+
+Server：.,DB名稱：PJW, 執行時間：124豪秒
+#####################################################
+
+            [Tags]
+                 {Key:method,Value:OnCustomerTraceConnection}
+ 
+[12:15:39.6066][Infrastructure.Logging.LogHelper][Info] - SQLSELECT TOP (1)
+	[t1].[Tid],
+	[t1].[DataChangeLastTime],
+	[t1].[IsActive],
+	[t1].[Eid],
+	[t1].[UserName],
+	[t1].[Pwd],
+	[t1].[Phone],
+	[t1].[LoginIp],
+	[t1].[MenuRights],
+	[t1].[RoleTid],
+	[t1].[LastLoginTime],
+	[t1].[UserAgent],
+	[t1].[CreateRoleName],
+	[t1].[CreateUser] as [CreateUser1]
+FROM
+	[system_users] [t1]
+WHERE
+	[t1].[Eid] = admin
+
+Server：.,DB名稱：PJW, 執行時間：2豪秒
+#####################################################
+
+            [Tags]
+                 {Key:method,Value:OnCustomerTraceConnection}
+ 
+[12:15:39.6564][Infrastructure.Logging.LogHelper][Info] - SQLSELECT
+	[t1].[Class] as [Class1],
+	[t1].[Ico],
+	[t1].[IsActive],
+	[t1].[Level] as [Level1],
+	[t1].[Name],
+	[t1].[OrderRule],
+	[t1].[ParentTid],
+	[t1].[Tid],
+	[t1].[Url]
+FROM
+	[system_menu] [t1]
+WHERE
+	True = [t1].[IsActive]
+
+Server：.,DB名稱：PJW, 執行時間：1豪秒
+#####################################################
+
+            [Tags]
+                 {Key:method,Value:OnCustomerTraceConnection}
+ 
+[12:15:42.0427][Infrastructure.Logging.LogHelper][Info] - SQLSELECT TOP (1)
+	[t1].[Tid],
+	[t1].[DataChangeLastTime],
+	[t1].[IsActive],
+	[t1].[Eid],
+	[t1].[UserName],
+	[t1].[Pwd],
+	[t1].[Phone],
+	[t1].[LoginIp],
+	[t1].[MenuRights],
+	[t1].[RoleTid],
+	[t1].[LastLoginTime],
+	[t1].[UserAgent],
+	[t1].[CreateRoleName],
+	[t1].[CreateUser] as [CreateUser1]
+FROM
+	[system_users] [t1]
+WHERE
+	[t1].[Eid] = admin
+
+Server：.,DB名稱：PJW, 執行時間：0豪秒
+#####################################################
+
+            [Tags]
+                 {Key:method,Value:OnCustomerTraceConnection}
+ 
+[12:15:42.2318][Infrastructure.Logging.LogHelper][Info] - SQLSELECT TOP (1)
+	[t1].[Tid],
+	[t1].[DataChangeLastTime],
+	[t1].[IsActive],
+	[t1].[Eid],
+	[t1].[UserName],
+	[t1].[Pwd],
+	[t1].[Phone],
+	[t1].[LoginIp],
+	[t1].[MenuRights],
+	[t1].[RoleTid],
+	[t1].[LastLoginTime],
+	[t1].[UserAgent],
+	[t1].[CreateRoleName],
+	[t1].[CreateUser] as [CreateUser1]
+FROM
+	[system_users] [t1]
+WHERE
+	[t1].[Eid] = admin
+
+Server：.,DB名稱：PJW, 執行時間：0豪秒
+#####################################################
+
+            [Tags]
+                 {Key:method,Value:OnCustomerTraceConnection}
+ 
+[12:18:50.9745][PJW.Web.Program][Debug] - init main 
+[12:18:58.4135][Infrastructure.Logging.LogHelper][Info] - SQLSELECT TOP (1)
+	[t1].[Tid],
+	[t1].[DataChangeLastTime],
+	[t1].[IsActive],
+	[t1].[Eid],
+	[t1].[UserName],
+	[t1].[Pwd],
+	[t1].[Phone],
+	[t1].[LoginIp],
+	[t1].[MenuRights],
+	[t1].[RoleTid],
+	[t1].[LastLoginTime],
+	[t1].[UserAgent],
+	[t1].[CreateRoleName],
+	[t1].[CreateUser] as [CreateUser1]
+FROM
+	[system_users] [t1]
+WHERE
+	[t1].[Eid] = admin
+
+Server：.,DB名稱：PJW, 執行時間：126豪秒
+#####################################################
+
+            [Tags]
+                 {Key:method,Value:OnCustomerTraceConnection}
+ 
+[12:18:58.6146][Infrastructure.Logging.LogHelper][Info] - SQLSELECT TOP (1)
+	[t1].[Tid],
+	[t1].[DataChangeLastTime],
+	[t1].[IsActive],
+	[t1].[Eid],
+	[t1].[UserName],
+	[t1].[Pwd],
+	[t1].[Phone],
+	[t1].[LoginIp],
+	[t1].[MenuRights],
+	[t1].[RoleTid],
+	[t1].[LastLoginTime],
+	[t1].[UserAgent],
+	[t1].[CreateRoleName],
+	[t1].[CreateUser] as [CreateUser1]
+FROM
+	[system_users] [t1]
+WHERE
+	[t1].[Eid] = admin
+
+Server：.,DB名稱：PJW, 執行時間：2豪秒
+#####################################################
+
+            [Tags]
+                 {Key:method,Value:OnCustomerTraceConnection}
+ 
+[12:18:58.6651][Infrastructure.Logging.LogHelper][Info] - SQLSELECT
+	[t1].[Class] as [Class1],
+	[t1].[Ico],
+	[t1].[IsActive],
+	[t1].[Level] as [Level1],
+	[t1].[Name],
+	[t1].[OrderRule],
+	[t1].[ParentTid],
+	[t1].[Tid],
+	[t1].[Url]
+FROM
+	[system_menu] [t1]
+WHERE
+	True = [t1].[IsActive]
+
+Server：.,DB名稱：PJW, 執行時間：1豪秒
+#####################################################
+
+            [Tags]
+                 {Key:method,Value:OnCustomerTraceConnection}
+ 
+[12:19:00.8031][Infrastructure.Logging.LogHelper][Info] - SQLSELECT TOP (1)
+	[t1].[Tid],
+	[t1].[DataChangeLastTime],
+	[t1].[IsActive],
+	[t1].[Eid],
+	[t1].[UserName],
+	[t1].[Pwd],
+	[t1].[Phone],
+	[t1].[LoginIp],
+	[t1].[MenuRights],
+	[t1].[RoleTid],
+	[t1].[LastLoginTime],
+	[t1].[UserAgent],
+	[t1].[CreateRoleName],
+	[t1].[CreateUser] as [CreateUser1]
+FROM
+	[system_users] [t1]
+WHERE
+	[t1].[Eid] = admin
+
+Server：.,DB名稱：PJW, 執行時間：0豪秒
+#####################################################
+
+            [Tags]
+                 {Key:method,Value:OnCustomerTraceConnection}
+ 
+[12:19:00.9990][Infrastructure.Logging.LogHelper][Info] - SQLSELECT TOP (1)
+	[t1].[Tid],
+	[t1].[DataChangeLastTime],
+	[t1].[IsActive],
+	[t1].[Eid],
+	[t1].[UserName],
+	[t1].[Pwd],
+	[t1].[Phone],
+	[t1].[LoginIp],
+	[t1].[MenuRights],
+	[t1].[RoleTid],
+	[t1].[LastLoginTime],
+	[t1].[UserAgent],
+	[t1].[CreateRoleName],
+	[t1].[CreateUser] as [CreateUser1]
+FROM
+	[system_users] [t1]
+WHERE
+	[t1].[Eid] = admin
+
+Server：.,DB名稱：PJW, 執行時間：0豪秒
+#####################################################
+
+            [Tags]
+                 {Key:method,Value:OnCustomerTraceConnection}
+ 
+[12:19:01.0572][Infrastructure.Logging.LogHelper][Info] - SQLSELECT TOP (1)
+	[t1].[Tid],
+	[t1].[DataChangeLastTime],
+	[t1].[IsActive],
+	[t1].[Eid],
+	[t1].[UserName],
+	[t1].[Pwd],
+	[t1].[Phone],
+	[t1].[LoginIp],
+	[t1].[MenuRights],
+	[t1].[RoleTid],
+	[t1].[LastLoginTime],
+	[t1].[UserAgent],
+	[t1].[CreateRoleName],
+	[t1].[CreateUser] as [CreateUser1]
+FROM
+	[system_users] [t1]
+WHERE
+	[t1].[Eid] = admin
+
+Server：.,DB名稱：PJW, 執行時間：2豪秒
+#####################################################
+
+            [Tags]
+                 {Key:method,Value:OnCustomerTraceConnection}
+ 
+[12:19:01.0572][Infrastructure.Logging.LogHelper][Info] - SQLSELECT TOP (1)
+	[t1].[Tid],
+	[t1].[DataChangeLastTime],
+	[t1].[IsActive],
+	[t1].[Eid],
+	[t1].[UserName],
+	[t1].[Pwd],
+	[t1].[Phone],
+	[t1].[LoginIp],
+	[t1].[MenuRights],
+	[t1].[RoleTid],
+	[t1].[LastLoginTime],
+	[t1].[UserAgent],
+	[t1].[CreateRoleName],
+	[t1].[CreateUser] as [CreateUser1]
+FROM
+	[system_users] [t1]
+WHERE
+	[t1].[Eid] = admin
+
+Server：.,DB名稱：PJW, 執行時間：0豪秒
+#####################################################
+
+            [Tags]
+                 {Key:method,Value:OnCustomerTraceConnection}
+ 
+[12:20:14.1836][PJW.Web.Program][Debug] - init main 
+[12:20:16.8379][Infrastructure.Logging.LogHelper][Info] - SQLSELECT TOP (1)
+	[t1].[Tid],
+	[t1].[DataChangeLastTime],
+	[t1].[IsActive],
+	[t1].[Eid],
+	[t1].[UserName],
+	[t1].[Pwd],
+	[t1].[Phone],
+	[t1].[LoginIp],
+	[t1].[MenuRights],
+	[t1].[RoleTid],
+	[t1].[LastLoginTime],
+	[t1].[UserAgent],
+	[t1].[CreateRoleName],
+	[t1].[CreateUser] as [CreateUser1]
+FROM
+	[system_users] [t1]
+WHERE
+	[t1].[Eid] = admin
+
+Server：.,DB名稱：PJW, 執行時間：133豪秒
+#####################################################
+
+            [Tags]
+                 {Key:method,Value:OnCustomerTraceConnection}
+ 
+[12:20:17.0411][Infrastructure.Logging.LogHelper][Info] - SQLSELECT TOP (1)
+	[t1].[Tid],
+	[t1].[DataChangeLastTime],
+	[t1].[IsActive],
+	[t1].[Eid],
+	[t1].[UserName],
+	[t1].[Pwd],
+	[t1].[Phone],
+	[t1].[LoginIp],
+	[t1].[MenuRights],
+	[t1].[RoleTid],
+	[t1].[LastLoginTime],
+	[t1].[UserAgent],
+	[t1].[CreateRoleName],
+	[t1].[CreateUser] as [CreateUser1]
+FROM
+	[system_users] [t1]
+WHERE
+	[t1].[Eid] = admin
+
+Server：.,DB名稱：PJW, 執行時間：2豪秒
+#####################################################
+
+            [Tags]
+                 {Key:method,Value:OnCustomerTraceConnection}
+ 
+[12:20:17.0976][Infrastructure.Logging.LogHelper][Info] - SQLSELECT
+	[t1].[Class] as [Class1],
+	[t1].[Ico],
+	[t1].[IsActive],
+	[t1].[Level] as [Level1],
+	[t1].[Name],
+	[t1].[OrderRule],
+	[t1].[ParentTid],
+	[t1].[Tid],
+	[t1].[Url]
+FROM
+	[system_menu] [t1]
+WHERE
+	True = [t1].[IsActive]
+
+Server：.,DB名稱：PJW, 執行時間：1豪秒
+#####################################################
+
+            [Tags]
+                 {Key:method,Value:OnCustomerTraceConnection}
+ 
+[12:20:20.2575][Infrastructure.Logging.LogHelper][Info] - SQLSELECT TOP (1)
+	[t1].[Tid],
+	[t1].[DataChangeLastTime],
+	[t1].[IsActive],
+	[t1].[Eid],
+	[t1].[UserName],
+	[t1].[Pwd],
+	[t1].[Phone],
+	[t1].[LoginIp],
+	[t1].[MenuRights],
+	[t1].[RoleTid],
+	[t1].[LastLoginTime],
+	[t1].[UserAgent],
+	[t1].[CreateRoleName],
+	[t1].[CreateUser] as [CreateUser1]
+FROM
+	[system_users] [t1]
+WHERE
+	[t1].[Eid] = admin
+
+Server：.,DB名稱：PJW, 執行時間：0豪秒
+#####################################################
+
+            [Tags]
+                 {Key:method,Value:OnCustomerTraceConnection}
+ 
+[12:20:20.4591][Infrastructure.Logging.LogHelper][Info] - SQLSELECT TOP (1)
+	[t1].[Tid],
+	[t1].[DataChangeLastTime],
+	[t1].[IsActive],
+	[t1].[Eid],
+	[t1].[UserName],
+	[t1].[Pwd],
+	[t1].[Phone],
+	[t1].[LoginIp],
+	[t1].[MenuRights],
+	[t1].[RoleTid],
+	[t1].[LastLoginTime],
+	[t1].[UserAgent],
+	[t1].[CreateRoleName],
+	[t1].[CreateUser] as [CreateUser1]
+FROM
+	[system_users] [t1]
+WHERE
+	[t1].[Eid] = admin
+
+Server：.,DB名稱：PJW, 執行時間：0豪秒
+#####################################################
+
+            [Tags]
+                 {Key:method,Value:OnCustomerTraceConnection}
+ 
+[12:31:26.4297][PJW.Web.Program][Debug] - init main 
+[12:31:29.2216][Infrastructure.Logging.LogHelper][Info] - SQLSELECT TOP (1)
+	[t1].[Tid],
+	[t1].[DataChangeLastTime],
+	[t1].[IsActive],
+	[t1].[Eid],
+	[t1].[UserName],
+	[t1].[Pwd],
+	[t1].[Phone],
+	[t1].[LoginIp],
+	[t1].[MenuRights],
+	[t1].[RoleTid],
+	[t1].[LastLoginTime],
+	[t1].[UserAgent],
+	[t1].[CreateRoleName],
+	[t1].[CreateUser] as [CreateUser1]
+FROM
+	[system_users] [t1]
+WHERE
+	[t1].[Eid] = admin
+
+Server：.,DB名稱：PJW, 執行時間：118豪秒
+#####################################################
+
+            [Tags]
+                 {Key:method,Value:OnCustomerTraceConnection}
+ 
+[12:31:29.4243][Infrastructure.Logging.LogHelper][Info] - SQLSELECT TOP (1)
+	[t1].[Tid],
+	[t1].[DataChangeLastTime],
+	[t1].[IsActive],
+	[t1].[Eid],
+	[t1].[UserName],
+	[t1].[Pwd],
+	[t1].[Phone],
+	[t1].[LoginIp],
+	[t1].[MenuRights],
+	[t1].[RoleTid],
+	[t1].[LastLoginTime],
+	[t1].[UserAgent],
+	[t1].[CreateRoleName],
+	[t1].[CreateUser] as [CreateUser1]
+FROM
+	[system_users] [t1]
+WHERE
+	[t1].[Eid] = admin
+
+Server：.,DB名稱：PJW, 執行時間：2豪秒
+#####################################################
+
+            [Tags]
+                 {Key:method,Value:OnCustomerTraceConnection}
+ 
+[12:31:29.4799][Infrastructure.Logging.LogHelper][Info] - SQLSELECT
+	[t1].[Class] as [Class1],
+	[t1].[Ico],
+	[t1].[IsActive],
+	[t1].[Level] as [Level1],
+	[t1].[Name],
+	[t1].[OrderRule],
+	[t1].[ParentTid],
+	[t1].[Tid],
+	[t1].[Url]
+FROM
+	[system_menu] [t1]
+WHERE
+	True = [t1].[IsActive]
+
+Server：.,DB名稱：PJW, 執行時間：1豪秒
+#####################################################
+
+            [Tags]
+                 {Key:method,Value:OnCustomerTraceConnection}
+ 
+[12:31:31.5037][Infrastructure.Logging.LogHelper][Info] - SQLSELECT TOP (1)
+	[t1].[Tid],
+	[t1].[DataChangeLastTime],
+	[t1].[IsActive],
+	[t1].[Eid],
+	[t1].[UserName],
+	[t1].[Pwd],
+	[t1].[Phone],
+	[t1].[LoginIp],
+	[t1].[MenuRights],
+	[t1].[RoleTid],
+	[t1].[LastLoginTime],
+	[t1].[UserAgent],
+	[t1].[CreateRoleName],
+	[t1].[CreateUser] as [CreateUser1]
+FROM
+	[system_users] [t1]
+WHERE
+	[t1].[Eid] = admin
+
+Server：.,DB名稱：PJW, 執行時間：0豪秒
+#####################################################
+
+            [Tags]
+                 {Key:method,Value:OnCustomerTraceConnection}
+ 
+[12:31:31.7124][Infrastructure.Logging.LogHelper][Info] - SQLSELECT TOP (1)
+	[t1].[Tid],
+	[t1].[DataChangeLastTime],
+	[t1].[IsActive],
+	[t1].[Eid],
+	[t1].[UserName],
+	[t1].[Pwd],
+	[t1].[Phone],
+	[t1].[LoginIp],
+	[t1].[MenuRights],
+	[t1].[RoleTid],
+	[t1].[LastLoginTime],
+	[t1].[UserAgent],
+	[t1].[CreateRoleName],
+	[t1].[CreateUser] as [CreateUser1]
+FROM
+	[system_users] [t1]
+WHERE
+	[t1].[Eid] = admin
+
+Server：.,DB名稱：PJW, 執行時間：0豪秒
+#####################################################
+
+            [Tags]
+                 {Key:method,Value:OnCustomerTraceConnection}
+ 
+[12:31:31.7801][Infrastructure.Logging.LogHelper][Info] - SQLSELECT TOP (1)
+	[t1].[Tid],
+	[t1].[DataChangeLastTime],
+	[t1].[IsActive],
+	[t1].[Eid],
+	[t1].[UserName],
+	[t1].[Pwd],
+	[t1].[Phone],
+	[t1].[LoginIp],
+	[t1].[MenuRights],
+	[t1].[RoleTid],
+	[t1].[LastLoginTime],
+	[t1].[UserAgent],
+	[t1].[CreateRoleName],
+	[t1].[CreateUser] as [CreateUser1]
+FROM
+	[system_users] [t1]
+WHERE
+	[t1].[Eid] = admin
+
+Server：.,DB名稱：PJW, 執行時間：0豪秒
+#####################################################
+
+            [Tags]
+                 {Key:method,Value:OnCustomerTraceConnection}
+ 
+[12:31:31.7801][Infrastructure.Logging.LogHelper][Info] - SQLSELECT TOP (1)
+	[t1].[Tid],
+	[t1].[DataChangeLastTime],
+	[t1].[IsActive],
+	[t1].[Eid],
+	[t1].[UserName],
+	[t1].[Pwd],
+	[t1].[Phone],
+	[t1].[LoginIp],
+	[t1].[MenuRights],
+	[t1].[RoleTid],
+	[t1].[LastLoginTime],
+	[t1].[UserAgent],
+	[t1].[CreateRoleName],
+	[t1].[CreateUser] as [CreateUser1]
+FROM
+	[system_users] [t1]
+WHERE
+	[t1].[Eid] = admin
+
+Server：.,DB名稱：PJW, 執行時間：0豪秒
+#####################################################
+
+            [Tags]
+                 {Key:method,Value:OnCustomerTraceConnection}
+ 
+[12:36:15.3357][PJW.Web.Program][Debug] - init main 
+[12:36:18.0695][Infrastructure.Logging.LogHelper][Info] - SQLSELECT TOP (1)
+	[t1].[Tid],
+	[t1].[DataChangeLastTime],
+	[t1].[IsActive],
+	[t1].[Eid],
+	[t1].[UserName],
+	[t1].[Pwd],
+	[t1].[Phone],
+	[t1].[LoginIp],
+	[t1].[MenuRights],
+	[t1].[RoleTid],
+	[t1].[LastLoginTime],
+	[t1].[UserAgent],
+	[t1].[CreateRoleName],
+	[t1].[CreateUser] as [CreateUser1]
+FROM
+	[system_users] [t1]
+WHERE
+	[t1].[Eid] = admin
+
+Server：.,DB名稱：PJW, 執行時間：122豪秒
+#####################################################
+
+            [Tags]
+                 {Key:method,Value:OnCustomerTraceConnection}
+ 
+[12:36:18.2771][Infrastructure.Logging.LogHelper][Info] - SQLSELECT TOP (1)
+	[t1].[Tid],
+	[t1].[DataChangeLastTime],
+	[t1].[IsActive],
+	[t1].[Eid],
+	[t1].[UserName],
+	[t1].[Pwd],
+	[t1].[Phone],
+	[t1].[LoginIp],
+	[t1].[MenuRights],
+	[t1].[RoleTid],
+	[t1].[LastLoginTime],
+	[t1].[UserAgent],
+	[t1].[CreateRoleName],
+	[t1].[CreateUser] as [CreateUser1]
+FROM
+	[system_users] [t1]
+WHERE
+	[t1].[Eid] = admin
+
+Server：.,DB名稱：PJW, 執行時間：3豪秒
+#####################################################
+
+            [Tags]
+                 {Key:method,Value:OnCustomerTraceConnection}
+ 
+[12:36:18.3326][Infrastructure.Logging.LogHelper][Info] - SQLSELECT
+	[t1].[Class] as [Class1],
+	[t1].[Ico],
+	[t1].[IsActive],
+	[t1].[Level] as [Level1],
+	[t1].[Name],
+	[t1].[OrderRule],
+	[t1].[ParentTid],
+	[t1].[Tid],
+	[t1].[Url]
+FROM
+	[system_menu] [t1]
+WHERE
+	True = [t1].[IsActive]
+
+Server：.,DB名稱：PJW, 執行時間：0豪秒
+#####################################################
+
+            [Tags]
+                 {Key:method,Value:OnCustomerTraceConnection}
+ 
+[12:36:21.3887][Infrastructure.Logging.LogHelper][Info] - SQLSELECT TOP (1)
+	[t1].[Tid],
+	[t1].[DataChangeLastTime],
+	[t1].[IsActive],
+	[t1].[Eid],
+	[t1].[UserName],
+	[t1].[Pwd],
+	[t1].[Phone],
+	[t1].[LoginIp],
+	[t1].[MenuRights],
+	[t1].[RoleTid],
+	[t1].[LastLoginTime],
+	[t1].[UserAgent],
+	[t1].[CreateRoleName],
+	[t1].[CreateUser] as [CreateUser1]
+FROM
+	[system_users] [t1]
+WHERE
+	[t1].[Eid] = admin
+
+Server：.,DB名稱：PJW, 執行時間：1豪秒
+#####################################################
+
+            [Tags]
+                 {Key:method,Value:OnCustomerTraceConnection}
+ 
+[12:36:21.5972][Infrastructure.Logging.LogHelper][Info] - SQLSELECT TOP (1)
+	[t1].[Tid],
+	[t1].[DataChangeLastTime],
+	[t1].[IsActive],
+	[t1].[Eid],
+	[t1].[UserName],
+	[t1].[Pwd],
+	[t1].[Phone],
+	[t1].[LoginIp],
+	[t1].[MenuRights],
+	[t1].[RoleTid],
+	[t1].[LastLoginTime],
+	[t1].[UserAgent],
+	[t1].[CreateRoleName],
+	[t1].[CreateUser] as [CreateUser1]
+FROM
+	[system_users] [t1]
+WHERE
+	[t1].[Eid] = admin
+
+Server：.,DB名稱：PJW, 執行時間：1豪秒
+#####################################################
+
+            [Tags]
+                 {Key:method,Value:OnCustomerTraceConnection}
+ 
+[12:36:21.6551][Infrastructure.Logging.LogHelper][Info] - SQLSELECT TOP (1)
+	[t1].[Tid],
+	[t1].[DataChangeLastTime],
+	[t1].[IsActive],
+	[t1].[Eid],
+	[t1].[UserName],
+	[t1].[Pwd],
+	[t1].[Phone],
+	[t1].[LoginIp],
+	[t1].[MenuRights],
+	[t1].[RoleTid],
+	[t1].[LastLoginTime],
+	[t1].[UserAgent],
+	[t1].[CreateRoleName],
+	[t1].[CreateUser] as [CreateUser1]
+FROM
+	[system_users] [t1]
+WHERE
+	[t1].[Eid] = admin
+
+Server：.,DB名稱：PJW, 執行時間：1豪秒
+#####################################################
+
+            [Tags]
+                 {Key:method,Value:OnCustomerTraceConnection}
+ 
+[13:41:39.8393][PJW.Web.Program][Debug] - init main 
+[13:41:44.7149][Infrastructure.Logging.LogHelper][Info] - SQLSELECT TOP (1)
+	[t1].[Tid],
+	[t1].[DataChangeLastTime],
+	[t1].[IsActive],
+	[t1].[Eid],
+	[t1].[UserName],
+	[t1].[Pwd],
+	[t1].[Phone],
+	[t1].[LoginIp],
+	[t1].[MenuRights],
+	[t1].[RoleTid],
+	[t1].[LastLoginTime],
+	[t1].[UserAgent],
+	[t1].[CreateRoleName],
+	[t1].[CreateUser] as [CreateUser1]
+FROM
+	[system_users] [t1]
+WHERE
+	[t1].[Eid] = admin
+
+Server：.,DB名稱：PJW, 執行時間：167豪秒
+#####################################################
+
+            [Tags]
+                 {Key:method,Value:OnCustomerTraceConnection}
+ 
+[13:41:45.0018][Infrastructure.Logging.LogHelper][Info] - SQLSELECT TOP (1)
+	[t1].[Tid],
+	[t1].[DataChangeLastTime],
+	[t1].[IsActive],
+	[t1].[Eid],
+	[t1].[UserName],
+	[t1].[Pwd],
+	[t1].[Phone],
+	[t1].[LoginIp],
+	[t1].[MenuRights],
+	[t1].[RoleTid],
+	[t1].[LastLoginTime],
+	[t1].[UserAgent],
+	[t1].[CreateRoleName],
+	[t1].[CreateUser] as [CreateUser1]
+FROM
+	[system_users] [t1]
+WHERE
+	[t1].[Eid] = admin
+
+Server：.,DB名稱：PJW, 執行時間：2豪秒
+#####################################################
+
+            [Tags]
+                 {Key:method,Value:OnCustomerTraceConnection}
+ 
+[13:41:45.0736][Infrastructure.Logging.LogHelper][Info] - SQLSELECT
+	[t1].[Class] as [Class1],
+	[t1].[Ico],
+	[t1].[IsActive],
+	[t1].[Level] as [Level1],
+	[t1].[Name],
+	[t1].[OrderRule],
+	[t1].[ParentTid],
+	[t1].[Tid],
+	[t1].[Url]
+FROM
+	[system_menu] [t1]
+WHERE
+	True = [t1].[IsActive]
+
+Server：.,DB名稱：PJW, 執行時間：2豪秒
+#####################################################
+
+            [Tags]
+                 {Key:method,Value:OnCustomerTraceConnection}
+ 
+[13:47:20.3506][PJW.Web.Program][Debug] - init main 
+[13:47:22.8607][Infrastructure.Logging.LogHelper][Info] - SQLSELECT TOP (1)
+	[t1].[Tid],
+	[t1].[DataChangeLastTime],
+	[t1].[IsActive],
+	[t1].[Eid],
+	[t1].[UserName],
+	[t1].[Pwd],
+	[t1].[Phone],
+	[t1].[LoginIp],
+	[t1].[MenuRights],
+	[t1].[RoleTid],
+	[t1].[LastLoginTime],
+	[t1].[UserAgent],
+	[t1].[CreateRoleName],
+	[t1].[CreateUser] as [CreateUser1]
+FROM
+	[system_users] [t1]
+WHERE
+	[t1].[Eid] = admin
+
+Server：.,DB名稱：PJW, 執行時間：123豪秒
+#####################################################
+
+            [Tags]
+                 {Key:method,Value:OnCustomerTraceConnection}
+ 
+[13:47:23.0675][Infrastructure.Logging.LogHelper][Info] - SQLSELECT TOP (1)
+	[t1].[Tid],
+	[t1].[DataChangeLastTime],
+	[t1].[IsActive],
+	[t1].[Eid],
+	[t1].[UserName],
+	[t1].[Pwd],
+	[t1].[Phone],
+	[t1].[LoginIp],
+	[t1].[MenuRights],
+	[t1].[RoleTid],
+	[t1].[LastLoginTime],
+	[t1].[UserAgent],
+	[t1].[CreateRoleName],
+	[t1].[CreateUser] as [CreateUser1]
+FROM
+	[system_users] [t1]
+WHERE
+	[t1].[Eid] = admin
+
+Server：.,DB名稱：PJW, 執行時間：4豪秒
+#####################################################
+
+            [Tags]
+                 {Key:method,Value:OnCustomerTraceConnection}
+ 
+[13:47:23.1299][Infrastructure.Logging.LogHelper][Info] - SQLSELECT
+	[t1].[Class] as [Class1],
+	[t1].[Ico],
+	[t1].[IsActive],
+	[t1].[Level] as [Level1],
+	[t1].[Name],
+	[t1].[OrderRule],
+	[t1].[ParentTid],
+	[t1].[Tid],
+	[t1].[Url]
+FROM
+	[system_menu] [t1]
+WHERE
+	True = [t1].[IsActive]
+
+Server：.,DB名稱：PJW, 執行時間：1豪秒
+#####################################################
+
+            [Tags]
+                 {Key:method,Value:OnCustomerTraceConnection}
+ 
+[13:47:26.5988][Infrastructure.Logging.LogHelper][Info] - SQLSELECT TOP (1)
+	[t1].[Tid],
+	[t1].[DataChangeLastTime],
+	[t1].[IsActive],
+	[t1].[Eid],
+	[t1].[UserName],
+	[t1].[Pwd],
+	[t1].[Phone],
+	[t1].[LoginIp],
+	[t1].[MenuRights],
+	[t1].[RoleTid],
+	[t1].[LastLoginTime],
+	[t1].[UserAgent],
+	[t1].[CreateRoleName],
+	[t1].[CreateUser] as [CreateUser1]
+FROM
+	[system_users] [t1]
+WHERE
+	[t1].[Eid] = admin
+
+Server：.,DB名稱：PJW, 執行時間：1豪秒
+#####################################################
+
+            [Tags]
+                 {Key:method,Value:OnCustomerTraceConnection}
+ 
+[13:47:26.8414][Infrastructure.Logging.LogHelper][Info] - SQLSELECT TOP (1)
+	[t1].[Tid],
+	[t1].[DataChangeLastTime],
+	[t1].[IsActive],
+	[t1].[Eid],
+	[t1].[UserName],
+	[t1].[Pwd],
+	[t1].[Phone],
+	[t1].[LoginIp],
+	[t1].[MenuRights],
+	[t1].[RoleTid],
+	[t1].[LastLoginTime],
+	[t1].[UserAgent],
+	[t1].[CreateRoleName],
+	[t1].[CreateUser] as [CreateUser1]
+FROM
+	[system_users] [t1]
+WHERE
+	[t1].[Eid] = admin
+
+Server：.,DB名稱：PJW, 執行時間：0豪秒
+#####################################################
+
+            [Tags]
+                 {Key:method,Value:OnCustomerTraceConnection}
+ 
+[13:47:26.9421][Infrastructure.Logging.LogHelper][Info] - SQLSELECT TOP (1)
+	[t1].[Tid],
+	[t1].[DataChangeLastTime],
+	[t1].[IsActive],
+	[t1].[Eid],
+	[t1].[UserName],
+	[t1].[Pwd],
+	[t1].[Phone],
+	[t1].[LoginIp],
+	[t1].[MenuRights],
+	[t1].[RoleTid],
+	[t1].[LastLoginTime],
+	[t1].[UserAgent],
+	[t1].[CreateRoleName],
+	[t1].[CreateUser] as [CreateUser1]
+FROM
+	[system_users] [t1]
+WHERE
+	[t1].[Eid] = admin
+
+Server：.,DB名稱：PJW, 執行時間：0豪秒
+#####################################################
+
+            [Tags]
+                 {Key:method,Value:OnCustomerTraceConnection}
+ 
+[13:47:26.9421][Infrastructure.Logging.LogHelper][Info] - SQLSELECT TOP (1)
+	[t1].[Tid],
+	[t1].[DataChangeLastTime],
+	[t1].[IsActive],
+	[t1].[Eid],
+	[t1].[UserName],
+	[t1].[Pwd],
+	[t1].[Phone],
+	[t1].[LoginIp],
+	[t1].[MenuRights],
+	[t1].[RoleTid],
+	[t1].[LastLoginTime],
+	[t1].[UserAgent],
+	[t1].[CreateRoleName],
+	[t1].[CreateUser] as [CreateUser1]
+FROM
+	[system_users] [t1]
+WHERE
+	[t1].[Eid] = admin
+
+Server：.,DB名稱：PJW, 執行時間：0豪秒
+#####################################################
+
+            [Tags]
+                 {Key:method,Value:OnCustomerTraceConnection}
+ 
+[13:47:26.9580][Infrastructure.Logging.LogHelper][Info] - SQLSELECT
+	[t1].[Class] as [Class1],
+	[t1].[Ico],
+	[t1].[IsActive],
+	[t1].[Level] as [Level1],
+	[t1].[Name],
+	[t1].[OrderRule],
+	[t1].[ParentTid],
+	[t1].[Tid],
+	[t1].[Url]
+FROM
+	[system_menu] [t1]
+WHERE
+	[t1].[Level] <> 88
+
+Server：.,DB名稱：PJW, 執行時間：1豪秒
+#####################################################
+
+            [Tags]
+                 {Key:method,Value:OnCustomerTraceConnection}
+ 
+[13:47:26.9580][Infrastructure.Logging.LogHelper][Warn] - ViewRenderService沒有找到對應的view：WorkLog/Index
+            [Tags]
+                 {Key:method,Value:RenderToStringAsync}
+ 
+[13:47:26.9800][Infrastructure.Logging.LogHelper][Warn] - ViewRenderService沒有找到對應的view：WorkLog/List2
+            [Tags]
+                 {Key:method,Value:RenderToStringAsync}
+ 
+[13:47:26.9800][Infrastructure.Logging.LogHelper][Warn] - ViewRenderService沒有找到對應的view：WorkLog/List3
+            [Tags]
+                 {Key:method,Value:RenderToStringAsync}
+ 
+[13:47:26.9800][Infrastructure.Logging.LogHelper][Warn] - ViewRenderService沒有找到對應的view：WorkLog/Share
+            [Tags]
+                 {Key:method,Value:RenderToStringAsync}
+ 
+[13:47:27.0133][Infrastructure.Logging.LogHelper][Info] - SQLSELECT
+	Count(1) as [cnt]
+FROM
+	[system_role] [t1]
+WHERE
+	True = [t1].[IsActive]
+
+Server：.,DB名稱：PJW, 執行時間：21豪秒
+#####################################################
+
+            [Tags]
+                 {Key:method,Value:OnCustomerTraceConnection}
+ 
+[13:47:27.0294][Infrastructure.Logging.LogHelper][Info] - SQLSELECT *
+FROM
+(
+	SELECT
+		t.*,
+		ROW_NUMBER() OVER
+		(
+			ORDER BY
+				oby DESC
+		) as rn
+	FROM
+	(
+		SELECT
+			[t1].[DataChangeLastTime],
+			[t1].[RoleName],
+			[t1].[Description],
+			[t1].[IsActive],
+			[t1].[MenuRights],
+			[t1].[Tid],
+			[t1].[ActionList],
+			[t1].[CreateUser] as [CreateUser1],
+			[t1].[CreateRoleTid],
+			[t1].[DataChangeLastTime] as [oby]
+		FROM
+			[system_role] [t1]
+		WHERE
+			True = [t1].[IsActive]
+	) t
+) t2
+WHERE
+	t2.rn BETWEEN 0 + 1 AND 0 + 10
+
+Server：.,DB名稱：PJW, 執行時間：36豪秒
+#####################################################
+
+            [Tags]
+                 {Key:method,Value:OnCustomerTraceConnection}
+ 
+[13:57:26.0681][PJW.Web.Program][Debug] - init main 
+[13:57:28.5778][Infrastructure.Logging.LogHelper][Info] - SQLSELECT TOP (1)
+	[t1].[Tid],
+	[t1].[DataChangeLastTime],
+	[t1].[IsActive],
+	[t1].[Eid],
+	[t1].[UserName],
+	[t1].[Pwd],
+	[t1].[Phone],
+	[t1].[LoginIp],
+	[t1].[MenuRights],
+	[t1].[RoleTid],
+	[t1].[LastLoginTime],
+	[t1].[UserAgent],
+	[t1].[CreateRoleName],
+	[t1].[CreateUser] as [CreateUser1]
+FROM
+	[system_users] [t1]
+WHERE
+	[t1].[Eid] = admin
+
+Server：.,DB名稱：PJW, 執行時間：122豪秒
+#####################################################
+
+            [Tags]
+                 {Key:method,Value:OnCustomerTraceConnection}
+ 
+[13:57:28.7804][Infrastructure.Logging.LogHelper][Info] - SQLSELECT TOP (1)
+	[t1].[Tid],
+	[t1].[DataChangeLastTime],
+	[t1].[IsActive],
+	[t1].[Eid],
+	[t1].[UserName],
+	[t1].[Pwd],
+	[t1].[Phone],
+	[t1].[LoginIp],
+	[t1].[MenuRights],
+	[t1].[RoleTid],
+	[t1].[LastLoginTime],
+	[t1].[UserAgent],
+	[t1].[CreateRoleName],
+	[t1].[CreateUser] as [CreateUser1]
+FROM
+	[system_users] [t1]
+WHERE
+	[t1].[Eid] = admin
+
+Server：.,DB名稱：PJW, 執行時間：2豪秒
+#####################################################
+
+            [Tags]
+                 {Key:method,Value:OnCustomerTraceConnection}
+ 
+[13:57:28.8390][Infrastructure.Logging.LogHelper][Info] - SQLSELECT
+	[t1].[Class] as [Class1],
+	[t1].[Ico],
+	[t1].[IsActive],
+	[t1].[Level] as [Level1],
+	[t1].[Name],
+	[t1].[OrderRule],
+	[t1].[ParentTid],
+	[t1].[Tid],
+	[t1].[Url]
+FROM
+	[system_menu] [t1]
+WHERE
+	True = [t1].[IsActive]
+
+Server：.,DB名稱：PJW, 執行時間：1豪秒
+#####################################################
+
+            [Tags]
+                 {Key:method,Value:OnCustomerTraceConnection}
+ 
+[14:04:38.4748][PJW.Web.Program][Debug] - init main 
+[14:04:41.4554][Infrastructure.Logging.LogHelper][Info] - SQLSELECT TOP (1)
+	[t1].[Tid],
+	[t1].[DataChangeLastTime],
+	[t1].[IsActive],
+	[t1].[Eid],
+	[t1].[UserName],
+	[t1].[Pwd],
+	[t1].[Phone],
+	[t1].[LoginIp],
+	[t1].[MenuRights],
+	[t1].[RoleTid],
+	[t1].[LastLoginTime],
+	[t1].[UserAgent],
+	[t1].[CreateRoleName],
+	[t1].[CreateUser] as [CreateUser1]
+FROM
+	[system_users] [t1]
+WHERE
+	[t1].[Eid] = admin
+
+Server：.,DB名稱：PJW, 執行時間：131豪秒
+#####################################################
+
+            [Tags]
+                 {Key:method,Value:OnCustomerTraceConnection}
+ 
+[14:04:41.6979][Infrastructure.Logging.LogHelper][Info] - SQLSELECT TOP (1)
+	[t1].[Tid],
+	[t1].[DataChangeLastTime],
+	[t1].[IsActive],
+	[t1].[Eid],
+	[t1].[UserName],
+	[t1].[Pwd],
+	[t1].[Phone],
+	[t1].[LoginIp],
+	[t1].[MenuRights],
+	[t1].[RoleTid],
+	[t1].[LastLoginTime],
+	[t1].[UserAgent],
+	[t1].[CreateRoleName],
+	[t1].[CreateUser] as [CreateUser1]
+FROM
+	[system_users] [t1]
+WHERE
+	[t1].[Eid] = admin
+
+Server：.,DB名稱：PJW, 執行時間：4豪秒
+#####################################################
+
+            [Tags]
+                 {Key:method,Value:OnCustomerTraceConnection}
+ 
+[14:04:41.7600][Infrastructure.Logging.LogHelper][Info] - SQLSELECT
+	[t1].[Class] as [Class1],
+	[t1].[Ico],
+	[t1].[IsActive],
+	[t1].[Level] as [Level1],
+	[t1].[Name],
+	[t1].[OrderRule],
+	[t1].[ParentTid],
+	[t1].[Tid],
+	[t1].[Url]
+FROM
+	[system_menu] [t1]
+WHERE
+	True = [t1].[IsActive]
+
+Server：.,DB名稱：PJW, 執行時間：1豪秒
+#####################################################
+
+            [Tags]
+                 {Key:method,Value:OnCustomerTraceConnection}
+ 
+[14:05:10.3926][Infrastructure.Logging.LogHelper][Info] - SQLSELECT TOP (1)
+	[t1].[Tid],
+	[t1].[DataChangeLastTime],
+	[t1].[IsActive],
+	[t1].[Eid],
+	[t1].[UserName],
+	[t1].[Pwd],
+	[t1].[Phone],
+	[t1].[LoginIp],
+	[t1].[MenuRights],
+	[t1].[RoleTid],
+	[t1].[LastLoginTime],
+	[t1].[UserAgent],
+	[t1].[CreateRoleName],
+	[t1].[CreateUser] as [CreateUser1]
+FROM
+	[system_users] [t1]
+WHERE
+	[t1].[Eid] = admin
+
+Server：.,DB名稱：PJW, 執行時間：1豪秒
+#####################################################
+
+            [Tags]
+                 {Key:method,Value:OnCustomerTraceConnection}
+ 
+[14:05:10.6448][Infrastructure.Logging.LogHelper][Info] - SQLSELECT TOP (1)
+	[t1].[Tid],
+	[t1].[DataChangeLastTime],
+	[t1].[IsActive],
+	[t1].[Eid],
+	[t1].[UserName],
+	[t1].[Pwd],
+	[t1].[Phone],
+	[t1].[LoginIp],
+	[t1].[MenuRights],
+	[t1].[RoleTid],
+	[t1].[LastLoginTime],
+	[t1].[UserAgent],
+	[t1].[CreateRoleName],
+	[t1].[CreateUser] as [CreateUser1]
+FROM
+	[system_users] [t1]
+WHERE
+	[t1].[Eid] = admin
+
+Server：.,DB名稱：PJW, 執行時間：0豪秒
+#####################################################
+
+            [Tags]
+                 {Key:method,Value:OnCustomerTraceConnection}
+ 
+[14:05:10.7226][Infrastructure.Logging.LogHelper][Info] - SQLSELECT TOP (1)
+	[t1].[Tid],
+	[t1].[DataChangeLastTime],
+	[t1].[IsActive],
+	[t1].[Eid],
+	[t1].[UserName],
+	[t1].[Pwd],
+	[t1].[Phone],
+	[t1].[LoginIp],
+	[t1].[MenuRights],
+	[t1].[RoleTid],
+	[t1].[LastLoginTime],
+	[t1].[UserAgent],
+	[t1].[CreateRoleName],
+	[t1].[CreateUser] as [CreateUser1]
+FROM
+	[system_users] [t1]
+WHERE
+	[t1].[Eid] = admin
+
+Server：.,DB名稱：PJW, 執行時間：0豪秒
+#####################################################
+
+            [Tags]
+                 {Key:method,Value:OnCustomerTraceConnection}
+ 
+[14:05:10.7226][Infrastructure.Logging.LogHelper][Info] - SQLSELECT TOP (1)
+	[t1].[Tid],
+	[t1].[DataChangeLastTime],
+	[t1].[IsActive],
+	[t1].[Eid],
+	[t1].[UserName],
+	[t1].[Pwd],
+	[t1].[Phone],
+	[t1].[LoginIp],
+	[t1].[MenuRights],
+	[t1].[RoleTid],
+	[t1].[LastLoginTime],
+	[t1].[UserAgent],
+	[t1].[CreateRoleName],
+	[t1].[CreateUser] as [CreateUser1]
+FROM
+	[system_users] [t1]
+WHERE
+	[t1].[Eid] = admin
+
+Server：.,DB名稱：PJW, 執行時間：0豪秒
+#####################################################
+
+            [Tags]
+                 {Key:method,Value:OnCustomerTraceConnection}
+ 
+[14:05:10.7226][Infrastructure.Logging.LogHelper][Info] - SQLSELECT
+	[t1].[Class] as [Class1],
+	[t1].[Ico],
+	[t1].[IsActive],
+	[t1].[Level] as [Level1],
+	[t1].[Name],
+	[t1].[OrderRule],
+	[t1].[ParentTid],
+	[t1].[Tid],
+	[t1].[Url]
+FROM
+	[system_menu] [t1]
+WHERE
+	[t1].[Level] <> 88
+
+Server：.,DB名稱：PJW, 執行時間：1豪秒
+#####################################################
+
+            [Tags]
+                 {Key:method,Value:OnCustomerTraceConnection}
+ 
+[14:05:10.7414][Infrastructure.Logging.LogHelper][Warn] - ViewRenderService沒有找到對應的view：WorkLog/Index
+            [Tags]
+                 {Key:method,Value:RenderToStringAsync}
+ 
+[14:05:10.7414][Infrastructure.Logging.LogHelper][Warn] - ViewRenderService沒有找到對應的view：WorkLog/List2
+            [Tags]
+                 {Key:method,Value:RenderToStringAsync}
+ 
+[14:05:10.7536][Infrastructure.Logging.LogHelper][Warn] - ViewRenderService沒有找到對應的view：WorkLog/List3
+            [Tags]
+                 {Key:method,Value:RenderToStringAsync}
+ 
+[14:05:10.7536][Infrastructure.Logging.LogHelper][Warn] - ViewRenderService沒有找到對應的view：WorkLog/Share
+            [Tags]
+                 {Key:method,Value:RenderToStringAsync}
+ 
+[14:05:10.7536][Infrastructure.Logging.LogHelper][Info] - SQLSELECT
+	Count(1) as [cnt]
+FROM
+	[system_role] [t1]
+WHERE
+	True = [t1].[IsActive]
+
+Server：.,DB名稱：PJW, 執行時間：2豪秒
+#####################################################
+
+            [Tags]
+                 {Key:method,Value:OnCustomerTraceConnection}
+ 
+[14:05:10.7757][Infrastructure.Logging.LogHelper][Info] - SQLSELECT *
+FROM
+(
+	SELECT
+		t.*,
+		ROW_NUMBER() OVER
+		(
+			ORDER BY
+				oby DESC
+		) as rn
+	FROM
+	(
+		SELECT
+			[t1].[DataChangeLastTime],
+			[t1].[RoleName],
+			[t1].[Description],
+			[t1].[IsActive],
+			[t1].[MenuRights],
+			[t1].[Tid],
+			[t1].[ActionList],
+			[t1].[CreateUser] as [CreateUser1],
+			[t1].[CreateRoleTid],
+			[t1].[DataChangeLastTime] as [oby]
+		FROM
+			[system_role] [t1]
+		WHERE
+			True = [t1].[IsActive]
+	) t
+) t2
+WHERE
+	t2.rn BETWEEN 0 + 1 AND 0 + 10
+
+Server：.,DB名稱：PJW, 執行時間：10豪秒
+#####################################################
+
+            [Tags]
+                 {Key:method,Value:OnCustomerTraceConnection}
+ 
+[14:22:40.8414][PJW.Web.Program][Debug] - init main 
+[14:22:43.5241][Infrastructure.Logging.LogHelper][Info] - SQLSELECT TOP (1)
+	[t1].[Tid],
+	[t1].[DataChangeLastTime],
+	[t1].[IsActive],
+	[t1].[Eid],
+	[t1].[UserName],
+	[t1].[Pwd],
+	[t1].[Phone],
+	[t1].[LoginIp],
+	[t1].[MenuRights],
+	[t1].[RoleTid],
+	[t1].[LastLoginTime],
+	[t1].[UserAgent],
+	[t1].[CreateRoleName],
+	[t1].[CreateUser] as [CreateUser1]
+FROM
+	[system_users] [t1]
+WHERE
+	[t1].[Eid] = admin
+
+Server：.,DB名稱：PJW, 執行時間：126豪秒
+#####################################################
+
+            [Tags]
+                 {Key:method,Value:OnCustomerTraceConnection}
+ 
+[14:22:43.7753][Infrastructure.Logging.LogHelper][Info] - SQLSELECT TOP (1)
+	[t1].[Tid],
+	[t1].[DataChangeLastTime],
+	[t1].[IsActive],
+	[t1].[Eid],
+	[t1].[UserName],
+	[t1].[Pwd],
+	[t1].[Phone],
+	[t1].[LoginIp],
+	[t1].[MenuRights],
+	[t1].[RoleTid],
+	[t1].[LastLoginTime],
+	[t1].[UserAgent],
+	[t1].[CreateRoleName],
+	[t1].[CreateUser] as [CreateUser1]
+FROM
+	[system_users] [t1]
+WHERE
+	[t1].[Eid] = admin
+
+Server：.,DB名稱：PJW, 執行時間：3豪秒
+#####################################################
+
+            [Tags]
+                 {Key:method,Value:OnCustomerTraceConnection}
+ 
+[14:22:43.8379][Infrastructure.Logging.LogHelper][Info] - SQLSELECT
+	[t1].[Class] as [Class1],
+	[t1].[Ico],
+	[t1].[IsActive],
+	[t1].[Level] as [Level1],
+	[t1].[Name],
+	[t1].[OrderRule],
+	[t1].[ParentTid],
+	[t1].[Tid],
+	[t1].[Url]
+FROM
+	[system_menu] [t1]
+WHERE
+	True = [t1].[IsActive]
+
+Server：.,DB名稱：PJW, 執行時間：1豪秒
+#####################################################
+
+            [Tags]
+                 {Key:method,Value:OnCustomerTraceConnection}
+ 
+[14:23:04.4044][Infrastructure.Logging.LogHelper][Info] - SQLSELECT TOP (1)
+	[t1].[Tid],
+	[t1].[DataChangeLastTime],
+	[t1].[IsActive],
+	[t1].[Eid],
+	[t1].[UserName],
+	[t1].[Pwd],
+	[t1].[Phone],
+	[t1].[LoginIp],
+	[t1].[MenuRights],
+	[t1].[RoleTid],
+	[t1].[LastLoginTime],
+	[t1].[UserAgent],
+	[t1].[CreateRoleName],
+	[t1].[CreateUser] as [CreateUser1]
+FROM
+	[system_users] [t1]
+WHERE
+	[t1].[Eid] = admin
+
+Server：.,DB名稱：PJW, 執行時間：2豪秒
+#####################################################
+
+            [Tags]
+                 {Key:method,Value:OnCustomerTraceConnection}
+ 
+[14:23:04.5055][Infrastructure.Logging.LogHelper][Warn] - OnActionExecuting
+            [Tags]
+                 {Key:method,Value:OnActionExecuting}
+ 
+System.InvalidCastException: Unable to cast object of type 'PJW.Web.Controllers.IntraUserController' to type 'PJW.Web.Admin.Controllers.BaseController'.
+   at PJW.Web.Filter.AuthorizeServiceFilterAttribute.OnActionExecuting(ActionExecutingContext filterContext) in C:\智擎科技\Git\PJW\PJW\Areas\Admin\Filter\AuthorizeFilterAttribute.cs:line 84
+[14:27:11.4595][Infrastructure.Logging.LogHelper][Info] - SQLSELECT TOP (1)
+	[t1].[Tid],
+	[t1].[DataChangeLastTime],
+	[t1].[IsActive],
+	[t1].[Eid],
+	[t1].[UserName],
+	[t1].[Pwd],
+	[t1].[Phone],
+	[t1].[LoginIp],
+	[t1].[MenuRights],
+	[t1].[RoleTid],
+	[t1].[LastLoginTime],
+	[t1].[UserAgent],
+	[t1].[CreateRoleName],
+	[t1].[CreateUser] as [CreateUser1]
+FROM
+	[system_users] [t1]
+WHERE
+	True = [t1].[IsActive] AND [t1].[Eid] = admin
+
+Server：.,DB名稱：PJW, 執行時間：3豪秒
+#####################################################
+
+            [Tags]
+                 {Key:method,Value:OnCustomerTraceConnection}
+ 
+[14:27:11.5263][Infrastructure.Logging.LogHelper][Info] - SQLSELECT TOP (1)
+	[t2].[Tid],
+	[t2].[DataChangeLastTime],
+	[t2].[IsActive],
+	[t2].[Eid],
+	[t2].[UserName],
+	[t2].[Pwd],
+	[t2].[Phone],
+	[t2].[LoginIp],
+	[t2].[MenuRights],
+	[t2].[RoleTid],
+	[t2].[LastLoginTime],
+	[t2].[UserAgent],
+	[t2].[CreateRoleName],
+	[t2].[CreateUser] as [CreateUser1],
+	[t1].[DataChangeLastTime] as [DataChangeLastTime1],
+	[t1].[RoleName],
+	[t1].[Description],
+	[t1].[IsActive] as [IsActive1],
+	[t1].[MenuRights] as [MenuRights1],
+	[t1].[Tid] as [Tid1],
+	[t1].[ActionList],
+	[t1].[CreateUser] as [CreateUser2],
+	[t1].[CreateRoleTid]
+FROM
+	[system_users] [t2]
+		LEFT JOIN [system_role] [t1] ON [t1].[Tid] = [t2].[RoleTid]
+WHERE
+	[t2].[Eid] = admin
+
+Server：.,DB名稱：PJW, 執行時間：4豪秒
+#####################################################
+
+            [Tags]
+                 {Key:method,Value:OnCustomerTraceConnection}
+ 
+[14:27:11.6105][Infrastructure.Logging.LogHelper][Info] - SQLUPDATE
+	[t1]
+SET
+	[t1].[LoginIp] = ::1,
+	[t1].[LastLoginTime] = 2021/9/23 下午 02:27:11,
+	[t1].[UserAgent] = Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/93.0.4577.82 Safari/537.36
+FROM
+	[system_users] [t1]
+WHERE
+	[t1].[Eid] = admin
+
+Server：.,DB名稱：PJW, 執行時間：5豪秒
+#####################################################
+
+            [Tags]
+                 {Key:method,Value:OnCustomerTraceConnection}
+ 
+[14:27:11.6352][Infrastructure.Logging.LogHelper][Info] - SQLSELECT TOP (1)
+	[t1].[Tid],
+	[t1].[DataChangeLastTime],
+	[t1].[IsActive],
+	[t1].[Eid],
+	[t1].[UserName],
+	[t1].[Pwd],
+	[t1].[Phone],
+	[t1].[LoginIp],
+	[t1].[MenuRights],
+	[t1].[RoleTid],
+	[t1].[LastLoginTime],
+	[t1].[UserAgent],
+	[t1].[CreateRoleName],
+	[t1].[CreateUser] as [CreateUser1]
+FROM
+	[system_users] [t1]
+WHERE
+	[t1].[Eid] = admin
+
+Server：.,DB名稱：PJW, 執行時間：1豪秒
+#####################################################
+
+            [Tags]
+                 {Key:method,Value:OnCustomerTraceConnection}
+ 
+[14:27:11.6352][Infrastructure.Logging.LogHelper][Info] - SQLSELECT TOP (1)
+	[t1].[Tid],
+	[t1].[DataChangeLastTime],
+	[t1].[IsActive],
+	[t1].[Eid],
+	[t1].[UserName],
+	[t1].[Pwd],
+	[t1].[Phone],
+	[t1].[LoginIp],
+	[t1].[MenuRights],
+	[t1].[RoleTid],
+	[t1].[LastLoginTime],
+	[t1].[UserAgent],
+	[t1].[CreateRoleName],
+	[t1].[CreateUser] as [CreateUser1]
+FROM
+	[system_users] [t1]
+WHERE
+	[t1].[Eid] = admin
+
+Server：.,DB名稱：PJW, 執行時間：1豪秒
+#####################################################
+
+            [Tags]
+                 {Key:method,Value:OnCustomerTraceConnection}
+ 
+[14:27:11.6456][Infrastructure.Logging.LogHelper][Info] - SQLSELECT
+	[t1].[Class] as [Class1],
+	[t1].[Ico],
+	[t1].[IsActive],
+	[t1].[Level] as [Level1],
+	[t1].[Name],
+	[t1].[OrderRule],
+	[t1].[ParentTid],
+	[t1].[Tid],
+	[t1].[Url]
+FROM
+	[system_menu] [t1]
+WHERE
+	True = [t1].[IsActive]
+
+Server：.,DB名稱：PJW, 執行時間：0豪秒
+#####################################################
+
+            [Tags]
+                 {Key:method,Value:OnCustomerTraceConnection}
+ 
+[14:27:14.2919][Infrastructure.Logging.LogHelper][Info] - SQLSELECT TOP (1)
+	[t1].[Tid],
+	[t1].[DataChangeLastTime],
+	[t1].[IsActive],
+	[t1].[Eid],
+	[t1].[UserName],
+	[t1].[Pwd],
+	[t1].[Phone],
+	[t1].[LoginIp],
+	[t1].[MenuRights],
+	[t1].[RoleTid],
+	[t1].[LastLoginTime],
+	[t1].[UserAgent],
+	[t1].[CreateRoleName],
+	[t1].[CreateUser] as [CreateUser1]
+FROM
+	[system_users] [t1]
+WHERE
+	[t1].[Eid] = admin
+
+Server：.,DB名稱：PJW, 執行時間：2豪秒
+#####################################################
+
+            [Tags]
+                 {Key:method,Value:OnCustomerTraceConnection}
+ 
+[14:27:14.4611][Infrastructure.Logging.LogHelper][Info] - SQLSELECT TOP (1)
+	[t1].[Tid],
+	[t1].[DataChangeLastTime],
+	[t1].[IsActive],
+	[t1].[Eid],
+	[t1].[UserName],
+	[t1].[Pwd],
+	[t1].[Phone],
+	[t1].[LoginIp],
+	[t1].[MenuRights],
+	[t1].[RoleTid],
+	[t1].[LastLoginTime],
+	[t1].[UserAgent],
+	[t1].[CreateRoleName],
+	[t1].[CreateUser] as [CreateUser1]
+FROM
+	[system_users] [t1]
+WHERE
+	[t1].[Eid] = admin
+
+Server：.,DB名稱：PJW, 執行時間：0豪秒
+#####################################################
+
+            [Tags]
+                 {Key:method,Value:OnCustomerTraceConnection}
+ 
+[14:27:14.4935][Infrastructure.Logging.LogHelper][Info] - SQLSELECT TOP (1)
+	[t1].[Tid],
+	[t1].[DataChangeLastTime],
+	[t1].[IsActive],
+	[t1].[Eid],
+	[t1].[UserName],
+	[t1].[Pwd],
+	[t1].[Phone],
+	[t1].[LoginIp],
+	[t1].[MenuRights],
+	[t1].[RoleTid],
+	[t1].[LastLoginTime],
+	[t1].[UserAgent],
+	[t1].[CreateRoleName],
+	[t1].[CreateUser] as [CreateUser1]
+FROM
+	[system_users] [t1]
+WHERE
+	[t1].[Eid] = admin
+
+Server：.,DB名稱：PJW, 執行時間：0豪秒
+#####################################################
+
+            [Tags]
+                 {Key:method,Value:OnCustomerTraceConnection}
+ 
+[14:27:18.6326][Infrastructure.Logging.LogHelper][Info] - SQLSELECT TOP (1)
+	[t1].[Tid],
+	[t1].[DataChangeLastTime],
+	[t1].[IsActive],
+	[t1].[Eid],
+	[t1].[UserName],
+	[t1].[Pwd],
+	[t1].[Phone],
+	[t1].[LoginIp],
+	[t1].[MenuRights],
+	[t1].[RoleTid],
+	[t1].[LastLoginTime],
+	[t1].[UserAgent],
+	[t1].[CreateRoleName],
+	[t1].[CreateUser] as [CreateUser1]
+FROM
+	[system_users] [t1]
+WHERE
+	[t1].[Eid] = admin
+
+Server：.,DB名稱：PJW, 執行時間：1豪秒
+#####################################################
+
+            [Tags]
+                 {Key:method,Value:OnCustomerTraceConnection}
+ 
+[14:27:18.6442][Infrastructure.Logging.LogHelper][Info] - SQLSELECT
+	[t1].[Class] as [Class1],
+	[t1].[Ico],
+	[t1].[IsActive],
+	[t1].[Level] as [Level1],
+	[t1].[Name],
+	[t1].[OrderRule],
+	[t1].[ParentTid],
+	[t1].[Tid],
+	[t1].[Url]
+FROM
+	[system_menu] [t1]
+WHERE
+	[t1].[Level] <> 88
+
+Server：.,DB名稱：PJW, 執行時間：1豪秒
+#####################################################
+
+            [Tags]
+                 {Key:method,Value:OnCustomerTraceConnection}
+ 
+[14:27:18.6442][Infrastructure.Logging.LogHelper][Info] - SQLSELECT
+	Count(1) as [cnt]
+FROM
+	[system_role] [t1]
+WHERE
+	True = [t1].[IsActive]
+
+Server：.,DB名稱：PJW, 執行時間：3豪秒
+#####################################################
+
+            [Tags]
+                 {Key:method,Value:OnCustomerTraceConnection}
+ 
+[14:27:18.6442][Infrastructure.Logging.LogHelper][Info] - SQLSELECT *
+FROM
+(
+	SELECT
+		t.*,
+		ROW_NUMBER() OVER
+		(
+			ORDER BY
+				oby DESC
+		) as rn
+	FROM
+	(
+		SELECT
+			[t1].[DataChangeLastTime],
+			[t1].[RoleName],
+			[t1].[Description],
+			[t1].[IsActive],
+			[t1].[MenuRights],
+			[t1].[Tid],
+			[t1].[ActionList],
+			[t1].[CreateUser] as [CreateUser1],
+			[t1].[CreateRoleTid],
+			[t1].[DataChangeLastTime] as [oby]
+		FROM
+			[system_role] [t1]
+		WHERE
+			True = [t1].[IsActive]
+	) t
+) t2
+WHERE
+	t2.rn BETWEEN 0 + 1 AND 0 + 10
+
+Server：.,DB名稱：PJW, 執行時間：2豪秒
+#####################################################
+
+            [Tags]
+                 {Key:method,Value:OnCustomerTraceConnection}
+ 
+[14:27:18.6442][Infrastructure.Logging.LogHelper][Warn] - ViewRenderService沒有找到對應的view：WorkLog/Index
+            [Tags]
+                 {Key:method,Value:RenderToStringAsync}
+ 
+[14:27:18.6659][Infrastructure.Logging.LogHelper][Warn] - ViewRenderService沒有找到對應的view：WorkLog/List2
+            [Tags]
+                 {Key:method,Value:RenderToStringAsync}
+ 
+[14:27:18.6659][Infrastructure.Logging.LogHelper][Warn] - ViewRenderService沒有找到對應的view：WorkLog/List3
+            [Tags]
+                 {Key:method,Value:RenderToStringAsync}
+ 
+[14:27:18.6659][Infrastructure.Logging.LogHelper][Warn] - ViewRenderService沒有找到對應的view：WorkLog/Share
+            [Tags]
+                 {Key:method,Value:RenderToStringAsync}
+ 
+[14:30:30.5702][PJW.Web.Program][Debug] - init main 
+[14:30:33.3289][Infrastructure.Logging.LogHelper][Info] - SQLSELECT TOP (1)
+	[t1].[Tid],
+	[t1].[DataChangeLastTime],
+	[t1].[IsActive],
+	[t1].[Eid],
+	[t1].[UserName],
+	[t1].[Pwd],
+	[t1].[Phone],
+	[t1].[LoginIp],
+	[t1].[MenuRights],
+	[t1].[RoleTid],
+	[t1].[LastLoginTime],
+	[t1].[UserAgent],
+	[t1].[CreateRoleName],
+	[t1].[CreateUser] as [CreateUser1]
+FROM
+	[system_users] [t1]
+WHERE
+	[t1].[Eid] = admin
+
+Server：.,DB名稱：PJW, 執行時間：130豪秒
+#####################################################
+
+            [Tags]
+                 {Key:method,Value:OnCustomerTraceConnection}
+ 
+[14:30:33.5528][Infrastructure.Logging.LogHelper][Info] - SQLSELECT TOP (1)
+	[t1].[Tid],
+	[t1].[DataChangeLastTime],
+	[t1].[IsActive],
+	[t1].[Eid],
+	[t1].[UserName],
+	[t1].[Pwd],
+	[t1].[Phone],
+	[t1].[LoginIp],
+	[t1].[MenuRights],
+	[t1].[RoleTid],
+	[t1].[LastLoginTime],
+	[t1].[UserAgent],
+	[t1].[CreateRoleName],
+	[t1].[CreateUser] as [CreateUser1]
+FROM
+	[system_users] [t1]
+WHERE
+	[t1].[Eid] = admin
+
+Server：.,DB名稱：PJW, 執行時間：4豪秒
+#####################################################
+
+            [Tags]
+                 {Key:method,Value:OnCustomerTraceConnection}
+ 
+[14:30:33.6089][Infrastructure.Logging.LogHelper][Info] - SQLSELECT
+	[t1].[Class] as [Class1],
+	[t1].[Ico],
+	[t1].[IsActive],
+	[t1].[Level] as [Level1],
+	[t1].[Name],
+	[t1].[OrderRule],
+	[t1].[ParentTid],
+	[t1].[Tid],
+	[t1].[Url]
+FROM
+	[system_menu] [t1]
+WHERE
+	True = [t1].[IsActive]
+
+Server：.,DB名稱：PJW, 執行時間：0豪秒
+#####################################################
+
+            [Tags]
+                 {Key:method,Value:OnCustomerTraceConnection}
+ 
+[14:30:38.0816][Infrastructure.Logging.LogHelper][Info] - SQLSELECT TOP (1)
+	[t1].[Tid],
+	[t1].[DataChangeLastTime],
+	[t1].[IsActive],
+	[t1].[Eid],
+	[t1].[UserName],
+	[t1].[Pwd],
+	[t1].[Phone],
+	[t1].[LoginIp],
+	[t1].[MenuRights],
+	[t1].[RoleTid],
+	[t1].[LastLoginTime],
+	[t1].[UserAgent],
+	[t1].[CreateRoleName],
+	[t1].[CreateUser] as [CreateUser1]
+FROM
+	[system_users] [t1]
+WHERE
+	[t1].[Eid] = admin
+
+Server：.,DB名稱：PJW, 執行時間：1豪秒
+#####################################################
+
+            [Tags]
+                 {Key:method,Value:OnCustomerTraceConnection}
+ 
+[14:30:38.3886][Infrastructure.Logging.LogHelper][Info] - SQLSELECT TOP (1)
+	[t1].[Tid],
+	[t1].[DataChangeLastTime],
+	[t1].[IsActive],
+	[t1].[Eid],
+	[t1].[UserName],
+	[t1].[Pwd],
+	[t1].[Phone],
+	[t1].[LoginIp],
+	[t1].[MenuRights],
+	[t1].[RoleTid],
+	[t1].[LastLoginTime],
+	[t1].[UserAgent],
+	[t1].[CreateRoleName],
+	[t1].[CreateUser] as [CreateUser1]
+FROM
+	[system_users] [t1]
+WHERE
+	[t1].[Eid] = admin
+
+Server：.,DB名稱：PJW, 執行時間：1豪秒
+#####################################################
+
+            [Tags]
+                 {Key:method,Value:OnCustomerTraceConnection}
+ 
+[14:30:46.3449][Infrastructure.Logging.LogHelper][Info] - SQLSELECT
+	Count(1) as [cnt]
+FROM
+	[system_users] [t1]
+WHERE
+	True = [t1].[IsActive]
+
+Server：.,DB名稱：PJW, 執行時間：4豪秒
+#####################################################
+
+            [Tags]
+                 {Key:method,Value:OnCustomerTraceConnection}
+ 
+[14:30:46.4153][Infrastructure.Logging.LogHelper][Info] - SQLSELECT TOP (1)
+	[t1].[Tid],
+	[t1].[DataChangeLastTime],
+	[t1].[IsActive],
+	[t1].[Eid],
+	[t1].[UserName],
+	[t1].[Pwd],
+	[t1].[Phone],
+	[t1].[LoginIp],
+	[t1].[MenuRights],
+	[t1].[RoleTid],
+	[t1].[LastLoginTime],
+	[t1].[UserAgent],
+	[t1].[CreateRoleName],
+	[t1].[CreateUser] as [CreateUser1]
+FROM
+	[system_users] [t1]
+WHERE
+	[t1].[Eid] = admin
+
+Server：.,DB名稱：PJW, 執行時間：1豪秒
+#####################################################
+
+            [Tags]
+                 {Key:method,Value:OnCustomerTraceConnection}
+ 
+[14:30:46.4153][Infrastructure.Logging.LogHelper][Info] - SQLSELECT TOP (1)
+	[t1].[Tid],
+	[t1].[DataChangeLastTime],
+	[t1].[IsActive],
+	[t1].[Eid],
+	[t1].[UserName],
+	[t1].[Pwd],
+	[t1].[Phone],
+	[t1].[LoginIp],
+	[t1].[MenuRights],
+	[t1].[RoleTid],
+	[t1].[LastLoginTime],
+	[t1].[UserAgent],
+	[t1].[CreateRoleName],
+	[t1].[CreateUser] as [CreateUser1]
+FROM
+	[system_users] [t1]
+WHERE
+	[t1].[Eid] = admin
+
+Server：.,DB名稱：PJW, 執行時間：2豪秒
+#####################################################
+
+            [Tags]
+                 {Key:method,Value:OnCustomerTraceConnection}
+ 
+[14:30:46.4358][Infrastructure.Logging.LogHelper][Info] - SQLSELECT
+	[t1].[DataChangeLastTime],
+	[t1].[RoleName],
+	[t1].[Description],
+	[t1].[IsActive],
+	[t1].[MenuRights],
+	[t1].[Tid],
+	[t1].[ActionList],
+	[t1].[CreateUser] as [CreateUser1],
+	[t1].[CreateRoleTid]
+FROM
+	[system_role] [t1]
+WHERE
+	True = [t1].[IsActive]
+
+Server：.,DB名稱：PJW, 執行時間：2豪秒
+#####################################################
+
+            [Tags]
+                 {Key:method,Value:OnCustomerTraceConnection}
+ 
+[14:30:46.4408][Infrastructure.Logging.LogHelper][Info] - SQLSELECT *
+FROM
+(
+	SELECT
+		t.*,
+		ROW_NUMBER() OVER
+		(
+			ORDER BY
+				oby DESC
+		) as rn
+	FROM
+	(
+		SELECT
+			[t2].[Tid],
+			[t2].[IsActive],
+			[t2].[Eid],
+			[t2].[UserName],
+			[t2].[LoginIp],
+			[t2].[RoleTid],
+			[t2].[LastLoginTime],
+			[t2].[UserAgent],
+			[t2].[DataChangeLastTime],
+			[t1].[RoleName],
+			[t1].[Description],
+			[t2].[Phone],
+			[t2].[CreateUser] as [CreateUser1],
+			[t2].[DataChangeLastTime] as [oby]
+		FROM
+			[system_users] [t2]
+				LEFT JOIN [system_role] [t1] ON [t1].[Tid] = [t2].[RoleTid]
+		WHERE
+			True = [t2].[IsActive]
+	) t
+) t3
+WHERE
+	t3.rn BETWEEN 0 + 1 AND 0 + 25
+
+Server：.,DB名稱：PJW, 執行時間：3豪秒
+#####################################################
+
+            [Tags]
+                 {Key:method,Value:OnCustomerTraceConnection}
+ 
+[14:30:53.3618][Infrastructure.Logging.LogHelper][Info] - SQLSELECT TOP (1)
+	[t1].[Tid],
+	[t1].[DataChangeLastTime],
+	[t1].[IsActive],
+	[t1].[Eid],
+	[t1].[UserName],
+	[t1].[Pwd],
+	[t1].[Phone],
+	[t1].[LoginIp],
+	[t1].[MenuRights],
+	[t1].[RoleTid],
+	[t1].[LastLoginTime],
+	[t1].[UserAgent],
+	[t1].[CreateRoleName],
+	[t1].[CreateUser] as [CreateUser1]
+FROM
+	[system_users] [t1]
+WHERE
+	[t1].[Eid] = admin
+
+Server：.,DB名稱：PJW, 執行時間：1豪秒
+#####################################################
+
+            [Tags]
+                 {Key:method,Value:OnCustomerTraceConnection}
+ 
+[14:30:53.5225][Infrastructure.Logging.LogHelper][Info] - SQLSELECT TOP (1)
+	[t1].[Tid],
+	[t1].[DataChangeLastTime],
+	[t1].[IsActive],
+	[t1].[Eid],
+	[t1].[UserName],
+	[t1].[Pwd],
+	[t1].[Phone],
+	[t1].[LoginIp],
+	[t1].[MenuRights],
+	[t1].[RoleTid],
+	[t1].[LastLoginTime],
+	[t1].[UserAgent],
+	[t1].[CreateRoleName],
+	[t1].[CreateUser] as [CreateUser1]
+FROM
+	[system_users] [t1]
+WHERE
+	[t1].[Eid] = admin
+
+Server：.,DB名稱：PJW, 執行時間：0豪秒
+#####################################################
+
+            [Tags]
+                 {Key:method,Value:OnCustomerTraceConnection}
+ 
+[14:30:53.5225][Infrastructure.Logging.LogHelper][Info] - SQLSELECT TOP (1)
+	[t1].[Tid],
+	[t1].[DataChangeLastTime],
+	[t1].[IsActive],
+	[t1].[Eid],
+	[t1].[UserName],
+	[t1].[Pwd],
+	[t1].[Phone],
+	[t1].[LoginIp],
+	[t1].[MenuRights],
+	[t1].[RoleTid],
+	[t1].[LastLoginTime],
+	[t1].[UserAgent],
+	[t1].[CreateRoleName],
+	[t1].[CreateUser] as [CreateUser1]
+FROM
+	[system_users] [t1]
+WHERE
+	[t1].[Eid] = admin
+
+Server：.,DB名稱：PJW, 執行時間：0豪秒
+#####################################################
+
+            [Tags]
+                 {Key:method,Value:OnCustomerTraceConnection}
+ 
+[14:30:53.5406][Infrastructure.Logging.LogHelper][Info] - SQLSELECT
+	[t1].[Class] as [Class1],
+	[t1].[Ico],
+	[t1].[IsActive],
+	[t1].[Level] as [Level1],
+	[t1].[Name],
+	[t1].[OrderRule],
+	[t1].[ParentTid],
+	[t1].[Tid],
+	[t1].[Url]
+FROM
+	[system_menu] [t1]
+WHERE
+	[t1].[ParentTid] = 0 AND [t1].[Level] <> 88
+ORDER BY
+	[t1].[OrderRule]
+
+Server：.,DB名稱：PJW, 執行時間：6豪秒
+#####################################################
+
+            [Tags]
+                 {Key:method,Value:OnCustomerTraceConnection}
+ 
+[14:30:54.8454][Infrastructure.Logging.LogHelper][Info] - SQLSELECT TOP (1)
+	[t1].[Tid],
+	[t1].[DataChangeLastTime],
+	[t1].[IsActive],
+	[t1].[Eid],
+	[t1].[UserName],
+	[t1].[Pwd],
+	[t1].[Phone],
+	[t1].[LoginIp],
+	[t1].[MenuRights],
+	[t1].[RoleTid],
+	[t1].[LastLoginTime],
+	[t1].[UserAgent],
+	[t1].[CreateRoleName],
+	[t1].[CreateUser] as [CreateUser1]
+FROM
+	[system_users] [t1]
+WHERE
+	[t1].[Eid] = admin
+
+Server：.,DB名稱：PJW, 執行時間：1豪秒
+#####################################################
+
+            [Tags]
+                 {Key:method,Value:OnCustomerTraceConnection}
+ 
+[14:30:54.9283][Infrastructure.Logging.LogHelper][Info] - SQLSELECT TOP (1)
+	[t1].[Tid],
+	[t1].[DataChangeLastTime],
+	[t1].[IsActive],
+	[t1].[Eid],
+	[t1].[UserName],
+	[t1].[Pwd],
+	[t1].[Phone],
+	[t1].[LoginIp],
+	[t1].[MenuRights],
+	[t1].[RoleTid],
+	[t1].[LastLoginTime],
+	[t1].[UserAgent],
+	[t1].[CreateRoleName],
+	[t1].[CreateUser] as [CreateUser1]
+FROM
+	[system_users] [t1]
+WHERE
+	[t1].[Eid] = admin
+
+Server：.,DB名稱：PJW, 執行時間：0豪秒
+#####################################################
+
+            [Tags]
+                 {Key:method,Value:OnCustomerTraceConnection}
+ 
+[14:30:54.9283][Infrastructure.Logging.LogHelper][Info] - SQLSELECT TOP (1)
+	[t1].[Tid],
+	[t1].[DataChangeLastTime],
+	[t1].[IsActive],
+	[t1].[Eid],
+	[t1].[UserName],
+	[t1].[Pwd],
+	[t1].[Phone],
+	[t1].[LoginIp],
+	[t1].[MenuRights],
+	[t1].[RoleTid],
+	[t1].[LastLoginTime],
+	[t1].[UserAgent],
+	[t1].[CreateRoleName],
+	[t1].[CreateUser] as [CreateUser1]
+FROM
+	[system_users] [t1]
+WHERE
+	[t1].[Eid] = admin
+
+Server：.,DB名稱：PJW, 執行時間：0豪秒
+#####################################################
+
+            [Tags]
+                 {Key:method,Value:OnCustomerTraceConnection}
+ 
+[14:30:54.9283][Infrastructure.Logging.LogHelper][Info] - SQLSELECT TOP (1)
+	[t1].[Tid],
+	[t1].[DataChangeLastTime],
+	[t1].[IsActive],
+	[t1].[Eid],
+	[t1].[UserName],
+	[t1].[Pwd],
+	[t1].[Phone],
+	[t1].[LoginIp],
+	[t1].[MenuRights],
+	[t1].[RoleTid],
+	[t1].[LastLoginTime],
+	[t1].[UserAgent],
+	[t1].[CreateRoleName],
+	[t1].[CreateUser] as [CreateUser1]
+FROM
+	[system_users] [t1]
+WHERE
+	[t1].[Eid] = admin
+
+Server：.,DB名稱：PJW, 執行時間：0豪秒
+#####################################################
+
+            [Tags]
+                 {Key:method,Value:OnCustomerTraceConnection}
+ 
+[14:30:54.9475][Infrastructure.Logging.LogHelper][Info] - SQLSELECT
+	[t1].[Class] as [Class1],
+	[t1].[Ico],
+	[t1].[IsActive],
+	[t1].[Level] as [Level1],
+	[t1].[Name],
+	[t1].[OrderRule],
+	[t1].[ParentTid],
+	[t1].[Tid],
+	[t1].[Url]
+FROM
+	[system_menu] [t1]
+WHERE
+	[t1].[Level] <> 88
+
+Server：.,DB名稱：PJW, 執行時間：2豪秒
+#####################################################
+
+            [Tags]
+                 {Key:method,Value:OnCustomerTraceConnection}
+ 
+[14:30:54.9606][Infrastructure.Logging.LogHelper][Warn] - ViewRenderService沒有找到對應的view：WorkLog/Index
+            [Tags]
+                 {Key:method,Value:RenderToStringAsync}
+ 
+[14:30:54.9606][Infrastructure.Logging.LogHelper][Warn] - ViewRenderService沒有找到對應的view：WorkLog/List2
+            [Tags]
+                 {Key:method,Value:RenderToStringAsync}
+ 
+[14:30:54.9606][Infrastructure.Logging.LogHelper][Warn] - ViewRenderService沒有找到對應的view：WorkLog/List3
+            [Tags]
+                 {Key:method,Value:RenderToStringAsync}
+ 
+[14:30:54.9606][Infrastructure.Logging.LogHelper][Warn] - ViewRenderService沒有找到對應的view：WorkLog/Share
+            [Tags]
+                 {Key:method,Value:RenderToStringAsync}
+ 
+[14:31:06.5065][Infrastructure.Logging.LogHelper][Info] - SQLSELECT TOP (1)
+	[t1].[Tid],
+	[t1].[DataChangeLastTime],
+	[t1].[IsActive],
+	[t1].[Eid],
+	[t1].[UserName],
+	[t1].[Pwd],
+	[t1].[Phone],
+	[t1].[LoginIp],
+	[t1].[MenuRights],
+	[t1].[RoleTid],
+	[t1].[LastLoginTime],
+	[t1].[UserAgent],
+	[t1].[CreateRoleName],
+	[t1].[CreateUser] as [CreateUser1]
+FROM
+	[system_users] [t1]
+WHERE
+	[t1].[Eid] = admin
+
+Server：.,DB名稱：PJW, 執行時間：1豪秒
+#####################################################
+
+            [Tags]
+                 {Key:method,Value:OnCustomerTraceConnection}
+ 
+[14:31:06.5397][Infrastructure.Logging.LogHelper][Info] - SQLSELECT
+	[t1].[Tid],
+	[t1].[DataChangeLastTime],
+	[t1].[MenuTid],
+	[t1].[ActionId],
+	[t1].[ActionName],
+	[t1].[ControlName]
+FROM
+	[system_page_action] [t1]
+WHERE
+	[t1].[MenuTid] = 5 AND [t1].[ActionId] = index
+
+Server：.,DB名稱：PJW, 執行時間：18豪秒
+#####################################################
+
+            [Tags]
+                 {Key:method,Value:OnCustomerTraceConnection}
+ 
+[14:31:17.6276][Infrastructure.Logging.LogHelper][Info] - SQLSELECT TOP (1)
+	[t1].[Tid],
+	[t1].[DataChangeLastTime],
+	[t1].[IsActive],
+	[t1].[Eid],
+	[t1].[UserName],
+	[t1].[Pwd],
+	[t1].[Phone],
+	[t1].[LoginIp],
+	[t1].[MenuRights],
+	[t1].[RoleTid],
+	[t1].[LastLoginTime],
+	[t1].[UserAgent],
+	[t1].[CreateRoleName],
+	[t1].[CreateUser] as [CreateUser1]
+FROM
+	[system_users] [t1]
+WHERE
+	[t1].[Eid] = admin
+
+Server：.,DB名稱：PJW, 執行時間：1豪秒
+#####################################################
+
+            [Tags]
+                 {Key:method,Value:OnCustomerTraceConnection}
+ 
+[14:31:17.6374][Infrastructure.Logging.LogHelper][Info] - SQLSELECT
+	[t1].[Tid],
+	[t1].[DataChangeLastTime],
+	[t1].[MenuTid],
+	[t1].[ActionId],
+	[t1].[ActionName],
+	[t1].[ControlName]
+FROM
+	[system_page_action] [t1]
+WHERE
+	[t1].[MenuTid] = 5 AND [t1].[ActionId] = role-add
+
+Server：.,DB名稱：PJW, 執行時間：4豪秒
+#####################################################
+
+            [Tags]
+                 {Key:method,Value:OnCustomerTraceConnection}
+ 
+[14:31:19.4115][Infrastructure.Logging.LogHelper][Info] - SQLSELECT TOP (1)
+	[t1].[Tid],
+	[t1].[DataChangeLastTime],
+	[t1].[IsActive],
+	[t1].[Eid],
+	[t1].[UserName],
+	[t1].[Pwd],
+	[t1].[Phone],
+	[t1].[LoginIp],
+	[t1].[MenuRights],
+	[t1].[RoleTid],
+	[t1].[LastLoginTime],
+	[t1].[UserAgent],
+	[t1].[CreateRoleName],
+	[t1].[CreateUser] as [CreateUser1]
+FROM
+	[system_users] [t1]
+WHERE
+	[t1].[Eid] = admin
+
+Server：.,DB名稱：PJW, 執行時間：1豪秒
+#####################################################
+
+            [Tags]
+                 {Key:method,Value:OnCustomerTraceConnection}
+ 
+[14:31:19.4115][Infrastructure.Logging.LogHelper][Info] - SQLSELECT
+	[t1].[Tid],
+	[t1].[DataChangeLastTime],
+	[t1].[MenuTid],
+	[t1].[ActionId],
+	[t1].[ActionName],
+	[t1].[ControlName]
+FROM
+	[system_page_action] [t1]
+WHERE
+	[t1].[MenuTid] = 5 AND [t1].[ActionId] = index
+
+Server：.,DB名稱：PJW, 執行時間：1豪秒
+#####################################################
+
+            [Tags]
+                 {Key:method,Value:OnCustomerTraceConnection}
+ 
+[14:31:52.7572][PJW.Web.Program][Debug] - init main 
+[14:31:55.4034][Infrastructure.Logging.LogHelper][Info] - SQLSELECT TOP (1)
+	[t1].[Tid],
+	[t1].[DataChangeLastTime],
+	[t1].[IsActive],
+	[t1].[Eid],
+	[t1].[UserName],
+	[t1].[Pwd],
+	[t1].[Phone],
+	[t1].[LoginIp],
+	[t1].[MenuRights],
+	[t1].[RoleTid],
+	[t1].[LastLoginTime],
+	[t1].[UserAgent],
+	[t1].[CreateRoleName],
+	[t1].[CreateUser] as [CreateUser1]
+FROM
+	[system_users] [t1]
+WHERE
+	[t1].[Eid] = admin
+
+Server：.,DB名稱：PJW, 執行時間：126豪秒
+#####################################################
+
+            [Tags]
+                 {Key:method,Value:OnCustomerTraceConnection}
+ 
+[14:31:55.6283][Infrastructure.Logging.LogHelper][Info] - SQLSELECT TOP (1)
+	[t1].[Tid],
+	[t1].[DataChangeLastTime],
+	[t1].[IsActive],
+	[t1].[Eid],
+	[t1].[UserName],
+	[t1].[Pwd],
+	[t1].[Phone],
+	[t1].[LoginIp],
+	[t1].[MenuRights],
+	[t1].[RoleTid],
+	[t1].[LastLoginTime],
+	[t1].[UserAgent],
+	[t1].[CreateRoleName],
+	[t1].[CreateUser] as [CreateUser1]
+FROM
+	[system_users] [t1]
+WHERE
+	[t1].[Eid] = admin
+
+Server：.,DB名稱：PJW, 執行時間：2豪秒
+#####################################################
+
+            [Tags]
+                 {Key:method,Value:OnCustomerTraceConnection}
+ 
+[14:31:55.6859][Infrastructure.Logging.LogHelper][Info] - SQLSELECT
+	[t1].[Class] as [Class1],
+	[t1].[Ico],
+	[t1].[IsActive],
+	[t1].[Level] as [Level1],
+	[t1].[Name],
+	[t1].[OrderRule],
+	[t1].[ParentTid],
+	[t1].[Tid],
+	[t1].[Url]
+FROM
+	[system_menu] [t1]
+WHERE
+	True = [t1].[IsActive]
+
+Server：.,DB名稱：PJW, 執行時間：1豪秒
+#####################################################
+
+            [Tags]
+                 {Key:method,Value:OnCustomerTraceConnection}
+ 
+[14:32:11.8263][Infrastructure.Logging.LogHelper][Warn] - HandleAjaxRequestException
+            [Tags]
+                 {Key:method,Value:HandleAjaxRequestException}
+ 
+System.Data.SqlClient.SqlException (0x80131904): 無法開啟登入所要求的資料庫 "PJW"。登入失敗。
+使用者 'sa' 的登入失敗。
+   at System.Data.SqlClient.SqlInternalConnectionTds..ctor(DbConnectionPoolIdentity identity, SqlConnectionString connectionOptions, SqlCredential credential, Object providerInfo, String newPassword, SecureString newSecurePassword, Boolean redirectedUserInstance, SqlConnectionString userConnectionOptions, SessionData reconnectSessionData, Boolean applyTransientFaultHandling, String accessToken)
+   at System.Data.SqlClient.SqlConnectionFactory.CreateConnection(DbConnectionOptions options, DbConnectionPoolKey poolKey, Object poolGroupProviderInfo, DbConnectionPool pool, DbConnection owningConnection, DbConnectionOptions userOptions)
+   at System.Data.ProviderBase.DbConnectionFactory.CreatePooledConnection(DbConnectionPool pool, DbConnection owningObject, DbConnectionOptions options, DbConnectionPoolKey poolKey, DbConnectionOptions userOptions)
+   at System.Data.ProviderBase.DbConnectionPool.CreateObject(DbConnection owningObject, DbConnectionOptions userOptions, DbConnectionInternal oldConnection)
+   at System.Data.ProviderBase.DbConnectionPool.UserCreateRequest(DbConnection owningObject, DbConnectionOptions userOptions, DbConnectionInternal oldConnection)
+   at System.Data.ProviderBase.DbConnectionPool.TryGetConnection(DbConnection owningObject, UInt32 waitForMultipleObjectsTimeout, Boolean allowCreate, Boolean onlyOneCheckConnection, DbConnectionOptions userOptions, DbConnectionInternal& connection)
+   at System.Data.ProviderBase.DbConnectionPool.WaitForPendingOpen()
+--- End of stack trace from previous location ---
+   at Dapper.SqlMapper.QueryAsync[T](IDbConnection cnn, Type effectiveType, CommandDefinition command) in /_/Dapper/SqlMapper.Async.cs:line 417
+   at PJW.Web.Controllers.IntraUserController.GetIntraUserList(IntraUserVm model) in C:\智擎科技\Git\PJW\PJW\Controllers\IntraUserController.cs:line 52
+   at lambda_method635(Closure , Object )
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.TaskOfActionResultExecutor.Execute(IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Awaited|12_0(ControllerActionInvoker invoker, ValueTask`1 actionResultValueTask)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeInnerFilterAsync>g__Awaited|13_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeNextExceptionFilterAsync>g__Awaited|25_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+ClientConnectionId:5b8c642e-50c1-4b7c-9c09-81a86e6cf340
+Error Number:4060,State:1,Class:11
+[14:33:23.3263][PJW.Web.Program][Debug] - init main 
+[14:33:25.7659][Infrastructure.Logging.LogHelper][Info] - SQLSELECT TOP (1)
+	[t1].[Tid],
+	[t1].[DataChangeLastTime],
+	[t1].[IsActive],
+	[t1].[Eid],
+	[t1].[UserName],
+	[t1].[Pwd],
+	[t1].[Phone],
+	[t1].[LoginIp],
+	[t1].[MenuRights],
+	[t1].[RoleTid],
+	[t1].[LastLoginTime],
+	[t1].[UserAgent],
+	[t1].[CreateRoleName],
+	[t1].[CreateUser] as [CreateUser1]
+FROM
+	[system_users] [t1]
+WHERE
+	[t1].[Eid] = admin
+
+Server：.,DB名稱：PJW, 執行時間：133豪秒
+#####################################################
+
+            [Tags]
+                 {Key:method,Value:OnCustomerTraceConnection}
+ 
+[14:33:25.9621][Infrastructure.Logging.LogHelper][Info] - SQLSELECT TOP (1)
+	[t1].[Tid],
+	[t1].[DataChangeLastTime],
+	[t1].[IsActive],
+	[t1].[Eid],
+	[t1].[UserName],
+	[t1].[Pwd],
+	[t1].[Phone],
+	[t1].[LoginIp],
+	[t1].[MenuRights],
+	[t1].[RoleTid],
+	[t1].[LastLoginTime],
+	[t1].[UserAgent],
+	[t1].[CreateRoleName],
+	[t1].[CreateUser] as [CreateUser1]
+FROM
+	[system_users] [t1]
+WHERE
+	[t1].[Eid] = admin
+
+Server：.,DB名稱：PJW, 執行時間：2豪秒
+#####################################################
+
+            [Tags]
+                 {Key:method,Value:OnCustomerTraceConnection}
+ 
+[14:33:26.0137][Infrastructure.Logging.LogHelper][Info] - SQLSELECT
+	[t1].[Class] as [Class1],
+	[t1].[Ico],
+	[t1].[IsActive],
+	[t1].[Level] as [Level1],
+	[t1].[Name],
+	[t1].[OrderRule],
+	[t1].[ParentTid],
+	[t1].[Tid],
+	[t1].[Url]
+FROM
+	[system_menu] [t1]
+WHERE
+	True = [t1].[IsActive]
+
+Server：.,DB名稱：PJW, 執行時間：1豪秒
+#####################################################
+
+            [Tags]
+                 {Key:method,Value:OnCustomerTraceConnection}
+ 
+[14:36:14.1819][Infrastructure.Logging.LogHelper][Info] - SQLSELECT TOP (1)
+	[t1].[Tid],
+	[t1].[DataChangeLastTime],
+	[t1].[IsActive],
+	[t1].[Eid],
+	[t1].[UserName],
+	[t1].[Pwd],
+	[t1].[Phone],
+	[t1].[LoginIp],
+	[t1].[MenuRights],
+	[t1].[RoleTid],
+	[t1].[LastLoginTime],
+	[t1].[UserAgent],
+	[t1].[CreateRoleName],
+	[t1].[CreateUser] as [CreateUser1]
+FROM
+	[system_users] [t1]
+WHERE
+	[t1].[Eid] = admin
+
+Server：.,DB名稱：PJW, 執行時間：1豪秒
+#####################################################
+
+            [Tags]
+                 {Key:method,Value:OnCustomerTraceConnection}
+ 
+[14:36:14.3533][Infrastructure.Logging.LogHelper][Info] - SQLSELECT TOP (1)
+	[t1].[Tid],
+	[t1].[DataChangeLastTime],
+	[t1].[IsActive],
+	[t1].[Eid],
+	[t1].[UserName],
+	[t1].[Pwd],
+	[t1].[Phone],
+	[t1].[LoginIp],
+	[t1].[MenuRights],
+	[t1].[RoleTid],
+	[t1].[LastLoginTime],
+	[t1].[UserAgent],
+	[t1].[CreateRoleName],
+	[t1].[CreateUser] as [CreateUser1]
+FROM
+	[system_users] [t1]
+WHERE
+	[t1].[Eid] = admin
+
+Server：.,DB名稱：PJW, 執行時間：0豪秒
+#####################################################
+
+            [Tags]
+                 {Key:method,Value:OnCustomerTraceConnection}
+ 
+[14:36:14.3848][Infrastructure.Logging.LogHelper][Info] - SQLSELECT TOP (1)
+	[t1].[Tid],
+	[t1].[DataChangeLastTime],
+	[t1].[IsActive],
+	[t1].[Eid],
+	[t1].[UserName],
+	[t1].[Pwd],
+	[t1].[Phone],
+	[t1].[LoginIp],
+	[t1].[MenuRights],
+	[t1].[RoleTid],
+	[t1].[LastLoginTime],
+	[t1].[UserAgent],
+	[t1].[CreateRoleName],
+	[t1].[CreateUser] as [CreateUser1]
+FROM
+	[system_users] [t1]
+WHERE
+	[t1].[Eid] = admin
+
+Server：.,DB名稱：PJW, 執行時間：0豪秒
+#####################################################
+
+            [Tags]
+                 {Key:method,Value:OnCustomerTraceConnection}
+ 
+[14:36:14.3848][Infrastructure.Logging.LogHelper][Info] - SQLSELECT TOP (1)
+	[t1].[Tid],
+	[t1].[DataChangeLastTime],
+	[t1].[IsActive],
+	[t1].[Eid],
+	[t1].[UserName],
+	[t1].[Pwd],
+	[t1].[Phone],
+	[t1].[LoginIp],
+	[t1].[MenuRights],
+	[t1].[RoleTid],
+	[t1].[LastLoginTime],
+	[t1].[UserAgent],
+	[t1].[CreateRoleName],
+	[t1].[CreateUser] as [CreateUser1]
+FROM
+	[system_users] [t1]
+WHERE
+	[t1].[Eid] = admin
+
+Server：.,DB名稱：PJW, 執行時間：0豪秒
+#####################################################
+
+            [Tags]
+                 {Key:method,Value:OnCustomerTraceConnection}
+ 
+[14:36:14.4121][Infrastructure.Logging.LogHelper][Info] - SQLSELECT
+	[t1].[Class] as [Class1],
+	[t1].[Ico],
+	[t1].[IsActive],
+	[t1].[Level] as [Level1],
+	[t1].[Name],
+	[t1].[OrderRule],
+	[t1].[ParentTid],
+	[t1].[Tid],
+	[t1].[Url]
+FROM
+	[system_menu] [t1]
+WHERE
+	[t1].[Level] <> 88
+
+Server：.,DB名稱：PJW, 執行時間：3豪秒
+#####################################################
+
+            [Tags]
+                 {Key:method,Value:OnCustomerTraceConnection}
+ 
+[14:36:14.4302][Infrastructure.Logging.LogHelper][Warn] - ViewRenderService沒有找到對應的view：WorkLog/Index
+            [Tags]
+                 {Key:method,Value:RenderToStringAsync}
+ 
+[14:36:14.4302][Infrastructure.Logging.LogHelper][Info] - SQLSELECT
+	Count(1) as [cnt]
+FROM
+	[system_role] [t1]
+WHERE
+	True = [t1].[IsActive]
+
+Server：.,DB名稱：PJW, 執行時間：2豪秒
+#####################################################
+
+            [Tags]
+                 {Key:method,Value:OnCustomerTraceConnection}
+ 
+[14:36:14.4485][Infrastructure.Logging.LogHelper][Warn] - ViewRenderService沒有找到對應的view：WorkLog/List2
+            [Tags]
+                 {Key:method,Value:RenderToStringAsync}
+ 
+[14:36:14.4485][Infrastructure.Logging.LogHelper][Warn] - ViewRenderService沒有找到對應的view：WorkLog/List3
+            [Tags]
+                 {Key:method,Value:RenderToStringAsync}
+ 
+[14:36:14.4485][Infrastructure.Logging.LogHelper][Warn] - ViewRenderService沒有找到對應的view：WorkLog/Share
+            [Tags]
+                 {Key:method,Value:RenderToStringAsync}
+ 
+[14:36:14.4485][Infrastructure.Logging.LogHelper][Info] - SQLSELECT *
+FROM
+(
+	SELECT
+		t.*,
+		ROW_NUMBER() OVER
+		(
+			ORDER BY
+				oby DESC
+		) as rn
+	FROM
+	(
+		SELECT
+			[t1].[DataChangeLastTime],
+			[t1].[RoleName],
+			[t1].[Description],
+			[t1].[IsActive],
+			[t1].[MenuRights],
+			[t1].[Tid],
+			[t1].[ActionList],
+			[t1].[CreateUser] as [CreateUser1],
+			[t1].[CreateRoleTid],
+			[t1].[DataChangeLastTime] as [oby]
+		FROM
+			[system_role] [t1]
+		WHERE
+			True = [t1].[IsActive]
+	) t
+) t2
+WHERE
+	t2.rn BETWEEN 0 + 1 AND 0 + 10
+
+Server：.,DB名稱：PJW, 執行時間：21豪秒
+#####################################################
+
+            [Tags]
+                 {Key:method,Value:OnCustomerTraceConnection}
+ 
+[14:39:27.7858][PJW.Web.Program][Debug] - init main 
+[14:39:30.6370][Infrastructure.Logging.LogHelper][Info] - SQLSELECT TOP (1)
+	[t1].[Tid],
+	[t1].[DataChangeLastTime],
+	[t1].[IsActive],
+	[t1].[Eid],
+	[t1].[UserName],
+	[t1].[Pwd],
+	[t1].[Phone],
+	[t1].[LoginIp],
+	[t1].[MenuRights],
+	[t1].[RoleTid],
+	[t1].[LastLoginTime],
+	[t1].[UserAgent],
+	[t1].[CreateRoleName],
+	[t1].[CreateUser] as [CreateUser1]
+FROM
+	[system_users] [t1]
+WHERE
+	[t1].[Eid] = admin
+
+Server：.,DB名稱：PJW, 執行時間：121豪秒
+#####################################################
+
+            [Tags]
+                 {Key:method,Value:OnCustomerTraceConnection}
+ 
+[14:39:30.8603][Infrastructure.Logging.LogHelper][Info] - SQLSELECT TOP (1)
+	[t1].[Tid],
+	[t1].[DataChangeLastTime],
+	[t1].[IsActive],
+	[t1].[Eid],
+	[t1].[UserName],
+	[t1].[Pwd],
+	[t1].[Phone],
+	[t1].[LoginIp],
+	[t1].[MenuRights],
+	[t1].[RoleTid],
+	[t1].[LastLoginTime],
+	[t1].[UserAgent],
+	[t1].[CreateRoleName],
+	[t1].[CreateUser] as [CreateUser1]
+FROM
+	[system_users] [t1]
+WHERE
+	[t1].[Eid] = admin
+
+Server：.,DB名稱：PJW, 執行時間：2豪秒
+#####################################################
+
+            [Tags]
+                 {Key:method,Value:OnCustomerTraceConnection}
+ 
+[14:39:30.9164][Infrastructure.Logging.LogHelper][Info] - SQLSELECT
+	[t1].[Class] as [Class1],
+	[t1].[Ico],
+	[t1].[IsActive],
+	[t1].[Level] as [Level1],
+	[t1].[Name],
+	[t1].[OrderRule],
+	[t1].[ParentTid],
+	[t1].[Tid],
+	[t1].[Url]
+FROM
+	[system_menu] [t1]
+WHERE
+	True = [t1].[IsActive]
+
+Server：.,DB名稱：PJW, 執行時間：1豪秒
+#####################################################
+
+            [Tags]
+                 {Key:method,Value:OnCustomerTraceConnection}
+ 
+[14:41:53.7169][Infrastructure.Logging.LogHelper][Info] - SQLSELECT TOP (1)
+	[t1].[Tid],
+	[t1].[DataChangeLastTime],
+	[t1].[IsActive],
+	[t1].[Eid],
+	[t1].[UserName],
+	[t1].[Pwd],
+	[t1].[Phone],
+	[t1].[LoginIp],
+	[t1].[MenuRights],
+	[t1].[RoleTid],
+	[t1].[LastLoginTime],
+	[t1].[UserAgent],
+	[t1].[CreateRoleName],
+	[t1].[CreateUser] as [CreateUser1]
+FROM
+	[system_users] [t1]
+WHERE
+	[t1].[Eid] = admin
+
+Server：.,DB名稱：PJW, 執行時間：1豪秒
+#####################################################
+
+            [Tags]
+                 {Key:method,Value:OnCustomerTraceConnection}
+ 
+[14:41:54.0726][Infrastructure.Logging.LogHelper][Info] - SQLSELECT TOP (1)
+	[t1].[Tid],
+	[t1].[DataChangeLastTime],
+	[t1].[IsActive],
+	[t1].[Eid],
+	[t1].[UserName],
+	[t1].[Pwd],
+	[t1].[Phone],
+	[t1].[LoginIp],
+	[t1].[MenuRights],
+	[t1].[RoleTid],
+	[t1].[LastLoginTime],
+	[t1].[UserAgent],
+	[t1].[CreateRoleName],
+	[t1].[CreateUser] as [CreateUser1]
+FROM
+	[system_users] [t1]
+WHERE
+	[t1].[Eid] = admin
+
+Server：.,DB名稱：PJW, 執行時間：0豪秒
+#####################################################
+
+            [Tags]
+                 {Key:method,Value:OnCustomerTraceConnection}
+ 
+[14:41:54.0726][Infrastructure.Logging.LogHelper][Info] - SQLSELECT
+	[t1].[Class] as [Class1],
+	[t1].[Ico],
+	[t1].[IsActive],
+	[t1].[Level] as [Level1],
+	[t1].[Name],
+	[t1].[OrderRule],
+	[t1].[ParentTid],
+	[t1].[Tid],
+	[t1].[Url]
+FROM
+	[system_menu] [t1]
+WHERE
+	True = [t1].[IsActive]
+
+Server：.,DB名稱：PJW, 執行時間：0豪秒
+#####################################################
+
+            [Tags]
+                 {Key:method,Value:OnCustomerTraceConnection}
+ 
+[14:42:12.6697][Infrastructure.Logging.LogHelper][Info] - SQLSELECT TOP (1)
+	[t1].[Tid],
+	[t1].[DataChangeLastTime],
+	[t1].[IsActive],
+	[t1].[Eid],
+	[t1].[UserName],
+	[t1].[Pwd],
+	[t1].[Phone],
+	[t1].[LoginIp],
+	[t1].[MenuRights],
+	[t1].[RoleTid],
+	[t1].[LastLoginTime],
+	[t1].[UserAgent],
+	[t1].[CreateRoleName],
+	[t1].[CreateUser] as [CreateUser1]
+FROM
+	[system_users] [t1]
+WHERE
+	[t1].[Eid] = admin
+
+Server：.,DB名稱：PJW, 執行時間：1豪秒
+#####################################################
+
+            [Tags]
+                 {Key:method,Value:OnCustomerTraceConnection}
+ 
+[14:42:13.0080][Infrastructure.Logging.LogHelper][Info] - SQLSELECT TOP (1)
+	[t1].[Tid],
+	[t1].[DataChangeLastTime],
+	[t1].[IsActive],
+	[t1].[Eid],
+	[t1].[UserName],
+	[t1].[Pwd],
+	[t1].[Phone],
+	[t1].[LoginIp],
+	[t1].[MenuRights],
+	[t1].[RoleTid],
+	[t1].[LastLoginTime],
+	[t1].[UserAgent],
+	[t1].[CreateRoleName],
+	[t1].[CreateUser] as [CreateUser1]
+FROM
+	[system_users] [t1]
+WHERE
+	[t1].[Eid] = admin
+
+Server：.,DB名稱：PJW, 執行時間：1豪秒
+#####################################################
+
+            [Tags]
+                 {Key:method,Value:OnCustomerTraceConnection}
+ 
+[14:42:13.0338][Infrastructure.Logging.LogHelper][Info] - SQLSELECT TOP (1)
+	[t1].[Tid],
+	[t1].[DataChangeLastTime],
+	[t1].[IsActive],
+	[t1].[Eid],
+	[t1].[UserName],
+	[t1].[Pwd],
+	[t1].[Phone],
+	[t1].[LoginIp],
+	[t1].[MenuRights],
+	[t1].[RoleTid],
+	[t1].[LastLoginTime],
+	[t1].[UserAgent],
+	[t1].[CreateRoleName],
+	[t1].[CreateUser] as [CreateUser1]
+FROM
+	[system_users] [t1]
+WHERE
+	[t1].[Eid] = admin
+
+Server：.,DB名稱：PJW, 執行時間：1豪秒
+#####################################################
+
+            [Tags]
+                 {Key:method,Value:OnCustomerTraceConnection}
+ 
+[14:42:13.0523][Infrastructure.Logging.LogHelper][Info] - SQLSELECT TOP (1)
+	[t1].[Tid],
+	[t1].[DataChangeLastTime],
+	[t1].[IsActive],
+	[t1].[Eid],
+	[t1].[UserName],
+	[t1].[Pwd],
+	[t1].[Phone],
+	[t1].[LoginIp],
+	[t1].[MenuRights],
+	[t1].[RoleTid],
+	[t1].[LastLoginTime],
+	[t1].[UserAgent],
+	[t1].[CreateRoleName],
+	[t1].[CreateUser] as [CreateUser1]
+FROM
+	[system_users] [t1]
+WHERE
+	[t1].[Eid] = admin
+
+Server：.,DB名稱：PJW, 執行時間：19豪秒
+#####################################################
+
+            [Tags]
+                 {Key:method,Value:OnCustomerTraceConnection}
+ 
+[14:42:13.0523][Infrastructure.Logging.LogHelper][Info] - SQLSELECT
+	[t1].[Class] as [Class1],
+	[t1].[Ico],
+	[t1].[IsActive],
+	[t1].[Level] as [Level1],
+	[t1].[Name],
+	[t1].[OrderRule],
+	[t1].[ParentTid],
+	[t1].[Tid],
+	[t1].[Url]
+FROM
+	[system_menu] [t1]
+WHERE
+	[t1].[Level] <> 88
+
+Server：.,DB名稱：PJW, 執行時間：1豪秒
+#####################################################
+
+            [Tags]
+                 {Key:method,Value:OnCustomerTraceConnection}
+ 
+[14:42:13.0761][Infrastructure.Logging.LogHelper][Warn] - ViewRenderService沒有找到對應的view：WorkLog/Index
+            [Tags]
+                 {Key:method,Value:RenderToStringAsync}
+ 
+[14:42:13.0949][Infrastructure.Logging.LogHelper][Warn] - ViewRenderService沒有找到對應的view：WorkLog/List2
+            [Tags]
+                 {Key:method,Value:RenderToStringAsync}
+ 
+[14:42:13.0949][Infrastructure.Logging.LogHelper][Warn] - ViewRenderService沒有找到對應的view：WorkLog/List3
+            [Tags]
+                 {Key:method,Value:RenderToStringAsync}
+ 
+[14:42:13.0949][Infrastructure.Logging.LogHelper][Warn] - ViewRenderService沒有找到對應的view：WorkLog/Share
+            [Tags]
+                 {Key:method,Value:RenderToStringAsync}
+ 
+[14:42:13.1233][Infrastructure.Logging.LogHelper][Info] - SQLSELECT
+	Count(1) as [cnt]
+FROM
+	[system_role] [t1]
+WHERE
+	True = [t1].[IsActive]
+
+Server：.,DB名稱：PJW, 執行時間：1豪秒
+#####################################################
+
+            [Tags]
+                 {Key:method,Value:OnCustomerTraceConnection}
+ 
+[14:42:13.1233][Infrastructure.Logging.LogHelper][Info] - SQLSELECT *
+FROM
+(
+	SELECT
+		t.*,
+		ROW_NUMBER() OVER
+		(
+			ORDER BY
+				oby DESC
+		) as rn
+	FROM
+	(
+		SELECT
+			[t1].[DataChangeLastTime],
+			[t1].[RoleName],
+			[t1].[Description],
+			[t1].[IsActive],
+			[t1].[MenuRights],
+			[t1].[Tid],
+			[t1].[ActionList],
+			[t1].[CreateUser] as [CreateUser1],
+			[t1].[CreateRoleTid],
+			[t1].[DataChangeLastTime] as [oby]
+		FROM
+			[system_role] [t1]
+		WHERE
+			True = [t1].[IsActive]
+	) t
+) t2
+WHERE
+	t2.rn BETWEEN 0 + 1 AND 0 + 10
+
+Server：.,DB名稱：PJW, 執行時間：2豪秒
+#####################################################
+
+            [Tags]
+                 {Key:method,Value:OnCustomerTraceConnection}
+ 
+[14:42:19.4799][Infrastructure.Logging.LogHelper][Info] - SQLSELECT TOP (1)
+	[t1].[Tid],
+	[t1].[DataChangeLastTime],
+	[t1].[IsActive],
+	[t1].[Eid],
+	[t1].[UserName],
+	[t1].[Pwd],
+	[t1].[Phone],
+	[t1].[LoginIp],
+	[t1].[MenuRights],
+	[t1].[RoleTid],
+	[t1].[LastLoginTime],
+	[t1].[UserAgent],
+	[t1].[CreateRoleName],
+	[t1].[CreateUser] as [CreateUser1]
+FROM
+	[system_users] [t1]
+WHERE
+	[t1].[Eid] = admin
+
+Server：.,DB名稱：PJW, 執行時間：1豪秒
+#####################################################
+
+            [Tags]
+                 {Key:method,Value:OnCustomerTraceConnection}
+ 
+[14:42:19.5513][Infrastructure.Logging.LogHelper][Info] - SQLSELECT TOP (1)
+	[t1].[Tid],
+	[t1].[DataChangeLastTime],
+	[t1].[IsActive],
+	[t1].[Eid],
+	[t1].[UserName],
+	[t1].[Pwd],
+	[t1].[Phone],
+	[t1].[LoginIp],
+	[t1].[MenuRights],
+	[t1].[RoleTid],
+	[t1].[LastLoginTime],
+	[t1].[UserAgent],
+	[t1].[CreateRoleName],
+	[t1].[CreateUser] as [CreateUser1]
+FROM
+	[system_users] [t1]
+WHERE
+	[t1].[Eid] = admin
+
+Server：.,DB名稱：PJW, 執行時間：0豪秒
+#####################################################
+
+            [Tags]
+                 {Key:method,Value:OnCustomerTraceConnection}
+ 
+[14:42:19.5758][Infrastructure.Logging.LogHelper][Info] - SQLSELECT TOP (1)
+	[t1].[Tid],
+	[t1].[DataChangeLastTime],
+	[t1].[IsActive],
+	[t1].[Eid],
+	[t1].[UserName],
+	[t1].[Pwd],
+	[t1].[Phone],
+	[t1].[LoginIp],
+	[t1].[MenuRights],
+	[t1].[RoleTid],
+	[t1].[LastLoginTime],
+	[t1].[UserAgent],
+	[t1].[CreateRoleName],
+	[t1].[CreateUser] as [CreateUser1]
+FROM
+	[system_users] [t1]
+WHERE
+	[t1].[Eid] = admin
+
+Server：.,DB名稱：PJW, 執行時間：0豪秒
+#####################################################
+
+            [Tags]
+                 {Key:method,Value:OnCustomerTraceConnection}
+ 
+[14:42:19.5758][Infrastructure.Logging.LogHelper][Info] - SQLSELECT TOP (1)
+	[t1].[Tid],
+	[t1].[DataChangeLastTime],
+	[t1].[IsActive],
+	[t1].[Eid],
+	[t1].[UserName],
+	[t1].[Pwd],
+	[t1].[Phone],
+	[t1].[LoginIp],
+	[t1].[MenuRights],
+	[t1].[RoleTid],
+	[t1].[LastLoginTime],
+	[t1].[UserAgent],
+	[t1].[CreateRoleName],
+	[t1].[CreateUser] as [CreateUser1]
+FROM
+	[system_users] [t1]
+WHERE
+	[t1].[Eid] = admin
+
+Server：.,DB名稱：PJW, 執行時間：0豪秒
+#####################################################
+
+            [Tags]
+                 {Key:method,Value:OnCustomerTraceConnection}
+ 
+[14:42:19.5998][Infrastructure.Logging.LogHelper][Info] - SQLSELECT
+	[t1].[DataChangeLastTime],
+	[t1].[RoleName],
+	[t1].[Description],
+	[t1].[IsActive],
+	[t1].[MenuRights],
+	[t1].[Tid],
+	[t1].[ActionList],
+	[t1].[CreateUser] as [CreateUser1],
+	[t1].[CreateRoleTid]
+FROM
+	[system_role] [t1]
+WHERE
+	True = [t1].[IsActive]
+
+Server：.,DB名稱：PJW, 執行時間：3豪秒
+#####################################################
+
+            [Tags]
+                 {Key:method,Value:OnCustomerTraceConnection}
+ 
+[14:42:19.5998][Infrastructure.Logging.LogHelper][Info] - SQLSELECT
+	Count(1) as [cnt]
+FROM
+	[system_users] [t1]
+WHERE
+	True = [t1].[IsActive]
+
+Server：.,DB名稱：PJW, 執行時間：1豪秒
+#####################################################
+
+            [Tags]
+                 {Key:method,Value:OnCustomerTraceConnection}
+ 
+[14:42:19.6634][Infrastructure.Logging.LogHelper][Info] - SQLSELECT *
+FROM
+(
+	SELECT
+		t.*,
+		ROW_NUMBER() OVER
+		(
+			ORDER BY
+				oby DESC
+		) as rn
+	FROM
+	(
+		SELECT
+			[t2].[Tid],
+			[t2].[IsActive],
+			[t2].[Eid],
+			[t2].[UserName],
+			[t2].[LoginIp],
+			[t2].[RoleTid],
+			[t2].[LastLoginTime],
+			[t2].[UserAgent],
+			[t2].[DataChangeLastTime],
+			[t1].[RoleName],
+			[t1].[Description],
+			[t2].[Phone],
+			[t2].[CreateUser] as [CreateUser1],
+			[t2].[DataChangeLastTime] as [oby]
+		FROM
+			[system_users] [t2]
+				LEFT JOIN [system_role] [t1] ON [t1].[Tid] = [t2].[RoleTid]
+		WHERE
+			True = [t2].[IsActive]
+	) t
+) t3
+WHERE
+	t3.rn BETWEEN 0 + 1 AND 0 + 25
+
+Server：.,DB名稱：PJW, 執行時間：2豪秒
+#####################################################
+
+            [Tags]
+                 {Key:method,Value:OnCustomerTraceConnection}
+ 
+[14:54:54.6051][PJW.Web.Program][Debug] - init main 
+[14:54:57.4062][Infrastructure.Logging.LogHelper][Info] - SQLSELECT TOP (1)
+	[t1].[Tid],
+	[t1].[DataChangeLastTime],
+	[t1].[IsActive],
+	[t1].[Eid],
+	[t1].[UserName],
+	[t1].[Pwd],
+	[t1].[Phone],
+	[t1].[LoginIp],
+	[t1].[MenuRights],
+	[t1].[RoleTid],
+	[t1].[LastLoginTime],
+	[t1].[UserAgent],
+	[t1].[CreateRoleName],
+	[t1].[CreateUser] as [CreateUser1]
+FROM
+	[system_users] [t1]
+WHERE
+	[t1].[Eid] = admin
+
+Server：.,DB名稱：PJW, 執行時間：123豪秒
+#####################################################
+
+            [Tags]
+                 {Key:method,Value:OnCustomerTraceConnection}
+ 
+[14:54:57.6108][Infrastructure.Logging.LogHelper][Info] - SQLSELECT TOP (1)
+	[t1].[Tid],
+	[t1].[DataChangeLastTime],
+	[t1].[IsActive],
+	[t1].[Eid],
+	[t1].[UserName],
+	[t1].[Pwd],
+	[t1].[Phone],
+	[t1].[LoginIp],
+	[t1].[MenuRights],
+	[t1].[RoleTid],
+	[t1].[LastLoginTime],
+	[t1].[UserAgent],
+	[t1].[CreateRoleName],
+	[t1].[CreateUser] as [CreateUser1]
+FROM
+	[system_users] [t1]
+WHERE
+	[t1].[Eid] = admin
+
+Server：.,DB名稱：PJW, 執行時間：2豪秒
+#####################################################
+
+            [Tags]
+                 {Key:method,Value:OnCustomerTraceConnection}
+ 
+[14:54:57.6749][Infrastructure.Logging.LogHelper][Info] - SQLSELECT
+	[t1].[Class] as [Class1],
+	[t1].[Ico],
+	[t1].[IsActive],
+	[t1].[Level] as [Level1],
+	[t1].[Name],
+	[t1].[OrderRule],
+	[t1].[ParentTid],
+	[t1].[Tid],
+	[t1].[Url]
+FROM
+	[system_menu] [t1]
+WHERE
+	True = [t1].[IsActive]
+
+Server：.,DB名稱：PJW, 執行時間：0豪秒
+#####################################################
+
+            [Tags]
+                 {Key:method,Value:OnCustomerTraceConnection}
+ 
+[14:55:23.7076][Infrastructure.Logging.LogHelper][Info] - SQLSELECT TOP (1)
+	[t1].[Tid],
+	[t1].[DataChangeLastTime],
+	[t1].[IsActive],
+	[t1].[Eid],
+	[t1].[UserName],
+	[t1].[Pwd],
+	[t1].[Phone],
+	[t1].[LoginIp],
+	[t1].[MenuRights],
+	[t1].[RoleTid],
+	[t1].[LastLoginTime],
+	[t1].[UserAgent],
+	[t1].[CreateRoleName],
+	[t1].[CreateUser] as [CreateUser1]
+FROM
+	[system_users] [t1]
+WHERE
+	[t1].[Eid] = admin
+
+Server：.,DB名稱：PJW, 執行時間：4豪秒
+#####################################################
+
+            [Tags]
+                 {Key:method,Value:OnCustomerTraceConnection}
+ 
+[14:55:23.9034][Infrastructure.Logging.LogHelper][Info] - SQLSELECT TOP (1)
+	[t1].[Tid],
+	[t1].[DataChangeLastTime],
+	[t1].[IsActive],
+	[t1].[Eid],
+	[t1].[UserName],
+	[t1].[Pwd],
+	[t1].[Phone],
+	[t1].[LoginIp],
+	[t1].[MenuRights],
+	[t1].[RoleTid],
+	[t1].[LastLoginTime],
+	[t1].[UserAgent],
+	[t1].[CreateRoleName],
+	[t1].[CreateUser] as [CreateUser1]
+FROM
+	[system_users] [t1]
+WHERE
+	[t1].[Eid] = admin
+
+Server：.,DB名稱：PJW, 執行時間：1豪秒
+#####################################################
+
+            [Tags]
+                 {Key:method,Value:OnCustomerTraceConnection}
+ 
+[18:40:19.6746][PJW.Web.Program][Debug] - init main 
+[18:40:24.1517][Infrastructure.Logging.LogHelper][Info] - SQLSELECT TOP (1)
+	[t1].[Tid],
+	[t1].[DataChangeLastTime],
+	[t1].[IsActive],
+	[t1].[Eid],
+	[t1].[UserName],
+	[t1].[Pwd],
+	[t1].[Phone],
+	[t1].[LoginIp],
+	[t1].[MenuRights],
+	[t1].[RoleTid],
+	[t1].[LastLoginTime],
+	[t1].[UserAgent],
+	[t1].[CreateRoleName],
+	[t1].[CreateUser] as [CreateUser1]
+FROM
+	[system_users] [t1]
+WHERE
+	[t1].[Eid] = admin
+
+Server：.,DB名稱：PJW, 執行時間：275豪秒
+#####################################################
+
+            [Tags]
+                 {Key:method,Value:OnCustomerTraceConnection}
+ 
+[18:40:24.4766][Infrastructure.Logging.LogHelper][Info] - SQLSELECT TOP (1)
+	[t1].[Tid],
+	[t1].[DataChangeLastTime],
+	[t1].[IsActive],
+	[t1].[Eid],
+	[t1].[UserName],
+	[t1].[Pwd],
+	[t1].[Phone],
+	[t1].[LoginIp],
+	[t1].[MenuRights],
+	[t1].[RoleTid],
+	[t1].[LastLoginTime],
+	[t1].[UserAgent],
+	[t1].[CreateRoleName],
+	[t1].[CreateUser] as [CreateUser1]
+FROM
+	[system_users] [t1]
+WHERE
+	[t1].[Eid] = admin
+
+Server：.,DB名稱：PJW, 執行時間：3豪秒
+#####################################################
+
+            [Tags]
+                 {Key:method,Value:OnCustomerTraceConnection}
+ 
+[18:40:24.5365][Infrastructure.Logging.LogHelper][Info] - SQLSELECT
+	[t1].[Class] as [Class1],
+	[t1].[Ico],
+	[t1].[IsActive],
+	[t1].[Level] as [Level1],
+	[t1].[Name],
+	[t1].[OrderRule],
+	[t1].[ParentTid],
+	[t1].[Tid],
+	[t1].[Url]
+FROM
+	[system_menu] [t1]
+WHERE
+	True = [t1].[IsActive]
+
+Server：.,DB名稱：PJW, 執行時間：3豪秒
+#####################################################
+
+            [Tags]
+                 {Key:method,Value:OnCustomerTraceConnection}
+ 
+[18:42:47.9875][Infrastructure.Logging.LogHelper][Warn] - HandleAjaxRequestException
+            [Tags]
+                 {Key:method,Value:HandleAjaxRequestException}
+ 
+System.ArgumentException: Invalid type owner for DynamicMethod.
+   at System.Reflection.Emit.DynamicMethod.Init(String name, MethodAttributes attributes, CallingConventions callingConvention, Type returnType, Type[] signature, Type owner, Module m, Boolean skipVisibility, Boolean transparentMethod)
+   at System.Reflection.Emit.DynamicMethod..ctor(String name, Type returnType, Type[] parameterTypes, Type owner, Boolean skipVisibility)
+   at Dapper.SqlMapper.GetTypeDeserializerImpl(Type type, IDataReader reader, Int32 startBound, Int32 length, Boolean returnNullIfFirstMissing) in /_/Dapper/SqlMapper.cs:line 3081
+   at Dapper.SqlMapper.TypeDeserializerCache.GetReader(IDataReader reader, Int32 startBound, Int32 length, Boolean returnNullIfFirstMissing) in /_/Dapper/SqlMapper.TypeDeserializerCache.cs:line 151
+   at Dapper.SqlMapper.TypeDeserializerCache.GetReader(Type type, IDataReader reader, Int32 startBound, Int32 length, Boolean returnNullIfFirstMissing) in /_/Dapper/SqlMapper.TypeDeserializerCache.cs:line 50
+   at Dapper.SqlMapper.GetTypeDeserializer(Type type, IDataReader reader, Int32 startBound, Int32 length, Boolean returnNullIfFirstMissing) in /_/Dapper/SqlMapper.cs:line 3044
+   at Dapper.SqlMapper.GetDeserializer(Type type, IDataReader reader, Int32 startBound, Int32 length, Boolean returnNullIfFirstMissing) in /_/Dapper/SqlMapper.cs:line 1805
+   at Dapper.SqlMapper.QueryImpl[T](IDbConnection cnn, CommandDefinition command, Type effectiveType)+MoveNext() in /_/Dapper/SqlMapper.cs:line 1094
+   at System.Collections.Generic.List`1..ctor(IEnumerable`1 collection)
+   at System.Linq.Enumerable.ToList[TSource](IEnumerable`1 source)
+   at Dapper.SqlMapper.Query[T](IDbConnection cnn, String sql, Object param, IDbTransaction transaction, Boolean buffered, Nullable`1 commandTimeout, Nullable`1 commandType) in /_/Dapper/SqlMapper.cs:line 725
+   at PJW.Web.BaseDapper.GetResult(String sql, String orderBy, String orderSequence, Int32 pageIndex, Int32 pageSize) in C:\智擎科技\Git\PJW\PJW\App_Start\BaseDapper.cs:line 30
+   at PJW.Web.Controllers.IntraUserController.GetIntraUserList(IntraUserVm model) in C:\智擎科技\Git\PJW\PJW\Controllers\IntraUserController.cs:line 55
+   at lambda_method633(Closure , Object )
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.TaskOfActionResultExecutor.Execute(IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Awaited|12_0(ControllerActionInvoker invoker, ValueTask`1 actionResultValueTask)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeInnerFilterAsync()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeNextExceptionFilterAsync>g__Awaited|25_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+[18:46:05.1663][PJW.Web.Program][Debug] - init main 
+[18:46:07.7394][Infrastructure.Logging.LogHelper][Info] - SQLSELECT TOP (1)
+	[t1].[Tid],
+	[t1].[DataChangeLastTime],
+	[t1].[IsActive],
+	[t1].[Eid],
+	[t1].[UserName],
+	[t1].[Pwd],
+	[t1].[Phone],
+	[t1].[LoginIp],
+	[t1].[MenuRights],
+	[t1].[RoleTid],
+	[t1].[LastLoginTime],
+	[t1].[UserAgent],
+	[t1].[CreateRoleName],
+	[t1].[CreateUser] as [CreateUser1]
+FROM
+	[system_users] [t1]
+WHERE
+	[t1].[Eid] = admin
+
+Server：.,DB名稱：PJW, 執行時間：133豪秒
+#####################################################
+
+            [Tags]
+                 {Key:method,Value:OnCustomerTraceConnection}
+ 
+[18:46:07.9773][Infrastructure.Logging.LogHelper][Info] - SQLSELECT TOP (1)
+	[t1].[Tid],
+	[t1].[DataChangeLastTime],
+	[t1].[IsActive],
+	[t1].[Eid],
+	[t1].[UserName],
+	[t1].[Pwd],
+	[t1].[Phone],
+	[t1].[LoginIp],
+	[t1].[MenuRights],
+	[t1].[RoleTid],
+	[t1].[LastLoginTime],
+	[t1].[UserAgent],
+	[t1].[CreateRoleName],
+	[t1].[CreateUser] as [CreateUser1]
+FROM
+	[system_users] [t1]
+WHERE
+	[t1].[Eid] = admin
+
+Server：.,DB名稱：PJW, 執行時間：3豪秒
+#####################################################
+
+            [Tags]
+                 {Key:method,Value:OnCustomerTraceConnection}
+ 
+[18:46:08.0381][Infrastructure.Logging.LogHelper][Info] - SQLSELECT
+	[t1].[Class] as [Class1],
+	[t1].[Ico],
+	[t1].[IsActive],
+	[t1].[Level] as [Level1],
+	[t1].[Name],
+	[t1].[OrderRule],
+	[t1].[ParentTid],
+	[t1].[Tid],
+	[t1].[Url]
+FROM
+	[system_menu] [t1]
+WHERE
+	True = [t1].[IsActive]
+
+Server：.,DB名稱：PJW, 執行時間：1豪秒
+#####################################################
+
+            [Tags]
+                 {Key:method,Value:OnCustomerTraceConnection}
+ 
+[18:47:31.7944][Infrastructure.Logging.LogHelper][Warn] - HandleAjaxRequestException
+            [Tags]
+                 {Key:method,Value:HandleAjaxRequestException}
+ 
+System.ArgumentException: Invalid type owner for DynamicMethod.
+   at System.Reflection.Emit.DynamicMethod.Init(String name, MethodAttributes attributes, CallingConventions callingConvention, Type returnType, Type[] signature, Type owner, Module m, Boolean skipVisibility, Boolean transparentMethod)
+   at System.Reflection.Emit.DynamicMethod..ctor(String name, Type returnType, Type[] parameterTypes, Type owner, Boolean skipVisibility)
+   at Dapper.SqlMapper.GetTypeDeserializerImpl(Type type, IDataReader reader, Int32 startBound, Int32 length, Boolean returnNullIfFirstMissing) in /_/Dapper/SqlMapper.cs:line 3081
+   at Dapper.SqlMapper.TypeDeserializerCache.GetReader(IDataReader reader, Int32 startBound, Int32 length, Boolean returnNullIfFirstMissing) in /_/Dapper/SqlMapper.TypeDeserializerCache.cs:line 151
+   at Dapper.SqlMapper.TypeDeserializerCache.GetReader(Type type, IDataReader reader, Int32 startBound, Int32 length, Boolean returnNullIfFirstMissing) in /_/Dapper/SqlMapper.TypeDeserializerCache.cs:line 50
+   at Dapper.SqlMapper.GetTypeDeserializer(Type type, IDataReader reader, Int32 startBound, Int32 length, Boolean returnNullIfFirstMissing) in /_/Dapper/SqlMapper.cs:line 3044
+   at Dapper.SqlMapper.GetDeserializer(Type type, IDataReader reader, Int32 startBound, Int32 length, Boolean returnNullIfFirstMissing) in /_/Dapper/SqlMapper.cs:line 1805
+   at Dapper.SqlMapper.QueryImpl[T](IDbConnection cnn, CommandDefinition command, Type effectiveType)+MoveNext() in /_/Dapper/SqlMapper.cs:line 1094
+   at System.Collections.Generic.List`1..ctor(IEnumerable`1 collection)
+   at System.Linq.Enumerable.ToList[TSource](IEnumerable`1 source)
+   at Dapper.SqlMapper.Query[T](IDbConnection cnn, String sql, Object param, IDbTransaction transaction, Boolean buffered, Nullable`1 commandTimeout, Nullable`1 commandType) in /_/Dapper/SqlMapper.cs:line 725
+   at PJW.Web.BaseDapper.GetResult(String sql, String orderBy, String orderSequence, Int32 pageIndex, Int32 pageSize) in C:\智擎科技\Git\PJW\PJW\App_Start\BaseDapper.cs:line 30
+   at PJW.Web.Controllers.IntraUserController.GetIntraUserList(IntraUserVm model) in C:\智擎科技\Git\PJW\PJW\Controllers\IntraUserController.cs:line 55
+   at lambda_method633(Closure , Object )
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.TaskOfActionResultExecutor.Execute(IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Awaited|12_0(ControllerActionInvoker invoker, ValueTask`1 actionResultValueTask)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeInnerFilterAsync()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeNextExceptionFilterAsync>g__Awaited|25_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+[18:55:25.7422][PJW.Web.Program][Debug] - init main 
+[18:55:28.4023][Infrastructure.Logging.LogHelper][Info] - SQLSELECT TOP (1)
+	[t1].[Tid],
+	[t1].[DataChangeLastTime],
+	[t1].[IsActive],
+	[t1].[Eid],
+	[t1].[UserName],
+	[t1].[Pwd],
+	[t1].[Phone],
+	[t1].[LoginIp],
+	[t1].[MenuRights],
+	[t1].[RoleTid],
+	[t1].[LastLoginTime],
+	[t1].[UserAgent],
+	[t1].[CreateRoleName],
+	[t1].[CreateUser] as [CreateUser1]
+FROM
+	[system_users] [t1]
+WHERE
+	[t1].[Eid] = admin
+
+Server：.,DB名稱：PJW, 執行時間：117豪秒
+#####################################################
+
+            [Tags]
+                 {Key:method,Value:OnCustomerTraceConnection}
+ 
+[18:55:28.6262][Infrastructure.Logging.LogHelper][Info] - SQLSELECT TOP (1)
+	[t1].[Tid],
+	[t1].[DataChangeLastTime],
+	[t1].[IsActive],
+	[t1].[Eid],
+	[t1].[UserName],
+	[t1].[Pwd],
+	[t1].[Phone],
+	[t1].[LoginIp],
+	[t1].[MenuRights],
+	[t1].[RoleTid],
+	[t1].[LastLoginTime],
+	[t1].[UserAgent],
+	[t1].[CreateRoleName],
+	[t1].[CreateUser] as [CreateUser1]
+FROM
+	[system_users] [t1]
+WHERE
+	[t1].[Eid] = admin
+
+Server：.,DB名稱：PJW, 執行時間：3豪秒
+#####################################################
+
+            [Tags]
+                 {Key:method,Value:OnCustomerTraceConnection}
+ 
+[18:55:28.6840][Infrastructure.Logging.LogHelper][Info] - SQLSELECT
+	[t1].[Class] as [Class1],
+	[t1].[Ico],
+	[t1].[IsActive],
+	[t1].[Level] as [Level1],
+	[t1].[Name],
+	[t1].[OrderRule],
+	[t1].[ParentTid],
+	[t1].[Tid],
+	[t1].[Url]
+FROM
+	[system_menu] [t1]
+WHERE
+	True = [t1].[IsActive]
+
+Server：.,DB名稱：PJW, 執行時間：1豪秒
+#####################################################
+
+            [Tags]
+                 {Key:method,Value:OnCustomerTraceConnection}
+ 
+[18:55:50.8563][Infrastructure.Logging.LogHelper][Warn] - HandleAjaxRequestException
+            [Tags]
+                 {Key:method,Value:HandleAjaxRequestException}
+ 
+System.InvalidCastException: Unable to cast object of type 'System.Collections.Generic.List`1[System.Collections.Generic.List`1[System.Object]]' to type 'System.Threading.Tasks.Task`1[System.Collections.Generic.List`1[System.Object]]'.
+   at PJW.Web.BaseDapper.GetResult(String sql, String orderBy, String orderSequence, Int32 pageIndex, Int32 pageSize) in C:\智擎科技\Git\PJW\PJW\App_Start\BaseDapper.cs:line 31
+   at PJW.Web.Controllers.IntraUserController.GetIntraUserList(IntraUserVm model) in C:\智擎科技\Git\PJW\PJW\Controllers\IntraUserController.cs:line 55
+   at lambda_method633(Closure , Object )
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.TaskOfActionResultExecutor.Execute(IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Awaited|12_0(ControllerActionInvoker invoker, ValueTask`1 actionResultValueTask)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeInnerFilterAsync()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeNextExceptionFilterAsync>g__Awaited|25_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)

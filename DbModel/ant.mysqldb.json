@@ -1,0 +1,34 @@
+{
+  "NamespaceName": "DbModel", //必填：設定產生程式碼的名稱空間
+
+  "BaseEntityClass": "LinqToDBEntity", //產生的DTo繼父類class名稱 (必填 程式碼產生的時候會用到)
+
+  "DataContextName": "PJWEntity", //自定義產生的數據庫Entity的name( 如果不填會有預設值為db的名稱+Entitys)
+
+  "EntitySuffix": "", //自定義產生的每張表對應class的後綴 例如統一加一個 "DTO"
+
+  "AssociationPrefix": "", //定義產生外來鍵的欄位名稱的字首 例如 「FK_」
+
+  "AssociationAppendByFieldName": true, //定義產生外來鍵的欄位名稱是否根據增加 "By" + 他的欄位名稱
+
+  "GenerateAssociations": true, //是否產生外來鍵
+
+  "ConnectionString": "Data Source=.;Initial Catalog=PJW;User ID=sa;Password=1234;MultipleActiveResultSets=true", //DB鏈接字串
+
+  "OutFileName": "DbModels", //產生的cs檔名稱
+
+  "PerClassPerFile": false, //每一個class產生一個獨立的cs檔案 如果這個為true就會忽略OutFileName參數值
+
+  "TableFilter": [], //指定要產生class的表，如果為空代表不限制
+
+  "SetFkList": [ //邏輯(非物理,不提倡物理建外來鍵)
+    //格式: A表名稱，A表字段，B表名稱，B表字段，外來鍵關係(OneToOne,OneToMany,ManyToOne) 例如 "good_category,GoodTid,goods,Tid,OneToOne"
+  ],
+  "UsingList": [ //設定Using
+
+  ],
+  "SetColumnTypeList": [ //自定義設定屬性的型別 格式為 table.filedName=xxxxxx  例如："person.Gender=GenderEnum"
+
+  ],
+  "DateTimeDefaultValue": "DateTime.Now" //如果datetime型別是非空有預設值的 可以在這裡設定預設值
+}

@@ -1,0 +1,188 @@
+@{
+    ViewBag.Title = "程式碼產生";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+<link href="~/css/plugins/steps/jquery.steps.css?201811201906" rel="stylesheet" />
+
+<div class="wrapper wrapper-content animated fadeInRight">
+    <div class="row" id="codearea" style="display: none">
+        <div class="col-sm-12">
+            <div class="ibox">
+                <div class="ibox-title">
+                    <h5>CRUD程式碼自動產生嚮導</h5>
+                </div>
+                <div class="ibox-content">
+
+                    <form id="form" action="#" class="wizard-big">
+                        <h1>選擇表</h1>
+                        <fieldset>
+                            <div class="row">
+                                <div class="col-sm-8">
+                                    <div class="form-group">
+                                        <label>表名稱 *</label>
+                                        <input class="js-example-data-array-selected text-box" id="tables" style="width: 400px;" />
+                                    </div>
+                                </div>
+                            </div>
+                        </fieldset>
+                        <h1>選擇欄位列表</h1>
+                        <fieldset>
+                            <h2>欄位列表</h2>
+                            <div class="row">
+                                <div class="col-sm-8">
+                                    <div class="form-group">
+                                        <label>欄位列表 *</label>
+                                        <input class="js-example-data-array-selected text-box" id="columns" style="width: 500px;" />
+                                    </div>
+                                </div>
+                            </div>
+                        </fieldset>
+
+                        <h1>下載程式碼</h1>
+                        <fieldset>
+                            <h2>注意：點選完成開始下載。下載后請貼上到工程裡面去</h2>
+                        </fieldset>
+                    </form>
+                </div>
+            </div>
+        </div>
+
+    </div>
+</div>
+@section Scripts{
+
+    
+    <script src="~/js/plugins/staps/jquery.steps.min.js?201811201906"></script>
+ 
+
+    <script>
+
+        $(document).ready(function () {
+            $('#codearea').show();
+            $("#form").steps({
+                bodyTag: "fieldset",
+                onStepChanging: function (event, currentIndex, newIndex) {
+                    if (currentIndex === 1 && newIndex === 2) {
+                        var columns = $('#columns').select2('data');
+                        return columns.length!==0;
+                        
+                    } else if (currentIndex === 2 && newIndex === 1) {
+                        return true;
+                    } else if (currentIndex === 1 && newIndex === 0) {
+                        return true;
+                    } else {
+                        return $('#tables').select2('data');
+                    }
+                },
+                onStepChanged: function (event, currentIndex, priorIndex) {
+                    if (currentIndex === 2) return;
+                    var tableName = $('#tables').select2('data') && $('#tables').select2('data').id;
+                    if (!tableName) return;
+                    QQT.ajax('/Admin/Common/GetDbTableColumns',
+                        'Post',
+                        {
+                             dbName: tableName.split('→')[0],
+                             tableName: tableName.split('→')[1]
+                        }
+                    )
+                        .done(function (response) {
+                            InitDbTablesColumns(response.Data);
+                        });
+                },
+                onFinishing: function (event, currentIndex) {
+                    return currentIndex>=2;
+                },
+                onFinished: function (event, currentIndex) {
+                    var cc = $('#columns').select2('data');
+                    var columns = [];
+                    $.each(cc,
+                        function (index, r) {
+                            columns.push(r.id);
+                        });
+
+                    swal({
+                        title: "您確定要開始產生程式碼嗎?",
+                        text: "今天是個好日子！",
+                        type: "warning",
+                        showCancelButton: true,
+                        confirmButtonColor: "#DD6B55",
+                        confirmButtonText: "GOGO！",
+                        cancelButtonText: "NONO…",
+                        showLoaderOnConfirm: true,
+                        preConfirm: function () {
+                            debugger;
+                            $.fileDownload(window.appUrl + '/Admin/Common/CodeGenDown',
+                                {
+                                    httpMethod: 'POST',
+                                    dataType: "json",
+                                    contentType: "application/json",
+                                    data: {
+                                        tableName: $('#tables').select2('data').id,
+                                        ColumnStr: columns.join(',')
+                                    },
+                                    preparingMessageHtml: "程式碼正在產生中,請稍後...",
+                                    failMessageHtml: "產生出錯,請聯繫技術！",
+                                    successCallback: function () {
+                                        swal("成功啦！", "程式碼產生成功!", "success");
+                                        $('#columns').val(null).trigger("change");
+                                        $('#tables').val(null).trigger("change");
+                                        $("#form").steps('previous');
+                                        $("#form").steps('previous');
+                                    }
+                                });
+                            
+                        }
+                    }).then(function() {
+
+                     }).catch(swal.noop);
+                    return true;
+                }
+            });
+
+
+            QQT.ajax('/Admin/Common/GetDbTables', 'Post')
+                .done(function (response) {
+                    InitTablesCombobox(response.Data);
+                });
+        });
+
+        function InitTablesCombobox(data) {
+            var searchList = [];
+            $.each(data,
+                function (index, item) {
+                    var dbName = item.DbName || '';
+                    searchList.push({
+                        id: dbName + "→"+ item.Name + "→" + item.Comment,
+                        text: (dbName.length > 0 ? dbName+".":"") + item.TableName + "(" + item.Comment + ")"
+                    });
+                });
+
+
+            $('#tables').select2({
+                data: searchList,
+                placeholder: '請選擇表',
+                multiple: false
+            });
+
+        }
+
+        function InitDbTablesColumns(data) {
+            var searchList = [];
+            $.each(data,
+                function (index, item) {
+                    searchList.push({
+                        id: item.Name + "→" + item.Comment,
+                        text: item.FieldName + "(" + item.Comment + ")"
+                    });
+                });
+
+
+            $('#columns').select2({
+                data: searchList,
+                placeholder: '請選擇欄位',
+                multiple: true
+            });
+
+        }
+    </script>
+}

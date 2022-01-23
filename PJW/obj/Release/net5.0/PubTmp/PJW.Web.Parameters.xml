@@ -1,0 +1,6 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<parameters>
+  <parameter name="IIS Web Application Name" description="" value="PJW_WEB" tags="IisApp">
+    <parameterEntry kind="ProviderPath" scope="IisApp" match="^C:\\智擎科技\\Git\\PJW\\PJW\\obj\\Release\\net5\.0\\PubTmp\\Out\\$" />
+  </parameter>
+</parameters>

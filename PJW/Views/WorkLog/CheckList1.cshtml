@@ -1,0 +1,438 @@
+﻿@{
+    ViewBag.Title = "需求單位任務查詢";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+<link href="~/js/plugins/jQuery-File-Upload/css/jquery.fileupload.css" asp-append-version="true" rel="stylesheet" />
+<link href="~/js/plugins/jQuery-File-Upload/css/jquery.fileupload-ui.css" asp-append-version="true" rel="stylesheet" />
+
+
+<div class="wrapper wrapper-content animated fadeInRight">
+
+    <div class="ibox-content">
+
+        <div style="margin-top:10px;" id="WorkLogListTableEventsToolbar">
+            新增日期：
+            <input type="text" id="startDate" style="height:35px;width:100px;margin-left:5px;margin-top:-32px;border-radius: 6px;border: 1px #cccccc solid; outline: none" onclick="WdatePicker({dateFmt:'yyyy-MM-dd'})">
+            —
+            <input type="text" id="endDate" style="height:35px;width:100px;margin-left:8px;margin-top:-34px;border-radius: 6px;border: 1px #cccccc solid; outline: none" onclick="WdatePicker({dateFmt:'yyyy-MM-dd'})">
+            <input type="text" id="queryKey" placeholder="輸入關鍵字搜尋" style="height:35px;width:170px;margin-left:10px;margin-top:-34px;border-radius: 6px;border: 1px #cccccc solid; outline: none">
+            <button type="button" style="width:70px;height:35px;margin-left:20px;margin-top:-3px" id="btnQuery" class="btn btn-info">搜尋</button>
+
+        </div>
+        <table id="WorkLogListTable" data-side-pagination="server" data-sort-order="desc" data-mobile-responsive="true"></table>
+
+    </div>
+
+</div>
+
+
+@await Html.PartialAsync("_Detail");
+
+@section Scripts{
+    <script src="~/js/plugins/jQuery-File-Upload/js/vendor/jquery.ui.widget.js" asp-append-version="true"></script>
+    <script src="~/js/plugins/jQuery-File-Upload/js/jquery.iframe-transport.js" asp-append-version="true"></script>
+    <script src="~/js/plugins/jQuery-File-Upload/js/jquery.fileupload.js" asp-append-version="true"></script>
+    <script src="~/js/site.js" asp-append-version="true"></script>
+    <script type="text/javascript">
+        $(function () {
+
+            onReady();
+            //1.初始化Table
+            var oTable = new TableInit();
+            oTable.Init();
+
+            //2.初始化Button的點擊事件
+            var oButtonInit = new ButtonInit();
+            oButtonInit.Init();
+
+        });
+
+        function words_deal(obj) {
+
+            var curLength = $('#' + obj.id).val().length;
+            var maxTextLen = 250;
+            if (curLength > maxTextLen) {
+                var num = $('#' + obj.id).val().substr(0, maxTextLen);
+                $('#' + obj.id).val(num);
+                //超過字數限制，多出的字將被移除！
+                $('#' + obj.id + 'Msg').html("超過字數" + maxTextLen + "個限制，多出的字將被移除！");
+                $('#' + obj.id + 'Msg').show();
+            } else {
+                $('#' + obj.id + 'Msg').html("");
+                $('#' + obj.id + 'Msg').hide();
+            }
+        }
+
+        var TableInit = function () {
+            var oTableInit = new Object();
+
+            //初始化Table
+
+            oTableInit.Init = function () {
+                $('#WorkLogListTable')
+                    .bootstrapTable({
+                        ajax: ajaxRequest,
+                        pageNumber: 1,
+                        pageSize: 25,
+                        pageList: [10, 25, 50, 100],
+                        resetOffset: true,
+                        search: false,
+                        sortable: true,
+                        pagination: true,
+                        height: $(window).height(),
+                        showRefresh: true,
+                        showToggle: true,
+                        showColumns: false,
+                        striped: true,
+                        sortOrder: 'desc',
+                        clickToSelect: true,
+                        singleSelect: true,
+                        cache: false,
+                        // showPaginationSwitch:true,
+                        dataType: "json",
+                        iconSize: 'outline',
+                        toolbar: '#WorkLogListTableEventsToolbar',
+                        icons: {
+                            refresh: 'glyphicon-refresh',
+                            toggleOff: 'glyphicon-list-alt icon-list-alt',
+                            toggleOn: 'glyphicon-list-alt icon-list-alt',
+                            columns: 'glyphicon-list'
+                        },
+                        columns: [
+                            { field: 'work_log_no', title: '任務編號', visible: false },
+                            {
+                                field: 'sortName',
+                                title: '任務分類'
+                            },
+                            {
+                                field: 'work_log_subject',
+                                title: '任務名稱'
+                            },
+                            { field: 'work_log_priority_status', title: '需求等級編號', visible: false },
+                            {
+                                field: 'workLogPriority',
+                                title: '需求等級'
+                            },
+                            { field: 'work_log_status', title: '任務狀態編號', visible: false },
+                            {
+                                field: 'workLogStatus',
+                                title: '任務狀態'
+                            },
+                            { field: 'work_log_type', title: '任務屬性編號', visible: false },
+                            {
+                                field: 'workLogType',
+                                title: '任務屬性'
+                            },
+                            {
+                                field: 'work_log_adddate',
+                                title: '新增時間'
+                            },
+                            { field: 'operate', title: '操作', align: 'center', halign: 'center', events: operateEvents, formatter: 'operateFormatter' }
+
+                        ],
+                        onLoadSuccess: function () {
+
+                        },
+                        onToggle: function () {
+
+
+                        }
+
+                    });
+                $(window).resize(function () {
+
+                    $('#WorkLogListTable').bootstrapTable('resetView', { height: $(window).height() });
+                });
+
+            }
+
+            return oTableInit;
+        }
+
+        // 格式化按钮
+        function operateFormatter(value, row, index) {
+            //需求單位主管審核 = 1
+            if (row.work_log_status == 1) {
+                return [
+
+                    '<button type="button" class="btn btn-success" style="margin-right:15px;" action-id="worklogcheck" action-name="需求單位審核" title="需求單位審核"><i class="icon-edit" ></i>&nbsp;審核</button>'
+
+                ].join('');
+            }
+            else if (row.work_log_status == 4) {
+                return [
+
+                    '<button type="button" class="btn btn-primary" style="margin-right:15px;" action-id="worklogcaseclose" action-name="需求單位結案" title="需求單位結案"><i class="icon-edit" ></i>&nbsp;結案/評分</button>'
+
+                ].join('');
+
+            } else if (row.work_log_status != 0) {
+                return [
+
+                    '<button type="button" class="btn btn-secondary" style="margin-right:15px;" action-id="worklogDetail" action-name="任務檢視" title="任務檢視"><i class="icon-edit" ></i>&nbsp;查詢</button>'
+
+                ].join('');
+            }
+
+        }
+
+        //操作監聽事件
+        window.operateEvents = {
+            //檢視
+            'click [action-id=worklogDetail]': function (e, value, row, index) {
+
+                WorkLogDetail(row.work_log_no);
+            },
+            //需求單位審核
+            'click [action-id=worklogcheck]': function (e, value, row, index) {
+
+                WorkLogDetail(row.work_log_no);
+
+                //取得我的部門代號
+                var myDeptNo = '@ViewBag.UserToken.DeptNo';
+                //部門選單
+                QQT.ajax('/WorkLog/GetDeptList', 'Post')
+                    .done(function (response) {
+                        if (!response || !response.Data) return;
+                        var searchList = new Array();
+
+                        $.each(response.Data,
+                            function (index, item) {
+                                searchList.push({
+                                    id: item.deptNo,
+                                    text: item.deptName
+                                });
+                            });
+
+                        //設定select2
+                        $('#workLogAssignDeptId').select2({
+                            data: searchList,
+                            placeholder: '請選擇部門',
+                            multiple: false
+                        });
+
+                    });
+
+                $("#divWorkLogAssignDept").show();
+                $("#check-model").show();
+                $("#reject-model").show();
+            },
+            //結案給分
+            'click [action-id=worklogcaseclose]': function (e, value, row, index) {
+
+                WorkLogDetail(row.work_log_no);
+
+                var scoreList = [
+                    { id: '10', text: '10分' },
+                    { id: '20', text: '20分' },
+                    { id: '30', text: '30分' },
+                    { id: '40', text: '40分' },
+                    { id: '50', text: '50分' },
+                    { id: '60', text: '60分' },
+                    { id: '70', text: '70分' },
+                    { id: '80', text: '80分' },
+                    { id: '90', text: '90分' },
+                    { id: '100', text: '100分' },
+                ];
+                $("#divCaseClose #workLogScore").select2({
+                    data: scoreList,
+                    placeholder: '請選擇評分',
+                    multiple: false
+                });
+
+                $("#divCaseClose").show();
+                $("#caseclose-model").show();
+                
+            },
+
+        }
+
+        var ButtonInit = function () {
+            var oInit = new Object();
+            //檔案上傳元件初始化
+            var filesList = [];
+            oInit.Init = function () {
+                //取得我的部門代號
+                var myDeptNo = '@ViewBag.UserToken.DeptNo';
+                //送審給執行單位
+                $("#WorkLogDetailModal #check-model").click(function (e) {
+                    e.preventDefault();
+
+                    var workLogNo = $("#WorkLogDetailModal #workLogNo").val();
+                    var workLogAssignDeptId = $("#workLogAssignDeptId").val();
+
+                    if (workLogAssignDeptId == "") {
+                        swal({
+                            title: "請選擇執行單位！",
+                            text: "",
+                            type: "error"
+                        });
+                        return;
+                    }
+
+                    var workLogAssignDeptName = $("#workLogAssignDeptId").select2('data').text;
+
+
+                    //送給執行單位
+                    QQT.ajax('/WorkLog/WorkLogFlow',
+                        'POST',
+                        {
+                            WorkLogNo: workLogNo,
+                            WorkLogDeptNo: myDeptNo,
+                            WorkLogAssignDeptId: workLogAssignDeptId,
+                            WorkLogStatus: 2
+                        })
+                        .done(function (response) {
+
+                            if (response.Status == "1") {
+                                $('#WorkLogListTable').bootstrapTable('refresh', { silent: true });
+                                swal({
+                                    title: "已送審給執行單位 <span style='color:blue'>" + workLogAssignDeptName + "</span>",
+                                    text: "",
+                                    type: "success"
+                                });
+
+                            } else {
+                                swal({
+                                    title: "送審給執行單位失敗",
+                                    text: "送審給執行單位失敗：" + response.Data,
+                                    type: "error"
+                                });
+                            }
+                        });
+
+                    $('#WorkLogDetailModal').modal('hide');
+
+
+                });
+
+                //結案
+                $("#WorkLogDetailModal #caseclose-model").click(function (e) {
+                    e.preventDefault();
+
+                    var workLogNo = $("#WorkLogDetailModal #workLogNo").val();
+                    var workLogScore = $("#workLogScore").val();
+
+                    if (workLogScore == "") {
+                        swal({
+                            title: "請給評鑑才能結案！",
+                            text: "",
+                            type: "error"
+                        });
+                        return;
+                    }
+
+                    var workLogScoreName = $("#workLogScore").select2('data').text;
+
+                    //結案處理
+                    QQT.ajax('/WorkLog/WorkLogFlow',
+                        'POST',
+                        {
+                            WorkLogNo: workLogNo,
+                            WorkLogDeptNo: myDeptNo,
+                            WorkLogScore: workLogScore,
+                            WorkLogStatus: 5
+                        })
+                        .done(function (response) {
+
+                            if (response.Status == "1") {
+                                $('#WorkLogListTable').bootstrapTable('refresh', { silent: true });
+                                swal({
+                                    title: "已做結案動作，評鑑 <span style='color:blue'>" + workLogScoreName + "</span>",
+                                    text: "",
+                                    type: "success"
+                                });
+
+                            } else {
+                                swal({
+                                    title: "結案動作失敗",
+                                    text: "結案動作失敗：" + response.Data,
+                                    type: "error"
+                                });
+                            }
+                        });
+
+                    $('#WorkLogDetailModal').modal('hide');
+                });
+
+                //退回
+                $("#WorkLogDetailModal #reject-model").click(function (e) {
+                    var workLogNo = $("#WorkLogDetailModal #workLogNo").val();
+                    //退回處理
+                    QQT.ajax('/WorkLog/WorkLogFlow',
+                        'POST',
+                        {
+                            WorkLogNo: workLogNo,
+                            WorkLogStatus: 0
+                        })
+                        .done(function (response) {
+
+                            if (response.Status == "1") {
+                                $('#WorkLogListTable').bootstrapTable('refresh', { silent: true });
+                                swal({
+                                    title: "您已將此工作任務退回",
+                                    text: "",
+                                    type: "success"
+                                });
+
+                            } else {
+                                swal({
+                                    title: "工作任務退回失敗",
+                                    text: "工作任務退回失敗：" + response.Data,
+                                    type: "error"
+                                });
+                            }
+                        });
+                    $("#WorkLogDetailModal").modal("hide");
+                });
+
+                
+
+                $("#WorkLogDetailModal #close-model").click(function (e) {
+                    $("#WorkLogDetailModal").modal("hide");
+                });
+
+                $("#btnQuery").click(function () {
+                    $(".bootstrap-table button[name='refresh']")[0].click();
+                });
+
+            }
+
+            return oInit;
+        }
+
+
+        function ajaxRequest(params) {
+            var pageSize = params.data.limit;
+            var pageIndex = params.data.offset / params.data.limit + 1;
+            var orderBy = params.data.sort;
+            var orderSequence = params.data.order;
+            QQT.ajax('/WorkLog/GetWorkLogListByStatus',
+                'POST',
+                {
+                    pageIndex: pageIndex,
+                    pageSize: pageSize,
+                    orderBy: orderBy,
+                    orderSequence: orderSequence,
+                    workLogStatus: 1,
+                    startDate: $("#startDate").val(),
+                    endDate: $("#endDate").val(),
+                    queryKey: $("#queryKey").val()
+                })
+                .done(function (response) {
+                    params.success({
+                        total: response.Total,
+                        rows: response.Rows
+                    });
+                });
+
+        }
+
+        function onReady() {
+
+
+        }
+
+
+    </script>
+}

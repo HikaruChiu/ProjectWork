@@ -1,0 +1,77 @@
+[15:18:08.3341][PJW.Web.Program][Debug] - init main 
+[15:51:54.0615][PJW.Web.Program][Debug] - init main 
+[17:36:33.7024][PJW.Web.Program][Debug] - init main 
+[17:54:27.4560][PJW.Web.Program][Debug] - init main 
+[17:58:04.1794][PJW.Web.Program][Debug] - init main 
+[18:01:59.5298][PJW.Web.Program][Debug] - init main 
+[18:05:01.0713][Infrastructure.Logging.LogHelper][Warn] - ViewRenderService找view出錯了：WorkLog/List1
+            [Tags]
+                 {Key:method,Value:RenderToStringAsync}
+ 
+System.InvalidOperationException: The partial view '_Detail' was not found. The following locations were searched:
+/Views/_Detail.cshtml
+/Views/Shared/_Detail.cshtml
+/Pages/Shared/_Detail.cshtml
+   at Microsoft.AspNetCore.Mvc.ViewFeatures.HtmlHelper.RenderPartialCoreAsync(String partialViewName, Object model, ViewDataDictionary viewData, TextWriter writer)
+   at Microsoft.AspNetCore.Mvc.ViewFeatures.HtmlHelper.PartialAsync(String partialViewName, Object model, ViewDataDictionary viewData)
+   at AspNetCore.Views_WorkLog_List1.ExecuteAsync() in D:\MyProject\PJWWEB\PJW\PJW\Views\WorkLog\List1.cshtml:line 129
+   at Microsoft.AspNetCore.Mvc.Razor.RazorView.RenderPageCoreAsync(IRazorPage page, ViewContext context)
+   at Microsoft.AspNetCore.Mvc.Razor.RazorView.RenderPageAsync(IRazorPage page, ViewContext context, Boolean invokeViewStarts)
+   at Microsoft.AspNetCore.Mvc.Razor.RazorView.RenderAsync(ViewContext context)
+   at PJW.Web.ViewRenderService.RenderToStringAsync(String viewName, Object model) in D:\MyProject\PJWWEB\PJW\PJW\App_Start\ViewRenderService.cs:line 92
+[18:05:01.1036][Infrastructure.Logging.LogHelper][Warn] - ViewRenderService沒有找到對應的view：WorkLog/List2
+            [Tags]
+                 {Key:method,Value:RenderToStringAsync}
+ 
+[18:05:01.1036][Infrastructure.Logging.LogHelper][Warn] - ViewRenderService沒有找到對應的view：WorkLog/List3
+            [Tags]
+                 {Key:method,Value:RenderToStringAsync}
+ 
+[18:05:01.1072][Infrastructure.Logging.LogHelper][Warn] - ViewRenderService沒有找到對應的view：WorkLog/Share
+            [Tags]
+                 {Key:method,Value:RenderToStringAsync}
+ 
+[18:05:01.1254][Infrastructure.Logging.LogHelper][Warn] - ViewRenderService沒有找到對應的view：WorkLog/CheckList1
+            [Tags]
+                 {Key:method,Value:RenderToStringAsync}
+ 
+[18:05:01.1254][Infrastructure.Logging.LogHelper][Warn] - ViewRenderService沒有找到對應的view：WorkLog/CheckList2
+            [Tags]
+                 {Key:method,Value:RenderToStringAsync}
+ 
+[18:38:06.5135][PJW.Web.Program][Debug] - init main 
+[18:38:21.3817][Infrastructure.Logging.LogHelper][Warn] - ViewRenderService找view出錯了：WorkLog/List1
+            [Tags]
+                 {Key:method,Value:RenderToStringAsync}
+ 
+System.InvalidOperationException: The partial view '_Detail' was not found. The following locations were searched:
+/Views/_Detail.cshtml
+/Views/Shared/_Detail.cshtml
+/Pages/Shared/_Detail.cshtml
+   at Microsoft.AspNetCore.Mvc.ViewFeatures.HtmlHelper.RenderPartialCoreAsync(String partialViewName, Object model, ViewDataDictionary viewData, TextWriter writer)
+   at Microsoft.AspNetCore.Mvc.ViewFeatures.HtmlHelper.PartialAsync(String partialViewName, Object model, ViewDataDictionary viewData)
+   at AspNetCore.Views_WorkLog_List1.ExecuteAsync() in D:\MyProject\PJWWEB\PJW\PJW\Views\WorkLog\List1.cshtml:line 129
+   at Microsoft.AspNetCore.Mvc.Razor.RazorView.RenderPageCoreAsync(IRazorPage page, ViewContext context)
+   at Microsoft.AspNetCore.Mvc.Razor.RazorView.RenderPageAsync(IRazorPage page, ViewContext context, Boolean invokeViewStarts)
+   at Microsoft.AspNetCore.Mvc.Razor.RazorView.RenderAsync(ViewContext context)
+   at PJW.Web.ViewRenderService.RenderToStringAsync(String viewName, Object model) in D:\MyProject\PJWWEB\PJW\PJW\App_Start\ViewRenderService.cs:line 92
+[18:38:21.3992][Infrastructure.Logging.LogHelper][Warn] - ViewRenderService沒有找到對應的view：WorkLog/List2
+            [Tags]
+                 {Key:method,Value:RenderToStringAsync}
+ 
+[18:38:21.3992][Infrastructure.Logging.LogHelper][Warn] - ViewRenderService沒有找到對應的view：WorkLog/List3
+            [Tags]
+                 {Key:method,Value:RenderToStringAsync}
+ 
+[18:38:21.3992][Infrastructure.Logging.LogHelper][Warn] - ViewRenderService沒有找到對應的view：WorkLog/Share
+            [Tags]
+                 {Key:method,Value:RenderToStringAsync}
+ 
+[18:38:21.3992][Infrastructure.Logging.LogHelper][Warn] - ViewRenderService沒有找到對應的view：WorkLog/CheckList1
+            [Tags]
+                 {Key:method,Value:RenderToStringAsync}
+ 
+[18:38:21.4127][Infrastructure.Logging.LogHelper][Warn] - ViewRenderService沒有找到對應的view：WorkLog/CheckList2
+            [Tags]
+                 {Key:method,Value:RenderToStringAsync}
+ 
